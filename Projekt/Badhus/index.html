@@ -1,58 +1,53 @@
-<!DOCTYPE html>
-<html lang="sv">
-
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="sv"> <!-- Specifies the language of the document (English in this case) -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fa/css/all.css">
-    <title>Badhuset</title>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport properties for responsive design -->
+    <link rel="stylesheet" href="style.css"> <!-- Links an external stylesheet for styling -->
+    <link rel="stylesheet" href="fa/css/all.css"> <!-- Links Font Awesome icons stylesheet -->
+    <title>Dickies® | Official Site | Workwear & Apparel</title> <!-- Sets the title of the web page -->
 </head>
-<!-- Badhuset
-Det lokala badhuset vill ha en egen webbplats. 
-Den ska vara grafisk och inbjudande till ett dop i poolen. Det måste finnas tydliga öppettider och priser då det är den mest ställda 
-frågan via telefon. Det ska också finnas kontaktuppgifter och en sida där man kan anmäla sig till olika simskolegrupper.
-
-
-Badhusets Webbplats
-1.      Badhuset - Öppettider – Som badgäst vill jag kunna se öppettider så jag kan bada
-2.      Badhuset – Pris – Som badgäst vill jag veta vad det kostar att bada
-3.      Badhuset – Simskola – Som förälder ska det vara enkelt att boka simskola
-4.      Badhuset – Design – Kommunen vill att det ska vara inbjudande & roligt att bada
--->
 <body>
-    <menu class="social">
-        <form>
-            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-        </form>
-        <form>
-            <a href=""><i class="fa-brands fa-square-youtube"></i></a>
-        </form>
-        <form>
-            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-        </form>
-        <form>
-            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        </form>
-    </menu>
-    <nav class="navbar">
-    <ul>
-        <li><a href="simskola.html">SIMSKOLAN</a></li>
-    </ul>
+    <nav class="navbar"> <!-- Navigation section of the webpage -->
+        <ul class="toolbar"> <!-- Unordered list for toolbar items -->
+            <li><a href="#"><i class="fa-regular fa-circle-question"></i>Frågor</a></li> <!-- Link for help section with a question mark icon -->
+            <li><a href="#"><i class="fa-regular fa-user"></i>Simskola</a></li> <!-- Link for user login with a user icon -->
+        </ul>
+        <nav class="logobar"> <!-- Secondary navigation section with a logo and search bar -->
+            <figure class="logo"> <!-- Logo image container with a link to the homepage -->
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo"></a>
+            </figure>
+            <nav class="searchbar"> <!-- Search bar container with a search input field and button -->
+                <form action="#">
+                    <button type="submit"><i class="fas fa-search"></i></button> <!-- Search button with a search icon -->
+                    <input type="text" placeholder="Sök.."> <!-- Search input field with a placeholder text -->
+                </form>
+            </nav>
+        </nav>
     </nav>
-    <nav class="navbarcontainer">
-        <figure class="logo">
-            <a href="#"><img src="img/logo.png" alt="Badhusets logotyp"></a>
-        </figure>
-        <menu class="searchbar">
-        <form>
-            <button type="submit"><i class="fas fa-search"></i></button>
-            <input type="text" placeholder="Sök..">
-        </form>
-    </nav>
+    <header class="headerbar"> <!-- Header section of the webpage -->
+        <p>
+            JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>. <!-- Text content with superscript and underline elements -->
+        </p>
+    </header>
     <section>
-        das
+        <img class="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset">
+        <section class="textcontainer">
+        <h2 class="homeheading">IN-CODENITO BADET</h2>
+        <p class="hometext">
+            Välkommen till oss, det prisbelönta badhuset som har erövrat 
+            <br>
+            Sveriges hjärtan och blivit årets badhus tre år i rad enligt det svenska folket. 
+            <br>
+            Upplev en unik atmosfär av avkoppling och glädje, 
+            <br>
+            oavsett om du är här för familjelek i våra pooler eller lyxig spaavkoppling. 
+            <br>
+            Vår kristallklara bassäng, spännande vattenrutschbanor och vänliga personal skapar 
+            <br>
+            minnesvärda stunder för alla. Kom och upptäck en värld av nöje och välbefinnande hos oss!
+        </p>
+        </section>
     </section>
 </body>
-
 </html>

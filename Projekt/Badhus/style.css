@@ -1,122 +1,104 @@
-/* TEXT #000000 */ 
-/* BACKGROUND #FFFFFF */ 
-/* PRIMARY #599FC5 */ 
-/* SECONDARY #1E1A60 */ 
-/* ACCENT #47547B */
-
-/* https://www.realtimecolors.com/?colors=000000-ffffff-599fc5-1e1a60-47547b&fonts=Poppins-Poppins */ 
-
+/* Set margin of the entire document to 0 */
 body {
     margin: 0;
-    background-color: #3e6f89;
 }
 
-nav {
-    background-color: #f2f2f2;
-}
-
-.navbarcontainer {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0 6px 2px -2px #dbdbdb;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    align-items: center;
-    width: 80%;
-}
-
-.navbar {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 10.5%;
-}
-
-.social
-{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 0;
-    right: 46%;
-    background-color: #47547B;
-    width: 8vw;
-    font-size: 1.2vw;
-    padding: 1.5vh 1vw 1.5vh 1.5vw;
-    margin: -1.5vh -1vw -1.5vh -1.5vw;
-    border: 1px solid #47547B;
-    border-top: none;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    box-shadow:  0px 5px 0px #697db7, -5px 0px 0px #697db7, 0px 0px -5px #697db7;;
-}
-
-.social a {
-    color: #FFFFFF;
-    
-}
-
-.social i {
-    padding: 1vh 1vw 0 0;
-}
-
-
-.navbar ul {
-    margin: 0;
-    list-style: none;
-}
-
-.navbar li {
-    padding: 1vh 0.5vw 0 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #47547B;
-    font-size: 1vw;
-    padding: 1.5vh 1vw 1.5vh 1.5vw;
-    margin: -1.5vh -1vw -1.5vh -1.5vw;
-    border-bottom: 1px solid #47547B;
-    border-left: 1px solid #47547B;
-    border-bottom-left-radius: 100px;
-    box-shadow:  0px 5px 0px #697db7, -5px 0px 0px #697db7;
-    letter-spacing: 0.2vw;
-}
-
-.navbar a:hover {
+nav a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.7vh;
-    font-weight: 1000;
 }
 
+/* Styling for the fixed navigation bar */
+.navbar {
+    border-bottom: 2px solid #47547B;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 21vh;
+}
+
+/* Styling for the toolbar inside the navigation bar */
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+    height: 4vh;
+    padding: 0;
+}
+
+/* Styling for the list inside the navigation menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* Styling for the language selector in the toolbar */
+.languagelink {
+    padding-right: 0 !important;
+}
+
+/* Styling for the language dropdown icon */
+.languageimg {
+    width: 1.5vw;
+    height: 2vh;
+    margin-top: 0.7vh;
+    margin-right: -0.8vw;
+}
+
+/* Styling for list items in the toolbar */
+.toolbar li {
+    padding-right: 0.5vw;
+}
+
+/* Styling for navigation links */
+nav a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-size: 0.8vw;
+}
+
+/* Styling for icons in the toolbar */
+.toolbar i {
+    padding-right: 0.3vw;
+}
+
+/* Styling for the logo bar */
+.logobar {
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+}
+
+/* Styling for the logo */
 .logo {
     margin: 0;
-    margin-left: 5vw;
+    text-align: center;
+    padding-bottom: 5vh;
+    margin-top: 0;
 }
 
-.logo img {
+/* Styling for the logo image */
+#logo {
     width: 15vw;
+    height: 15vh;
 }
 
-section {
-    margin: auto;
-    margin-top: 0.5vh;
-    background-color: #f2f2f2;
-    width: 70%;
-    height: 100vh;
+/* Styling for the search bar */
+.searchbar {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: -20vh;
+    margin-right: 0.5vw;
 }
-
 
 /* Styling for the search form */
 .searchbar form {
-    border: 1px solid #697db7;
+    border: 1px solid #EBEBEB;
     border-radius: 5px;
     overflow: hidden;
-    margin: 5vh 30vw 0 0;
 }
 
 /* Styling for focused search form */
@@ -127,7 +109,7 @@ section {
 /* Styling for search button */
 .searchbar button {
     border: none;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     border-right: none;
     padding: 1vh 0 0.8vh 0.8vw;
     cursor: pointer;
@@ -136,10 +118,11 @@ section {
 /* Styling for search input */
 .searchbar input[type=text] {
     border: none;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     border-left: none;
     padding: 0.8vh 0 0.8vh 0.8vw;
     font-size: 1vw;
+    width: 9vw;
 }
 
 /* Styling for search input placeholder */
@@ -156,3 +139,225 @@ section {
 .searchbar input[type=text]:focus::placeholder {
     color: #CCCDCC;
 }
+
+/* Styling for the page navigation bar */
+.pagebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 0;
+    margin-top: 1vh;
+    margin-bottom: -1vh;
+}
+
+/* Styling for page navigation links */
+.pagebar a {
+    padding-bottom: 0.3vh;
+    margin-bottom: -0.3vh;
+    margin-right: -0.65vw;
+    padding-right: 0.65vw;
+    padding-left: 0.65vw;
+    margin-left: -0.65vw;
+    font-size: 1.2vw;
+    font-weight: 1000;
+}
+
+/* Styling for page navigation links on hover */
+.pagebar a:hover {
+    color: #77778D;
+    border-bottom: 2px solid #C31230;
+}
+
+/* Styling for the header bar */
+.headerbar {
+    background-color: #599FC5;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.3vw;
+    height: 4.5vh;
+    line-height: 3vh;
+    position: relative;
+    margin: 0;
+    margin-left: -3.5vw;
+    padding-top: 21vh;
+}
+
+/* Styling for the header bar text */
+.headerbar p {
+    margin: 0;
+    color: #000000;
+}
+
+/* Styling for the header bar underline */
+.headerbar u {
+    margin: 0.8vh 0 0 0.7vw;
+    position: absolute;
+    font-size: 0.8vw;
+}
+
+/* Styling for the header image and text */
+.headerpicture {
+    position: relative;
+    margin: 0;
+}
+
+/* Styling for the header image */
+#headerimg {
+    width: 100%;
+}
+
+/* Styling for smaller header text */
+#headersmall {
+    color: #FFFFFF;
+    position: absolute;
+    margin: -29vh 0 0 4vw;
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+    font-weight: normal;
+}
+
+/* Styling for larger header text */
+#headerbig {
+    color: #FFFFFF;
+    position: absolute;
+    margin: -25vh 0 0 4.2vw;
+    font-size: 4.5vw;
+    font-weight: 1000;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+}
+
+/* Styling for the header button */
+#headerbutton {
+    position: absolute;
+    margin: -12vh 0 0 4vw;
+    border: 1px solid black;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    padding: 2vh 2.5vw 2vh 2.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for header button on hover */
+#headerbutton:hover {
+    text-decoration: underline;
+}
+
+#itemsmall {
+    color: #3d3d3d;
+    font-weight: normal;
+    font-size: 1.1vw;
+    padding: 5.5vh 0 0 2vw;
+    letter-spacing: 0.1vw;
+}
+
+#itemsbig {
+    font-size: 3vw;
+    padding: 0 0 0 2vw;
+    margin: -0.8vh 0 0 0;
+    letter-spacing: 0.1vw;
+}
+
+#itemscontainer {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1.2vw;
+}
+
+#itemscontainer figure {
+    margin: 0;
+}
+
+#itemscontainer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+#itemscontainer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2vh;
+}
+
+#itemscontainer figcaption {
+    padding: 2vh 0 0 0;
+}
+
+.itemsimg {
+    width: 18vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1.5px solid #DDDDDD;
+    background-color: #EFEFEF;
+    height: 35vh;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a h3, .footerbigger {
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a, p, address, time, i {
+    color: #3d3d3d;
+}
+
+.homebackground {
+    margin: 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.textcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(71, 84, 123, 0.9); /* Background color for the text container */
+    padding: 20px; /* Padding inside the text container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.homeheading {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 2vw; /* Adjust the font size as needed */
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.textcontainer p {
+    color: #FFFFFF;
+    font-size: 1.1vw; /* Example font size for <p> element inside text container */
+    margin: 10px 0; /* Optional: Adjust the margin as needed */
+    line-height: 3vh;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
+}
+
+
+
+
