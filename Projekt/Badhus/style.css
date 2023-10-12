@@ -8,6 +8,7 @@
 
 body {
     margin: 0;
+    background-color: #3e6f89;
 }
 
 nav {
@@ -15,30 +16,81 @@ nav {
 }
 
 .navbarcontainer {
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     box-shadow: 0 6px 2px -2px #dbdbdb;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    align-items: center;
+    width: 80%;
 }
 
 .navbar {
     margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 10.5%;
+}
+
+.social
+{
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 46%;
+    background-color: #47547B;
+    width: 8vw;
+    font-size: 1.2vw;
+    padding: 1.5vh 1vw 1.5vh 1.5vw;
+    margin: -1.5vh -1vw -1.5vh -1.5vw;
+    border: 1px solid #47547B;
+    border-top: none;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow:  0px 5px 0px #697db7, -5px 0px 0px #697db7, 0px 0px -5px #697db7;;
+}
+
+.social a {
+    color: #FFFFFF;
+    
+}
+
+.social i {
+    padding: 1vh 1vw 0 0;
+}
+
+
+.navbar ul {
+    margin: 0;
     list-style: none;
+}
+
+.navbar li {
+    padding: 1vh 0.5vw 0 0;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #000000;
-    font-weight: 600;
-    font-size: 1.2vw;
-    padding: 0.7vh 1vw 0.7vh 1vw;
-    border: 2px solid #47547B;
-    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #47547B;
+    font-size: 1vw;
+    padding: 1.5vh 1vw 1.5vh 1.5vw;
+    margin: -1.5vh -1vw -1.5vh -1.5vw;
+    border-bottom: 1px solid #47547B;
+    border-left: 1px solid #47547B;
+    border-bottom-left-radius: 100px;
+    box-shadow:  0px 5px 0px #697db7, -5px 0px 0px #697db7;
+    letter-spacing: 0.2vw;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.7vh;
+    font-weight: 1000;
 }
 
 .logo {
@@ -48,4 +100,59 @@ nav {
 
 .logo img {
     width: 15vw;
+}
+
+section {
+    margin: auto;
+    margin-top: 0.5vh;
+    background-color: #f2f2f2;
+    width: 70%;
+    height: 100vh;
+}
+
+
+/* Styling for the search form */
+.searchbar form {
+    border: 1px solid #697db7;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5vh 30vw 0 0;
+}
+
+/* Styling for focused search form */
+.searchbar form:focus-within {
+    border: 1px solid #000000;
+}
+
+/* Styling for search button */
+.searchbar button {
+    border: none;
+    background-color: #f2f2f2;
+    border-right: none;
+    padding: 1vh 0 0.8vh 0.8vw;
+    cursor: pointer;
+}
+
+/* Styling for search input */
+.searchbar input[type=text] {
+    border: none;
+    background-color: #f2f2f2;
+    border-left: none;
+    padding: 0.8vh 0 0.8vh 0.8vw;
+    font-size: 1vw;
+}
+
+/* Styling for search input placeholder */
+.searchbar input[type=text]::placeholder {
+    color: #000000;
+}
+
+/* Styling for focused search input */
+.searchbar input[type=text]:focus {
+    outline: none;
+}
+
+/* Styling for focused search input placeholder */
+.searchbar input[type=text]:focus::placeholder {
+    color: #CCCDCC;
 }
