@@ -188,6 +188,7 @@ nav a {
 /* Styling for the header bar text */
 .headerbar p {
     margin: 0;
+    padding: 0;
     color: #FFFFFF;
 }
 
@@ -439,9 +440,19 @@ html {
 }
 
 .trip {
+    margin: auto;
+    display: block;
     margin-top: 5vh;
     width: 25vw !important;
     height: 15vh !important;
+}
+
+.slogan {
+    margin: auto;
+    display: block;
+    margin-top: 5vh;
+    width: 20vw !important;
+    height: 20vh !important;
 }
 
 .infocontainer h2
