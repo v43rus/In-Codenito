@@ -1,6 +1,7 @@
 /* Set margin of the entire document to 0 */
 body {
     margin: 0;
+    background-color: #FBFBFB;
 }
 
 nav a:hover {
@@ -10,7 +11,7 @@ nav a:hover {
 /* Styling for the fixed navigation bar */
 .navbar {
     border-bottom: 2px solid #47547B;
-    background-color: #FFFFFF;
+    background-color: #FBFBFB;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -55,7 +56,7 @@ nav ul {
 /* Styling for navigation links */
 nav a {
     text-decoration: none;
-    color: #3d3d3d;
+    color: #42605A;
     font-size: 0.8vw;
 }
 
@@ -103,7 +104,7 @@ nav a {
 
 /* Styling for focused search form */
 .searchbar form:focus-within {
-    border: 1px solid #000000;
+    border: 1px solid #42605A;
 }
 
 /* Styling for search button */
@@ -121,6 +122,7 @@ nav a {
     background-color: #FFFFFF;
     border-left: none;
     padding: 0.8vh 0 0.8vh 0.8vw;
+    margin-left: -0.3vw;
     font-size: 1vw;
     width: 9vw;
 }
@@ -172,8 +174,7 @@ nav a {
 
 /* Styling for the header bar */
 .headerbar {
-    background-color: #599FC5;
-    color: #FFFFFF;
+    background-color: #42605A;
     text-align: center;
     font-size: 1.3vw;
     height: 4.5vh;
@@ -187,7 +188,7 @@ nav a {
 /* Styling for the header bar text */
 .headerbar p {
     margin: 0;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 /* Styling for the header bar underline */
@@ -329,7 +330,7 @@ footer a, p, address, time, i {
     width: 100%;
     height: 80vh;
     object-fit: cover;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
 }
 
 .textcontainer {
@@ -337,7 +338,7 @@ footer a, p, address, time, i {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(71, 84, 123, 0.9); /* Background color for the text container */
+    background-color: rgba(66, 96, 90, 0.9); /* Background color for the text container */
     padding: 20px; /* Padding inside the text container */
     border-radius: 10px; /* Optional: Add border-radius for rounded corners */
 }
@@ -364,30 +365,64 @@ footer a, p, address, time, i {
     height: 35vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-top: 2px solid rgba(71, 84, 123, 0.9);
-    border-left: 2px solid rgba(71, 84, 123, 0.9);
-    border-right: 2px solid rgba(71, 84, 123, 0.9);
-}
-.infocontainer figure {
+    border-top: 2px solid rgba(205, 188, 141, 0.8);
+    border-left: 2px solid rgba(205, 188, 141, 0.8);
+    border-right: 2px solid rgba(205, 188, 141, 0.8);
 }
 
 .infocontainer figcaption {
-    background-color: rgba(71, 84, 123, 0.9);
+    background-color: rgba(205, 188, 141, 0.8);
     margin: 0;
     margin-top: -0.7vh;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 5vh;
+    border-bottom: 2px solid rgba(205, 188, 141, 0.8);
+    border-left: 2px solid rgba(205, 188, 141, 0.8);
+    border-right: 2px solid rgba(205, 188, 141, 0.8);
     color: #FFFFFF;
 
+}
+
+.infocontainer figure
+{
+    width: 30.25vw;
+}
+.infocontainer ul {
+    list-style-type: none;
+    text-align: start;
 }
 
 .infocontainer {
     display: flex;
     justify-content: center;
+    background-color: #FBFBFB;
 }
 
+.navmap
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 10vw;
+}
+
+.navroute a
+{
+    color: #42605A;
+}
+
+.navmap a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scroll {
+    scroll-margin-top: 25vh;
+}
 
 
 
