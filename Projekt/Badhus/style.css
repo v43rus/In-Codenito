@@ -386,7 +386,20 @@ footer a, p, address, time, i {
 
 .infocontainer figure
 {
-    width: 30.25vw;
+    width: 30vw;
+}
+
+.infocontainer figcaption {
+    width: 30vw;
+}
+
+.infocontainer figcaption li {
+    width: 90%;
+}
+
+.height
+{
+    margin-top: 38.6vh;
 }
 .infocontainer ul {
     list-style-type: none;
