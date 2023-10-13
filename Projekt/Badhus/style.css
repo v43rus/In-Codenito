@@ -1,7 +1,7 @@
 /* Set margin of the entire document to 0 */
 body {
     margin: 0;
-    background-color: #FBFBFB;
+    background-color: #EBEBEB;
 }
 
 nav a:hover {
@@ -10,7 +10,7 @@ nav a:hover {
 
 /* Styling for the fixed navigation bar */
 .navbar {
-    border-bottom: 2px solid #47547B;
+    border-bottom: 2px solid #42605A;
     background-color: #FBFBFB;
     position: fixed;
     width: 100%;
@@ -92,7 +92,7 @@ nav a {
     justify-content: end;
     list-style: none;
     margin-top: -20vh;
-    margin-right: 0.5vw;
+    margin-right: 2vw;
 }
 
 /* Styling for the search form */
@@ -358,58 +358,54 @@ footer a, p, address, time, i {
     line-height: 3vh;
     word-spacing: 0.2vw;
     letter-spacing: 0.1vw;
+    padding-left: 2vw;
 }
 
 .infocontainer img {
     width: 30vw;
     height: 35vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top: 2px solid rgba(205, 188, 141, 0.8);
-    border-left: 2px solid rgba(205, 188, 141, 0.8);
-    border-right: 2px solid rgba(205, 188, 141, 0.8);
+    border-bottom: 2px solid rgba(49, 71, 67, 0.9);
 }
 
 .infocontainer figcaption {
-    background-color: rgba(205, 188, 141, 0.8);
+    background-color: #EBEBEB;
     margin: 0;
     margin-top: -0.7vh;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom: 2px solid rgba(205, 188, 141, 0.8);
-    border-left: 2px solid rgba(205, 188, 141, 0.8);
-    border-right: 2px solid rgba(205, 188, 141, 0.8);
-    color: #FFFFFF;
+    color: #000000;
 
 }
+
 
 .infocontainer figure
 {
     width: 30vw;
+    border: 10px solid rgba(49, 71, 67, 0.9);
+    outline: 20px solid rgba(71, 104, 98, 0.9);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    margin-top: 6vh;
+    
 }
 
 .infocontainer figcaption {
     width: 30vw;
+    height: 100vh;
 }
 
 .infocontainer figcaption li {
     width: 90%;
 }
 
-.height
-{
-    margin-top: 38.6vh;
-}
 .infocontainer ul {
     list-style-type: none;
     text-align: start;
+    
 }
 
 .infocontainer {
     display: flex;
     justify-content: center;
-    background-color: #FBFBFB;
+    background-color: #EBEBEB;
 }
 
 .navmap
@@ -417,14 +413,19 @@ footer a, p, address, time, i {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin-left: 10vw;
+    padding: 2vh 0 0 10vw;
+    border-top: 2px solid #d8d8d8;
+    background-color: #EBEBEB;
 }
 
 .navroute a
 {
     color: #42605A;
 }
-
+.navroute a:hover
+{
+    text-decoration: underline;
+}
 .navmap a {
     text-decoration: none;
 }
@@ -433,8 +434,33 @@ html {
     scroll-behavior: smooth;
 }
 
-#scroll {
-    scroll-margin-top: 25vh;
+#scroll1, #scroll2 {
+    scroll-margin-top: 30vh;
+}
+
+.trip {
+    margin-top: 5vh;
+    width: 25vw !important;
+    height: 15vh !important;
+}
+
+.infocontainer h2
+{
+    text-align: center;
+    margin: 0;
+    padding-top: 2vh;
+}
+
+
+.infocontainer h3, h4, p
+{
+    padding: 1.5vh 0 0 2vw;
+    margin: 0;
+}
+
+.infocontainer h3 
+{
+    
 }
 
 
