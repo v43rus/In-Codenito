@@ -1,0 +1,292 @@
+/* Set smooth scrolling behavior for the entire HTML document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset margin for the entire body and set background color */
+body {
+    margin: 0;
+    background-color: #EBEBEB;
+}
+
+/* Styling for the fixed navigation bar */
+.navbar {
+    border-bottom: 2px solid #42605A;
+    background-color: #FBFBFB;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 21vh; /* 21% of viewport height */
+}
+
+/* Styling for the list inside the navigation menu */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* Styling for navigation links */
+.navbar a {
+    text-decoration: none;
+    color: #42605A;
+    font-size: 0.8vw; /* 0.8% of viewport width */
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the toolbar inside the navigation bar */
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw; /* 1% of viewport width */
+    height: 4vh; /* 4% of viewport height */
+    padding: 0;
+}
+
+/* Styling for list items in the toolbar */
+.toolbar li {
+    padding-right: 0.5vw;
+}
+
+/* Styling for icons in the toolbar */
+.toolbar i {
+    padding-right: 0.3vw;
+}
+
+/* Define scroll margins for specific elements with IDs 'scroll1' and 'scroll2' */
+#scroll1, #scroll2 {
+    scroll-margin-top: 30vh; /* 30% of viewport height */
+}
+
+/* Styling for the logo bar */
+.logobar {
+    width: 100%;
+    height: 10vh; /* 10% of viewport height */
+    padding: 0;
+}
+
+/* Styling for the logo */
+.logo {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 5vh;
+    margin-top: 0;
+}
+
+/* Styling for the logo image */
+#logo {
+    width: 15vw; /* 15% of viewport width */
+    height: 15vh; /* 15% of viewport height */
+}
+
+/* Styling for the search bar */
+.searchbar {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: -20vh; /* -20% of viewport height */
+    margin-right: 2vw;
+}
+
+/* Styling for the search form */
+.searchbar form {
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Styling for focused search form */
+.searchbar form:focus-within {
+    border: 1px solid #42605A;
+}
+
+/* Styling for search button */
+.searchbar button {
+    border: none;
+    background-color: #FFFFFF;
+    border-right: none;
+    padding: 1vh 0 0.8vh 0.8vw;
+    cursor: pointer;
+}
+
+/* Styling for search input */
+.searchbar input[type=text] {
+    border: none;
+    background-color: #FFFFFF;
+    border-left: none;
+    padding: 0.8vh 0 0.8vh 0.8vw;
+    margin-left: -0.3vw;
+    font-size: 1vw; /* 1% of viewport width */
+    width: 9vw; /* 9% of viewport width */
+}
+
+/* Styling for search input placeholder */
+.searchbar input[type=text]::placeholder {
+    color: #000000;
+}
+
+/* Styling for focused search input */
+.searchbar input[type=text]:focus {
+    outline: none;
+}
+
+/* Styling for focused search input placeholder */
+.searchbar input[type=text]:focus::placeholder {
+    color: #CCCDCC;
+}
+
+/* Styling for the header bar */
+.headerbar {
+    background-color: #42605A;
+    text-align: center;
+    font-size: 1.3vw; /* 1.3% of viewport width */
+    height: 4.5vh; /* 4.5% of viewport height */
+    line-height: 3vh;
+    position: relative;
+    margin: 0;
+    margin-left: -3.5vw;
+    padding-top: 21vh; /* 21% of viewport height */
+}
+
+/* Styling for the header bar text */
+.headerbar p {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+/* Styling for the home background image */
+.homebackground {
+    margin: 0;
+    width: 100%;
+    height: 80vh; /* 80% of viewport height */
+    object-fit: cover;
+    margin-bottom: 4vh;
+}
+
+/* Styling for the text container inside the home section */
+.hometextcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(66, 96, 90, 0.9); /* Background color with opacity */
+    padding: 20px; /* Padding inside the text container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Styling for text inside the home text container */
+.hometext {
+    color: #FFFFFF;
+    font-size: 1.1vw; /* Example font size for <p> element inside text container */
+    margin: 10px 0; /* Optional: Adjust the margin as needed */
+    line-height: 3vh;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
+    padding-left: 2vw;
+}
+
+/* Styling for the home section heading */
+.homeheading {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 2vw; /* Adjust the font size as needed */
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+/* Styling for the navigation map */
+.navmap {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 2vh 0 0 10vw;
+    border-top: 2px solid #d8d8d8;
+    background-color: #EBEBEB;
+}
+
+/* Styling for navigation links in the map */
+.navmap a {
+    text-decoration: none;
+}
+
+/* Styling for route links in the navigation map */
+.navroute a {
+    color: #42605A;
+}
+
+/* Hover effect for route links in the navigation map */
+.navroute a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the info container */
+.infocontainer {
+    display: flex;
+    justify-content: center;
+    background-color: #EBEBEB;
+    margin-top: 10vh; /* 10% of viewport height */
+}
+
+/* Styling for the heading inside the info container */
+.infocontainer h4 {
+    position: absolute;
+    margin-top: -7vh;
+    font-weight: normal;
+}
+
+/* Styling for the figure element inside the info container */
+.infocontainer figure {
+    width: 30vw; /* 30% of viewport width */
+    border: 10px solid rgba(49, 71, 67, 0.9);
+    outline: 20px solid rgba(71, 104, 98, 0.9);
+    border-radius: 10px;
+    margin-bottom: 10vh; /* 10% of viewport height */
+    margin-top: 6vh; /* 6% of viewport height */
+}
+
+/* Styling for images inside the figure element */
+.infocontainer img {
+    width: 30vw; /* 30% of viewport width */
+    height: 35vh; /* 35% of viewport height */
+    border-bottom: 2px solid rgba(49, 71, 67, 0.9);
+}
+
+/* Styling for captions inside the figure element */
+.infocontainer figcaption {
+    background-color: #EBEBEB;
+    margin: 0;
+    margin-top: -0.7vh;
+    color: #000000;
+    width: 30vw; /* 30% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+}
+
+/* Styling for headings and paragraphs inside the info container */
+.infocontainer h2, .infocontainer h3, .infocontainer p {
+    padding: 1.5vh 0 0 2vw;
+    margin: 0;
+}
+
+/* Styling for the slogan image */
+.slogan {
+    margin: auto;
+    display: block;
+    margin-top: 5vh;
+    width: 20vw !important; /* 20% of viewport width */
+    height: 20vh !important; /* 20% of viewport height */
+}
+
+/* Styling for the TripAdvisor image */
+.tripadvisor {
+    margin: auto;
+    display: block;
+    margin-top: 5vh;
+    width: 25vw !important; /* 25% of viewport width */
+    height: 15vh !important; /* 15% of viewport height */
+}
