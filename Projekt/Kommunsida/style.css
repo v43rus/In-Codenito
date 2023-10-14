@@ -64,3 +64,59 @@ header nav a:hover {
     background-color: var(--background-color);
     color: var(--secondary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN CONTENT */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aktuellt-section{   /* section som tar hela width och delar upp sidan till olika delar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:98vw ;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.k-btn{
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid var(--accent-color);
+    background-color: var(--secondary-color); 
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--text-color); /* White Color */
+
+}
