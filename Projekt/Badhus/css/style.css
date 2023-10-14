@@ -87,10 +87,10 @@ body {
 /* Styling for the search bar */
 .searchbar {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     list-style: none;
     margin-top: -20vh; /* -20% of viewport height */
-    margin-right: 2vw;
+    margin-left: 4vw;
 }
 
 /* Styling for the search form */
@@ -267,8 +267,14 @@ body {
     height: 100vh; /* 100% of viewport height */
 }
 
+.infocontainer h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1.5vh 0 0 0;
+}
+
 /* Styling for headings and paragraphs inside the info container */
-.infocontainer h2, .infocontainer h3, .infocontainer p {
+.infocontainer h3, .infocontainer p {
     padding: 1.5vh 0 0 2vw;
     margin: 0;
 }
@@ -289,4 +295,26 @@ body {
     margin-top: 5vh;
     width: 25vw !important; /* 25% of viewport width */
     height: 15vh !important; /* 15% of viewport height */
+}
+
+.footercontainer {
+    border-top: 2px solid #42605A;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-left: -3vw;
+}
+
+.footercontainer ul, .hourscontainer ul {
+    list-style-type: none;
+}
+
+.footerhours {
+    text-align: center;
+    margin-left: -3vw;
+}
+.hourscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
 }
