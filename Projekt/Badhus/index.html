@@ -18,11 +18,11 @@
             <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Om Oss</a></li> <!-- Link for user login with a user icon -->        
             <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Adress</a></li> <!-- Link for user login with a user icon -->        
             <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Kontakt</a></li> <!-- Link for user login with a user icon -->        
-            <li><a href="simskola.html"><i class="fa-regular fa-user"></i>Boka Simskola</a></li> <!-- Link for user login with a user icon -->
+            <li><a href="/html/simskola.html"><i class="fa-regular fa-user"></i>Boka Simskola</a></li> <!-- Link for user login with a user icon -->
         </ul>
         <nav class="logobar"> <!-- Secondary navigation section with a logo and search bar -->
-            <figure class="logo"> <!-- Logo image container with a link to the homepage -->
-                <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo"></a>
+            <figure class="logofigure"> <!-- Logo image container with a link to the homepage -->
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
             </figure>
             <nav class="searchbar"> <!-- Search bar container with a search input field and button -->
                 <form action="#">
@@ -32,16 +32,16 @@
             </nav>
         </nav>
     </nav>
-    <header class="headerbar"> <!-- Header section of the webpage -->
+    <header id="headerbar"> <!-- Header section of the webpage -->
         <p>
             JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>. <!-- Text content with superscript and underline elements -->
         </p>
     </header>
     <main>
-        <img class="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset">
-        <section class="hometextcontainer">
-            <h2 class="homeheading">IN-CODENITO BADET</h2> <!-- Heading for the homepage section -->
-            <p class="hometext"> <!-- Welcome text for the homepage -->
+        <img id="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset">
+        <section id="hometextcontainer">
+            <h2 id="homeheading">IN-CODENITO BADET</h2> <!-- Heading for the homepage section -->
+            <p id="hometext"> <!-- Welcome text for the homepage -->
             Välkommen till oss, det prisbelönta badhuset som har erövrat 
             <br>
             Sveriges hjärtan och blivit årets badhus tre år i rad 
@@ -61,9 +61,9 @@
             <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
             <li class="navroute">&emsp;<a href="index.html">Start</a></li>
         </ul>
-        <section class="infocontainer">
+        <section id="infocontainer">
             <h4>Just nu är det 20% rabatt för <b>barn</b> och <b>ungdomar</b>, på alla priser.</h4>
-            <article class="info1">
+            <article>
                 <figure id="scroll1">
                 <img src="img/relax.png" alt="Bild inuti relaxen">
                 <figcaption>
@@ -195,7 +195,7 @@
                     </figcaption>
                 </figure>
             </article>
-            <article class="info2">
+            <article>
                 <figure>
                 <img src="img/simskola.png" alt="Bild på barn i simskola">
                 <figcaption>
@@ -237,9 +237,9 @@
                         Brukare + 2 skötare: 350 kr per gång
                         <br>
                         <br>
-                        <a href=""><b>Klicka här för att boka simskola</b></a>
+                        <a href="/html/simskola.html"><b>Klicka här för att boka Simskola</b></a>
                     </p>
-                    <img class="slogan" src="img/slogan.png" alt="Slogan logo">
+                    <img id="slogan" src="img/slogan.png" alt="Slogan logo">
                 </figcaption>
                 </figure>
                 <figure>
@@ -276,18 +276,18 @@
                             <br>
                             värld av nöje, hälsa och gemenskap!
                         </p>
-                            <img class="tripadvisor" src="/img/tripadvisor.png" alt="Tripadvisor logo">
+                            <img id="tripadvisor" src="/img/tripadvisor.png" alt="Tripadvisor logo">
                     </figcaption>
                 </figure>
             </article>
         </section>
     </main>
-    <footer>
-        <footer id="scroll3" class="footercontainer">
+    <footer id="scroll3">
+        <footer class="footercontainer">
             <ul>
                 <h2>Sidor</h2>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="">Boka Simskola</a></li>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="/html/simskola.html">Boka Simskola</a></li>
             </ul>
             <ul>
                 <h2>Adress</h2>
@@ -299,7 +299,7 @@
             </ul>
             <ul>
                 <h2>Kontakt</h2>
-                <li><a href = "mailto: in-codenito.badhuset@in-codenito.com">E-postadress</a></li>
+                <li><a href="mailto: in-codenito.badhuset@in-codenito.com">E-postadress</a></li>
                 <li>Tel. 08-999 55 41</li>
             </ul>
         </footer>
