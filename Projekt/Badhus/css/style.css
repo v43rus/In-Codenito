@@ -7,7 +7,10 @@
     --secondary-color: rgb(194, 216, 255);
     --accent-color: rgb(1, 244, 155);
     --primary-opacity: rgba(1, 123, 142, 0.8);
-    --secondary-opacity: rgba(194, 216, 255, 0.8);
+}
+
+*::selection {
+    background-color: var(--accent-color);
 }
 
 /* Reset margin for the entire body and set background color */
@@ -18,12 +21,13 @@ body {
 
 /* Styling for the fixed navigation bar */
 .navbar {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 5px solid var(--primary-color);
     position: fixed;
     width: 100%;
     z-index: 2;
     height: 21vh; /* 21% of viewport height */
     background-color: var(--background-color);
+    box-shadow: 0 4px 2px -2px var(--primary-opacity);
 }
 
 /* Styling for the list inside the navigation menu */
@@ -164,13 +168,14 @@ body {
     margin: 0;
     margin-left: -3.5vw;
     padding-top: 21vh; /* 21% of viewport height */
+    background-color: var(--primary-opacity);
 }
 
 /* Styling for the header bar text */
 .headerbar p {
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--background-color);
     font-family: Hind Siliguri;
 }
 
@@ -180,7 +185,7 @@ body {
     width: 100%;
     height: 80vh; /* 80% of viewport height */
     object-fit: cover;
-    margin-bottom: 4vh;
+    border-bottom: 10px solid var(--primary-color);
 }
 
 /* Styling for the text container inside the home section */
@@ -224,7 +229,6 @@ body {
     flex-direction: row;
     list-style-type: none;
     padding: 2vh 0 0 10vw;
-    border-top: 2px solid var(--secondary-color);
     color: var(--text-color);
     font-size: 1vw;
     font-family: Hind Siliguri;
@@ -273,7 +277,7 @@ body {
 .infocontainer img {
     width: 30vw; /* 30% of viewport width */
     height: 35vh; /* 35% of viewport height */
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 /* Styling for captions inside the figure element */
@@ -339,20 +343,19 @@ body {
     height: 15vh !important; /* 15% of viewport height */
 }
 
+footer {
+    background-color: var(--primary-color);
+}
+
 .footercontainer {
-    border-top: 2px solid var(--secondary-color);
-    background-color: var(--primary-opacity);
     display: flex;
     justify-content: center;
     gap: 5vw;
+    text-align: center;
+    border-top: 2px solid var(--secondary-color);
 }
 
-.footercontainer ul {
-    list-style-type: none;
-    padding: 0 0 0 1.5vw;
-}
-
-.hourscontainer ul {
+.footercontainer ul, .hourscontainer ul {
     list-style-type: none;
     padding: 0;
 }
@@ -374,7 +377,6 @@ body {
     margin: 0 0 2vh 0;
     font-size: 2.2vw;
     color: var(--background-color);
-    text-align: center;
     font-family: Outfit;
 }
 
@@ -393,8 +395,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10vw;
-    padding-bottom: 7vh;
-    background-color: var(--primary-opacity);
+    text-align: center;
 }
 
 .hourscontainer h3 {
@@ -402,7 +403,6 @@ body {
     margin: 0 0 2vh 0;
     color: var(--background-color);
     font-size: 1.4vw;
-    text-align: center;
     font-family: Outfit;
 }
 
@@ -413,4 +413,33 @@ body {
     font-size: 1.1vw;
     font-family: Hind Siliguri;
     line-height: 1.5vh;
+}
+
+.footerlogos {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.footerlogo, .footerslogan {
+    width: 20vw;
+    height: 20vh;
+}
+
+.footercontainerhr {
+    margin: 0 auto;
+    background-color: var(--background-color);
+    width: 60%;
+    margin-top: 2vh;
+    height: 2px;
+}
+
+.hourscontainerhr {
+    margin: 0 auto;
+    background-color: var(--background-color);
+    width: 80%;
+    margin-top: 2vh;
+    height: 2px;
 }
