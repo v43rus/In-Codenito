@@ -191,7 +191,7 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 3vh 0 3vh 0;
     border-radius: 10px;
     background-color: var(--primary-opacity);
 }
@@ -214,7 +214,7 @@ body {
     line-height: 3vh;
     word-spacing: .2vw;
     letter-spacing: .1vw;
-    padding-left: 2vw;
+    padding: 0 2vw 0 2vw;
     color: var(--background-color);
     text-shadow: 2px 2px 2px var(--text-color);
     font-family: Hind Siliguri;
@@ -235,7 +235,7 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 3vh 0 3vh 0;
     border-radius: 10px;
     background-color: var(--primary-opacity);
 }
@@ -258,7 +258,7 @@ body {
     line-height: 3vh;
     word-spacing: .2vw;
     letter-spacing: .1vw;
-    padding-left: 2vw;
+    padding: 0 2vw 0 2vw;
     color: var(--background-color);
     text-shadow: 2px 2px 2px var(--text-color);
     font-family: Hind Siliguri;
