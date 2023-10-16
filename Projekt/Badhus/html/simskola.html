@@ -29,6 +29,21 @@
             </nav>
         </nav>
     </nav>
+    <img id="registerbackground" src="../img/homebackground.png" alt="Bild inifrån badhuset">
+    <section id="registertextcontainer">
+        <h2 id="registerheading">SIMSKOLORNA</h2> <!-- Heading for the homepage section -->
+        <p id="registertext"> <!-- Welcome text for the homepage -->
+            Upptäck glädjen och vikten av att kunna simma på In-Codenito Badet. 
+            <br>
+            Våra perfekta simskolor erbjuder en trygg och inspirerande miljö för människor i alla åldrar att lära sig simma.
+            <br>
+            Våra erfarna instruktörer guider deltagarna genom varje steg, från grundläggande tekniker till avancerade simstilar.
+            <br>
+            Oavsett om du är barn, tonåring, äldre eller har en funktionsvariation, är det aldrig för tidigt eller för sent att lära sig simma. 
+            <br>
+            Kom och simma för livet med oss på In-Codenito Badet!
+        </p>
+    </section>
     <main id="registermain">
         <ul class="navmap">
             <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
@@ -38,7 +53,7 @@
         </ul>
         <section id="scroll1" class="registerlistcontainer">
             <ul>
-                <li><b>Simskolor:</b></li>
+                <li><h2>Simskolor:</h2></li>
                 <li><a href="#scroll5"><b>Boka Babysim</b>: 0 - 2 år</a></li>
                 <li><a href="#scroll6"><b>Boka Barnsim</b>: 3 - 7 år</a></li>
                 <li><a href="#scroll7"><b>Boka Barnsim</b>: 8 - 12 år</a></li>
@@ -49,22 +64,183 @@
             </ul>
         </section>
     </main>
-        <form action="#">
-            <section class="container">
-                <h2>Boka Babysim 0 - 2 år</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" id="email" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-                <hr>
-                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <button type="submit" class="registerbtn">Register</button>
-            </section>
-        </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll5">Boka Babysim 0 - 2 år</a></li>
+    </ul>
+    <form id="scroll5" action="#">
+        <section class="registercontainer">
+            <h2>Boka Babysim 0 - 2 år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="childname"><b>Barnets Namn:</b></label>
+            <input type="text" placeholder="Ange Barnets Fullständiga Namn" name="childname" id="childname" required>
+            <label for="parentname1"><b>Förälder 1 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 1 Fullständiga Namn" name="parentname1" id="parentname1" required>
+            <label for="parentname2"><b>Förälder 2 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 2 Fullständiga Namn (Valfritt)" name="parentname2" id="parentname2">
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje måndag mellan klockan 09:00 och 10:30. 
+                <br>
+                Dessutom förväntas du betala en avgift på antingen 150 kr eller 220 kr per tillfälle, beroende på antalet deltagande föräldrar.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll6">Boka Barnsim 3 - 7 år</a></li>
+    </ul>
+    <form id="scroll6" action="#">
+        <section class="registercontainer">
+            <h2>Boka Barnsim 3 - 7 år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="childname"><b>Barnets Namn:</b></label>
+            <input type="text" placeholder="Ange Barnets Fullständiga Namn" name="childname" id="childname" required>
+            <label for="parentname1"><b>Förälder 1 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 1 Fullständiga Namn" name="parentname1" id="parentname1" required>
+            <label for="parentname2"><b>Förälder 2 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 2 Fullständiga Namn (Valfritt)" name="parentname2" id="parentname2">
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje måndag mellan klockan 10:30 och 12:00. 
+                <br>
+                Dessutom förväntas du betala en avgift på antingen 200 kr eller 290 kr per tillfälle, beroende på antalet deltagande föräldrar.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll7">Boka Barnsim 8 - 12 år</a></li>
+    </ul>
+    <form id="scroll7" action="#">
+        <section class="registercontainer">
+            <h2>Boka Barnsim 8 - 12 år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="childname"><b>Barnets Namn:</b></label>
+            <input type="text" placeholder="Ange Barnets Fullständiga Namn" name="childname" id="childname" required>
+            <label for="parentname1"><b>Förälder 1 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 1 Fullständiga Namn" name="parentname1" id="parentname1" required>
+            <label for="parentname2"><b>Förälder 2 Namn:</b></label>
+            <input type="text" placeholder="Ange Förälder 2 Fullständiga Namn (Valfritt)" name="parentname2" id="parentname2">
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje tisdag mellan klockan 09:00 och 10:30. 
+                <br>
+                Dessutom förväntas du betala en avgift på antingen 250 kr eller 340 kr per tillfälle, beroende på antalet deltagande föräldrar.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll8">Boka Ungdomssim 13 - 17 år</a></li>
+    </ul>
+    <form id="scroll8" action="#">
+        <section class="registercontainer">
+            <h2>Boka Ungdomssim 13 - 17 år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="teenname"><b>Ungdomens Namn:</b></label>
+            <input type="text" placeholder="Ange Ungdomens Fullständiga Namn" name="teenname" id="teenname" required>
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje tisdag mellan klockan 14:00 och 15:30. 
+                <br>
+                Dessutom förväntas du betala en avgift på 250 kr per tillfälle.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll9">Boka Vuxensim 18 - 64 år</a></li>
+    </ul>
+    <form id="scroll9" action="#">
+        <section class="registercontainer">
+            <h2>Boka Vuxensim 18 - 64 år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="personname"><b>Personens Namn:</b></label>
+            <input type="text" placeholder="Ange Personens Fullständiga Namn" name="personname" id="personname" required>
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje fredag mellan klockan 17:00 och 18:30. 
+                <br>
+                Dessutom förväntas du betala en avgift på 300 kr per tillfälle.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll10">Boka Pensionärssim 65+ år</a></li>
+    </ul>
+    <form id="scroll10" action="#">
+        <section class="registercontainer">
+            <h2>Boka Pensionärssim 65+ år</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="personname"><b>Personens Namn:</b></label>
+            <input type="text" placeholder="Ange Personens Fullständiga Namn" name="personname" id="personname" required>
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje onsdag mellan klockan 13:00 och 14:30. 
+                <br>
+                Dessutom förväntas du betala en avgift på 180 kr per tillfälle.            
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
+    <hr class="registerhr">
+    <ul class="navmap">
+        <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <li class="lastnavroute">&emsp;<a href="../index.html">Start</a></li>
+        <li>&emsp;></li>
+        <li class="lastnavroute">&emsp;<a href="simskola.html">Boka Simskola</a></li>
+        <li>&emsp;></li>
+        <li class="navroute">&emsp;<a href="#scroll11">Boka Funkissim Alla Åldrar</a></li>
+    </ul>
+    <form id="scroll11" action="#">
+        <section class="registercontainer">
+            <h2>Boka Funkissim Alla Åldrar</h1>
+            <p>Fyll i fälten nedan för att boka in dig på simskolan.</p>
+            <label for="clientname"><b>Brukarens Namn:</b></label>
+            <input type="text" placeholder="Ange Brukarens Fullständiga Namn" name="clientname" id="clientname" required>
+            <label for="carername1"><b>Ledsagare 1 Namn:</b></label>
+            <input type="text" placeholder="Ange Ledsagare 1 Fullständiga Namn" name="carername1" id="carername1" required>
+            <label for="carername2"><b>Ledsagare 2 Namn:</b></label>
+            <input type="text" placeholder="Ange Ledsagare 2 Fullständiga Namn (Valfritt)" name="carername2" id="carername2">
+            <p>
+                Genom att anmäla dig till simskolan åtar du dig att närvara varje onsdag och torsdag mellan klockan 10:30 och 12:00. 
+                <br>
+                Dessutom förväntas du betala en avgift på antingen 250 kr eller 350 kr per tillfälle, beroende på antalet deltagande ledsagare.
+            </p>
+            <button type="submit" class="registerbtn"><b>Boka Simskola</b></button>
+        </section>
+    </form>
     <footer id="scroll4">
         <footer class="footercontainer">
             <ul>
@@ -118,6 +294,12 @@
                 <img class="footerlogo" src="../img/footerlogo.png" alt="Badhusets Logotyp">
                 <img class="footerslogan" src="../img/footerslogan.png" alt="Badhusets Slogan Logotyp">
             </figure>
+        </footer>
+        <hr class="footercontainerhr">
+        <footer class="footericons">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
         </footer>
     </footer>
 </body>

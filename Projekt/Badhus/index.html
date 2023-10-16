@@ -33,32 +33,30 @@
             </nav>
         </nav>
     </nav>
-    <header id="scroll1">
-        <header id="headerbar"> <!-- Header section of the webpage -->
-            <p>
-                JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>. <!-- Text content with superscript and underline elements -->
-            </p>
-        </header>
+    <header id="headerbar"> <!-- Header section of the webpage -->
+        <p id="scroll1">
+            JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>. <!-- Text content with superscript and underline elements -->
+        </p>
     </header>
     <main>
         <img id="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset">
         <section id="hometextcontainer">
             <h2 id="homeheading">IN-CODENITO BADET</h2> <!-- Heading for the homepage section -->
             <p id="hometext"> <!-- Welcome text for the homepage -->
-            Välkommen till oss, det prisbelönta badhuset som har erövrat 
-            <br>
-            Sveriges hjärtan och blivit årets badhus tre år i rad 
-            <br>
-            enligt det svenska folket. 
-            <br>
-            Upplev en unik atmosfär av avkoppling och glädje, 
-            <br>
-            oavsett om du är här för familjelek i våra pooler, lyxig spaavkoppling eller energigivande träning i vårt moderna gym. 
-            <br> 
-            Vår kristallklara bassäng, spännande vattenrutschbanor och vänliga personal 
-            <br>
-            skapar minnesvärda stunder för alla. Kom och upptäck en värld av nöje, välbefinnande och hälsa hos oss!
-        </p>
+                Välkommen till oss, det prisbelönta badhuset som har erövrat 
+                <br>
+                Sveriges hjärtan och blivit årets badhus tre år i rad 
+                <br>
+                enligt det svenska folket. 
+                <br>
+                Upplev en unik atmosfär av avkoppling och glädje, 
+                <br>
+                oavsett om du är här för familjelek i våra pooler, lyxig spaavkoppling eller energigivande träning i vårt moderna gym. 
+                <br> 
+                Vår kristallklara bassäng, spännande vattenrutschbanor och vänliga personal 
+                <br>
+                skapar minnesvärda stunder för alla. Kom och upptäck en värld av nöje, välbefinnande och hälsa hos oss!
+            </p>
         </section>
         <ul class="navmap">
             <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
@@ -109,7 +107,7 @@
                         <br>
                         <b>Barnsim: 8 - 12 år</b>
                         <br>
-                        Tisdagar: 09:00 - 10-30
+                        Tisdagar: 09:00 - 10:30
                         <br>
                         <br>
                         <b>Ungdomssim: 13 - 17 år</b>
@@ -235,9 +233,9 @@
                     </p>
                     <h3>Funkissim: Alla Åldrar</h3>
                     <p>
-                        Brukare + 1 skötare: 250 kr per gång
+                        Brukare + 1 Ledsagare: 250 kr per gång
                         <br>
-                        Brukare + 2 skötare: 350 kr per gång
+                        Brukare + 2 Ledsagare: 350 kr per gång
                         <br>
                         <br>
                         <a href="/html/simskola.html"><b>Klicka här för att boka Simskola</b></a>
@@ -285,60 +283,72 @@
             </article>
         </section>
     </main>
-    <footer id="scroll4">
-        <footer class="footercontainer">
-            <ul>
+    <footer id="scroll4" class="footercontainer">
+        <ul class="footerlist">
+            <li>
                 <h2>Sidor</h2>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="/html/simskola.html">Boka Simskola</a></li>
-            </ul>
-            <ul>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="/html/simskola.html">Boka Simskola</a></li>
+                </ul>
+            </li>
+            <li>
                 <h2>Adress</h2>
-                <address>
-                    <li>Badhusgatan 1</li>
-                    <li>103 16, In-Codenito</li>
-                    <li>Stockholms Län, Sverige</li>
-                </address>
-            </ul>
-            <ul>
+                <ul>
+                    <li>
+                        <address>
+                            Badhusgatan 1
+                            <br><br>
+                            103 16, In-Codenito
+                            <br><br>
+                            Stockholms Län, Sverige
+                        </address>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <h2>Kontakt</h2>
-                <li><a href="mailto: in-codenito.badhuset@in-codenito.com">E-postadress</a></li>
-                <li>Tel. 08-999 55 41</li>
-            </ul>
-        </footer>
-        <hr class="footercontainerhr">
-        <footer class="hourscontainer">
+                <ul>
+                    <li><a href="mailto:in-codenito.badhuset@in-codenito.com">E-postadress</a></li>
+                    <li>Tel. 08-999 55 41</li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <hr class="footercontainerhr">
+    <footer class="hourscontainer">
         <ul>
-            <time>
+            <li>
                 <h3>Simhallen</h3>
-                <li>Måndag - Torsdag: 07:00 - 20:00</li>
-                <li>Fredag - Lördag: 08:00 - 21:00</li>
-                <li>Söndag: 10:00 - 19:00</li>
-            </time>
-        </ul>
-        <ul>
-            <time>
+                <time datetime="Mo-Th 07:00-20:00">Måndag - Torsdag: 07:00 - 20:00</time>
+                <time datetime="Fr-Sa 08:00-21:00">Fredag - Lördag: 08:00 - 21:00</time>
+                <time datetime="Su 10:00-19:00">Söndag: 10:00 - 19:00</time>
+            </li>
+            <li>
                 <h3>Spa Relax</h3>
-                <li>Måndag - Torsdag: 14:00 - 18:00</li>
-                <li>Fredag - Lördag: 15:00 - 20:00</li>
-                <li>Söndag: Stängt</li>
-            </time>
-        </ul>
-        <ul>
-            <time>
+                <time datetime="Mo-Th 14:00-18:00">Måndag - Torsdag: 14:00 - 18:00</time>
+                <time datetime="Fr-Sa 15:00-20:00">Fredag - Lördag: 15:00 - 20:00</time>
+                <time datetime="Su">Söndag: Stängt</time>
+            </li>
+            <li>
                 <h3>Gymmet</h3>
-                <li>Måndag - Lördag: 06:00 - 21:00</li>
-                <li>Söndag: 10:00 - 19:00</li>
-            </time>
+                <time datetime="Mo-Sa 06:00-21:00">Måndag - Lördag: 06:00 - 21:00</time>
+                <time datetime="Su 10:00-19:00">Söndag: 10:00 - 19:00</time>
+            </li>
         </ul>
-        </footer>
-        <hr class="hourscontainerhr">
-        <footer class="footerlogos">
-            <figure>
-                <img class="footerlogo" src="/img/footerlogo.png" alt="Badhusets Logotyp">
-                <img class="footerslogan" src="/img/footerslogan.png" alt="Badhusets Slogan Logotyp">
-            </figure>
-        </footer>
+    </footer>
+    <hr class="hourscontainerhr">
+    <footer class="footerlogos">
+        <figure>
+            <img class="footerlogo" src="/img/footerlogo.png" alt="Badhusets Logotyp">
+            <img class="footerslogan" src="/img/footerslogan.png" alt="Badhusets Slogan Logotyp">
+        </figure>
+    </footer>
+    <hr class="footercontainerhr">
+    <footer class="footericons">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
     </footer>
 </body>
 </html>

@@ -357,17 +357,62 @@ footer {
 }
 
 .footercontainer {
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
-    text-align: center;
     border-top: 2px solid var(--secondary-color);
+    padding-bottom: 1vh;
 }
 
-.footercontainer ul, .hourscontainer ul {
+.footerlist {
+    display: flex;
+    justify-content: center; /* Adjust this based on your layout preferences */
+    gap: 8vw;
     list-style-type: none;
     padding: 0;
 }
+
+.footerlist address {
+    font-style: normal;
+}
+
+
+/* Styling for headings and paragraphs inside the info container */
+.footerlist h2 {
+    text-align: center;
+    font-size: 2.2vw;
+    color: var(--background-color);
+    font-family: Outfit;
+}
+
+/* Styling for headings and paragraphs inside the info container */
+.footerlist li {
+    text-align: center;
+    color: var(--background-color);
+    font-style: normal;
+    font-size: 1.2vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
+    padding: 0.7vh 0 0.7vh 0;
+}
+
+.footerlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hourscontainer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 11vw;
+}
+
+
+.hourscontainer time {
+    display: block;
+    white-space: pre-line;
+    padding: 0.7vh 0 0.7vh 0;
+}
+
 
 .footercontainer a {
     text-decoration: none;
@@ -380,32 +425,6 @@ footer {
     text-decoration-color: var(--secondary-color);
 }
 
-/* Styling for headings and paragraphs inside the info container */
-.footercontainer h2 {
-    padding: 3.5vh 0 0.8vh 0;
-    margin: 0 0 2vh 0;
-    font-size: 2.2vw;
-    color: var(--background-color);
-    font-family: Outfit;
-}
-
-/* Styling for headings and paragraphs inside the info container */
-.footercontainer li {
-    padding: 0.5vh 0 0.8vh 0;
-    margin: 0;
-    color: var(--background-color);
-    font-style: normal;
-    font-size: 1.2vw;
-    font-family: Hind Siliguri;
-    line-height: 1.5vh;
-}
-
-.hourscontainer {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-    text-align: center;
-}
 
 .hourscontainer h3 {
     padding: 2vh 0 0.8vh 0;
@@ -417,18 +436,22 @@ footer {
 
 .hourscontainer li {
     padding: 0.5vh 0 0.8vh 0;
-    margin: 0;
+
     color: var(--background-color);
     font-size: 1.1vw;
     font-family: Hind Siliguri;
     line-height: 1.5vh;
+    text-align: center;
+}
+
+.hourscontainer {
+    padding: 1vh 0 1vh 0;
 }
 
 .footerlogos {
     display: flex;
     justify-content: center;
     gap: 10vw;
-    padding-bottom: 2vh;
     text-align: center;
 }
 
@@ -437,26 +460,52 @@ footer {
     height: 20vh;
 }
 
+.footericons {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh 0 2.5vh 0;
+}
+
+.footericons i {
+    font-size: 3.5vw;
+}
+
+.footericons a {
+    color: var(--background-color);
+}
+
+.footericons a:hover {
+    color: var(--secondary-color);
+}
+
 .footercontainerhr {
-    margin: 0 auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: none;
     background-color: var(--background-color);
+    position: absolute;
     width: 60%;
-    margin-top: 2vh;
     height: 2px;
 }
 
 .hourscontainerhr {
-    margin: 0 auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: none;
     background-color: var(--background-color);
+    position: absolute;
     width: 80%;
-    margin-top: 2vh;
     height: 2px;
 }
 
 #registermain {
-    padding-top: 23vh;
     background-color: var(--background-color);
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 .registerlistcontainer ul
 {
@@ -482,8 +531,14 @@ footer {
     font-size: 1.1vw;
 }
 
+.registerlistcontainer h2 {
+    margin: 1.5vh 0 1.5vh 0;
+    font-size: 1.5vw;
+    font-family: Outfit;
+}
+
 .registerlistcontainer a {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -495,62 +550,123 @@ footer {
 
 
 /* Add padding to containers */
-.container {
-    padding: 16px;
+.registercontainer {
+    padding: 1.5vw;
     background-color: var(--background-color);
     margin: 0 auto;
     width: 50%;
     border: 5px solid var(--primary-opacity);
     border-radius: 10px;
-    padding-left: 3vw;
+    padding: 2vh 3vw 5vh 3vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
-  
+
+.registercontainer p {
+    font-family: Hind Siliguri;
+    color: var(--text-color);
+    font-size: 1.1vw;
+  }
+
+.registercontainer label, .registercontainer h2 {
+    font-family: Outfit;
+    color: var(--text-color);
+    font-size: 1.3vw;
+  }
+
   /* Full-width input fields */
-  .container input[type=text], .container input[type=password] {
+  .registercontainer input[type=text] {
     padding: 1vh 1vw 1vh 1vw;
-    margin: 0 auto;
-    width: 90%;
+    width: 92%;
     display: block;
-    border: none;
-    background: #f1f1f1;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
+    font-family: Hind Siliguri;
+    margin: 2vh 0 2vh 0;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 1vw;
   }
   
-  .container input[type=text]:focus, .container input[type=password]:focus {
-    background-color: #ddd;
+  .registercontainer input[type=text]:focus {
+    border: 2px solid var(--primary-color);
     outline: none;
   }
   
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-    margin: 0 auto;
-    width: 90%;
-  }
   
   /* Set a style for the submit button */
   .registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 1.5vh 0 1.5vh 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 60%;
     opacity: 0.9;
+    font-family: Outfit;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2vw;
   }
   
   .registerbtn:hover {
     opacity: 1;
   }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
+
+.registerhr {
+    background-color: var(--primary-opacity);
+    height: 0.2vh;
+    margin: 0 auto;
+    width: 80%;
   }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #f1f1f1;
+
+  /* Define scroll margins for specific elements with IDs 'scroll1' and 'scroll2' */
+#scroll5, #scroll6, #scroll7, #scroll8, #scroll9, #scroll10, #scroll11 {
+    scroll-margin-top: 37vh; /* 30% of viewport height */
+}
+
+
+/* Styling for the home background image */
+#registerbackground {
+    margin: 20vh 0 0 0;
+    width: 100%;
+    height: 80vh; /* 80% of viewport height */
+    object-fit: cover;
+    border-bottom: 10px solid var(--primary-color);
+}
+
+/* Styling for the text container inside the home section */
+#registertextcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px; /* Padding inside the text container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    background-color: var(--primary-opacity);
+}
+
+/* Styling for the home section heading */
+#registerheading {
+    margin: 0;
+    font-size: 2vw; /* Adjust the font size as needed */
     text-align: center;
-  }
+    padding-bottom: 2vh;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Outfit;
+}
+
+/* Styling for text inside the home text container */
+#registertext {
+    font-size: 1.1vw; /* Example font size for <p> element inside text container */
+    margin: 10px 0; /* Optional: Adjust the margin as needed */
+    line-height: 3vh;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
+    padding-left: 2vw;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Hind Siliguri;
+}
