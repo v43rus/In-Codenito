@@ -106,11 +106,11 @@ main{
     height: 25vh;
     width: 70%;
     margin: 10px auto;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     border: solid #8B8852;
 }
 
-.aktuellt-section > h2{
+.aktuellt-section{
     border-top: solid 4px var(--accent-color);
     /* border-radius: 2px; */
     text-align: center;
@@ -119,32 +119,17 @@ main{
 }
 
 .aktuellt-section{   /* section som tar hela width och delar upp sidan till olika delar */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width:60vw ;
     background-color: var(--background-color);
 }
 
 .solenergi{
-    position: relative;
-    height: 300px;
     margin: 10px 10px;
-    /* background-color: var(--primary-color); */
-    border: solid var(--secondary-color);
-}
-.solenergi figure img{
-
-    width: 20%;
-    /* position: absolute; */
-    top: 1px;
-    left: 90px;
+    background-color: var(--primary-color);
 }
 
-.solenergi h3 , p{
-    z-index: 1;
-}
 .bibliotek{
     margin: 10px 10px;
     background-color: var(--primary-color);

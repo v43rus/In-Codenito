@@ -55,28 +55,13 @@
         </section>
 
         <!--    AKTUELLT SECTION-->
+
+        <h2>Aktuellt</h2>
         <section class="aktuellt-section">
 
-            <!-- <div role="region" class="news-item" aria-labelledby="newsC">
-                
-                    
-                    <img src="images/photovoltaic-system-2742302_1280.jpg" alt="solenergi" class="image-pos1" width="250" height="150">
-                    
-                    <div class="news-section">
-                        <h3 id="newsC">Incodenito kommun satsar på solenergi</h3>
-                        <span class="date">Publicerad
-                            den 12 september 2023
-                        </span>
-                        <div>
-	                        <p>Incodenito kommun har beslutat att satsa på solenergi. Kommunen kommer att installera solpaneler på
-                                alla kommunala byggnader.</p>
-                        </div>
-                    </div>
-                
-            </div> -->
-
-            <h2>Aktuellt</h2>
+            
             <article class="bibliotek">
+                <img src="images/architecture-5705042_1280.jpg" alt="bibliotek" width="250">
                 <h3>Nytt bibliotek öppnar i Incodenito</h3>
                 <p>Ett nytt bibliotek öppnar i Incodenito den 15 mars. Biblioteket kommer att ligga i den gamla
                     järnvägsstationen.</p>
@@ -84,9 +69,9 @@
             </article>
 
             <article class="solenergi">
-                <figure>
-                    <img src="images/photovoltaic-system-2742302_1280.jpg" alt="solenergi">
-                    </figure>
+                <!-- <figure> -->
+                    <img src="images/photovoltaic-system-2742302_1280.jpg" alt="solenergi" width="250">
+                    <!-- </figure> -->
                 <h3>Incodenito kommun satsar på solenergi</h3>
 
                 <p>Incodenito kommun har beslutat att satsa på solenergi. Kommunen kommer att installera solpaneler på
@@ -96,15 +81,50 @@
             </article>
 
             <article class="cykelstråk">
+                <img src="images/bicycle-path-3444914_1280.jpg" alt="cykelstråk" width="250">
                 <h3>Nytt gång- och cykelstråk invigs i Incodenito</h3>
                 <p>Ett nytt gång- och cykelstråk invigs i Incodenito den 20 mars. Stråket kommer att gå från centrum
                     till järnvägsstationen.</p>
                 <button class="k-btn">Läs mer</button>
             </article>
 
+            <article class="länkar">
+                <h3>Länkar</h3>
+                <a href="">Fritidsgård</a>
+                <a href="">badhus</a>
+                <button class="k-btn">Läs mer</button>
+            </article>
+
         </section>
 
+        <!-- form för jobb ansökningar -->
 
+        <!-- en liten paragraf om hur du söker jobb och lite info om det -->
+        <summary class="jobbansökan">
+            <h2>Jobbansökning</h2>
+        </summary>
+
+        <aside class="jobb-ansökan">
+            <form action="#">
+                <select name="jobb" id="jobb" >
+                    <option value="" disabled selected hidden></option>
+                    <option value="administratör">Administratör</option>
+                    <option value="arkitekt">Arkitekt</option>
+                    <option value="byggmästare">Byggmästare</option>
+                    <option value="elektroniker">Elektriker</option>
+                    <option value="Lager Personal">Lager Personal</option>
+                </select>
+                
+
+                <label for="namn">Lediga jobb</label><br><br>
+                    <input type="text" id="namn" name="name" placeholder="Namn" required><br>
+                        <label for="email"></label><br />
+                            <input type="email" id="email" name="email" placeholder="E-postadress" required><br>
+                            <!-- en input knapp som skickar infon till servern -->
+                            <input class="k-btn" type="submit" value="Skicka in!">
+
+            </form>
+        </aside>
     </main>
 
 
