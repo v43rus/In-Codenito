@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #CBBD98;
+    --secondary-color: #8B8852;
+    --accent-color: #A44040;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+}
+
+.skolwrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navOverview li{
+	   display: inline;
+}
+
+.navskolor{
+	   height: 200px;
+	   width: 110px;
+	   padding-right: 20px;
+	   border-right: 3px solid;
+       border-color: #A44040;
+       margin-right: 40px;
+}
+
+.navskolor li, a{
+	   margin-bottom: 18px;
+	   list-style-type: none;
+	   text-decoration: none;
+}
+
+.titelSkola{
+    width: 70%;
+    margin-top: -20px;
+}
+
+.skolbild{
+    width: 480px;
+}
+
+.infoSkola{
+    width: 95%;
+    margin: auto;
+}
