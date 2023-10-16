@@ -170,82 +170,120 @@ main {
     border: solid #8B8852;
 }
 
-
-.aktuellt-section{  
+                /* AKTUELL SECTION */
+.aktuellt-section {
     display: grid;
     gap: 75px;
     grid-template-columns: 1fr 1fr;
     max-width: 710px;
     background-color: var(--background-color);
+}
 
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
     padding: 40px 40px;
 }
-.aktuellt-section article img{
+
+.aktuellt-section article img {
     max-width: 250px;
 }
 
 
-.b-btn{
-    margin-top:10px;
-}
-
-
-
-.solenergi{
-    border-bottom: solid var(--secondary-color);
-    max-width: 250px;
-    background-color: var(--background-color-color);
-}
-
-.bibliotek{
-    border-bottom: solid var(--secondary-color);
-    max-width: 250px;
-    background-color: var(--background-color-color);
-}
-.cykelstråk{
-    border-bottom: solid var(--secondary-color);
-    max-width: 250px;
-    background-color: var(--background-color-color);
-}
-
-.länkar{
-    border-bottom: solid var(--secondary-color);
-    max-width: 250px;
-    background-color: var(--background-color-color);
-
-.aktuellt-section {
-    /* section som tar hela width och delar upp sidan till olika delar */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60vw;
-    background-color: var(--background-color);
-}
 
 .solenergi {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
+    border-bottom: solid var(--secondary-color);
+    max-width: 250px;
+    background-color: var(--background-color-color);
 }
 
 .bibliotek {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
-
-
+    border-bottom: solid var(--secondary-color);
+    max-width: 250px;
+    background-color: var(--background-color-color);
 }
 
 .cykelstråk {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
+    border-bottom: solid var(--secondary-color);
+    max-width: 250px;
+    background-color: var(--background-color-color);
 }
 
+                    /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* flex-direction: column; */
+    gap: 40px;
+    max-width: 100%;
+    border-bottom: solid var(--accent-color);
+    border-top: solid var(--accent-color);
+
+}
+
+.stacked {
+    display: grid;
+}
+
+.stacked>* {
+    grid-column: 2 / 2;
+}
+
+.card {
+    border-radius: 5px;
+    border: solid 1px #9c774a;
+    aspect-ratio: 1 / 1.4;
+}
+
+.card-content {
+    background: var(--primary-color);
+    align-self: end;
+    margin: .5rem;
+    box-shadow: 0 .25rem 0.5rem rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-content h2, .card-content p{
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card-titel {
+    font-size: 2rem;
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
+.card-price {
+    font-size: large;
+    margin-left: 5px;
+}
+
+
+                        /* MAIN BUTTON STYLE */
 .k-btn {
     display: inline-block;
     margin: 4px;
     cursor: pointer;
     border: 2px solid var(--accent-color);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
     padding: 10px 20px;
     text-align: center;
@@ -253,5 +291,4 @@ main {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: var(--text-color);
-    /* White Color */
 }

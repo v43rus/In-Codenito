@@ -1,6 +1,7 @@
-/* Set smooth scrolling behavior for the entire HTML document */
+/* Set smooth scroll behavior for the entire document */
 :root {
     scroll-behavior: smooth;
+    /* Define custom color variables */
     --text-color: rgb(25, 3, 0);
     --background-color: rgb(255, 246, 245);
     --primary-color: rgb(1, 123, 142);
@@ -9,83 +10,80 @@
     --primary-opacity: rgba(1, 123, 142, 0.8);
 }
 
-*::selection {
+/* Style selected text */
+::selection {
     background-color: var(--accent-color);
 }
 
-/* Reset margin for the entire body and set background color */
+/* Basic styles for the body element */
 body {
     margin: 0;
     background-color: var(--background-color);
 }
 
-/* Styling for the fixed navigation bar */
+/* Styles for the fixed navigation bar */
 .navbar {
     border-bottom: 5px solid var(--primary-color);
     position: fixed;
     width: 100%;
     z-index: 2;
-    height: 21vh; /* 21% of viewport height */
+    height: 21vh;
     background-color: var(--background-color);
     box-shadow: 0 4px 2px -2px var(--primary-opacity);
 }
 
-/* Styling for the list inside the navigation menu */
-.navbar ul {
-    list-style: none;
-    margin: 0;
-}
-
-/* Styling for navigation links */
+/* Styles for navigation links */
 .navbar a {
     text-decoration: none;
-    font-size: 0.8vw; /* 0.8% of viewport width */
+    font-size: .8vw;
     color: var(--text-color);
 }
 
-/* Hover effect for navigation links */
+/* Hover styles for navigation links */
 .navbar a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.4vh;
+    text-underline-offset: .4vh;
     text-decoration-color: var(--accent-color);
 }
 
-/* Styling for the toolbar inside the navigation bar */
+/* Styles for toolbar */
 .toolbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 1vw; /* 1% of viewport width */
-    height: 4vh; /* 4% of viewport height */
+    gap: 1vw;
+    height: 4vh;
     padding: 0 2vw 0 0;
     font-family: Rajdhani;
+    list-style: none;
+    margin: 0;
 }
 
-/* Styling for list items in the toolbar */
+/* Styles for toolbar list items */
 .toolbar li {
-    padding-right: 0.5vw;
+    padding-right: .5vw;
 }
 
-/* Styling for icons in the toolbar */
+/* Styles for toolbar icons */
 .toolbar i {
-    padding-right: 0.3vw;
+    padding-right: .3vw;
     color: var(--accent-color);
 }
 
-/* Define scroll margins for specific elements with IDs 'scroll1' and 'scroll2' */
+/* Scroll margin for anchor links */
 #scroll1, #scroll2, #scroll3, #scroll4 {
-    scroll-margin-top: 30vh; /* 30% of viewport height */
+    scroll-margin-top: 30vh;
 }
 
-/* Styling for the logo bar */
+/* Styles for logobar */
 .logobar {
     width: 100%;
-    height: 10vh; /* 10% of viewport height */
+    height: 10vh;
     padding: 0;
 }
 
-/* Styling for the logo */
+/* Styles for logo container */
 .logofigure {
     margin: 0;
     text-align: center;
@@ -93,84 +91,84 @@ body {
     margin-top: 0;
 }
 
-/* Styling for the logo image */
+/* Styles for logo image */
 .logo {
-    width: 15vw; /* 15% of viewport width */
-    height: 15vh; /* 15% of viewport height */
+    width: 15vw;
+    height: 15vh;
 }
 
-/* Styling for the search bar */
+/* Styles for searchbar */
 .searchbar {
     display: flex;
     justify-content: start;
     list-style: none;
-    margin-top: -20vh; /* -20% of viewport height */
+    margin-top: -20vh;
     margin-left: 4vw;
 }
 
-/* Styling for the search form */
+/* Styles for search form */
 .searchbar form {
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     overflow: hidden;
 }
 
-/* Styling for focused search form */
+/* Focus styles for search form */
 .searchbar form:focus-within {
     border: 1px solid var(--primary-color);
 }
 
-/* Styling for search button */
+/* Styles for search button */
 .searchbar button {
     border: none;
     border-right: none;
-    padding: 1vh 0 0.8vh 0.8vw;
+    padding: 1vh 0 .8vh .8vw;
     cursor: pointer;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-/* Styling for search input */
+/* Styles for search input */
 .searchbar input[type=text] {
     border: none;
     border-left: none;
-    padding: 0.8vh 0 0.8vh 0.8vw;
-    font-size: 1vw; /* 1% of viewport width */
-    width: 9vw; /* 9% of viewport width */
+    padding: .8vh 0 .8vh .8vw;
+    font-size: 1vw;
+    width: 9vw;
     color: var(--text-color);
     background-color: var(--background-color);
     font-family: Rajdhani;
 }
 
-/* Styling for focused search input */
+/* Placeholder styles for search input */
 .searchbar input[type=text]::placeholder {
     color: var(--text-color);
 }
 
-/* Styling for focused search input */
+/* Focus styles for search input */
 .searchbar input[type=text]:focus {
-    outline: none;
+    outline: 0;
 }
 
-/* Styling for focused search input */
+/* Hide placeholder text on focus */
 .searchbar input[type=text]:focus::placeholder {
     color: transparent;
 }
 
-/* Styling for the header bar */
+/* Styles for header bar */
 #headerbar {
     text-align: center;
-    font-size: 1.3vw; /* 1.3% of viewport width */
-    height: 5vh; /* 4.5% of viewport height */
+    font-size: 1.3vw;
+    height: 5vh;
     line-height: 4vh;
     position: relative;
     margin: 0;
     margin-left: -3.5vw;
-    padding-top: 21vh; /* 21% of viewport height */
+    padding-top: 21vh;
     background-color: var(--primary-opacity);
 }
 
-/* Styling for the header bar text */
+/* Styles for header text */
 #headerbar p {
     margin: 0;
     padding: 0;
@@ -178,30 +176,30 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styling for the home background image */
+/* Styles for home background image */
 #homebackground {
     margin: 0;
     width: 100%;
-    height: 80vh; /* 80% of viewport height */
+    height: 80vh;
     object-fit: cover;
     border-bottom: 10px solid var(--primary-color);
 }
 
-/* Styling for the text container inside the home section */
+/* Styles for home text container */
 #hometextcontainer {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px; /* Padding inside the text container */
-    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    padding: 20px;
+    border-radius: 10px;
     background-color: var(--primary-opacity);
 }
 
-/* Styling for the home section heading */
+/* Styles for home heading */
 #homeheading {
     margin: 0;
-    font-size: 2vw; /* Adjust the font size as needed */
+    font-size: 2vw;
     text-align: center;
     padding-bottom: 2vh;
     color: var(--background-color);
@@ -209,20 +207,64 @@ body {
     font-family: Outfit;
 }
 
-/* Styling for text inside the home text container */
+/* Styles for home text */
 #hometext {
-    font-size: 1.1vw; /* Example font size for <p> element inside text container */
-    margin: 10px 0; /* Optional: Adjust the margin as needed */
+    font-size: 1.1vw;
+    margin: 10px 0;
     line-height: 3vh;
-    word-spacing: 0.2vw;
-    letter-spacing: 0.1vw;
+    word-spacing: .2vw;
+    letter-spacing: .1vw;
     padding-left: 2vw;
     color: var(--background-color);
     text-shadow: 2px 2px 2px var(--text-color);
     font-family: Hind Siliguri;
 }
 
-/* Styling for the navigation map */
+/* Styles for register background image */
+#registerbackground {
+    margin: 20vh 0 0 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-bottom: 10px solid var(--primary-color);
+}
+
+/* Styles for register text container */
+#registertextcontainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-opacity);
+}
+
+/* Styles for register heading */
+#registerheading {
+    margin: 0;
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2vh;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Outfit;
+}
+
+/* Styles for register text */
+#registertext {
+    font-size: 1.1vw;
+    margin: 10px 0;
+    line-height: 3vh;
+    word-spacing: .2vw;
+    letter-spacing: .1vw;
+    padding-left: 2vw;
+    color: var(--background-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Hind Siliguri;
+}
+
+/* Styles for navigation map and routes */
 .navmap {
     display: flex;
     flex-direction: row;
@@ -233,70 +275,204 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styling for navigation links in the map */
+/* Styles for navigation routes */
 .navroute a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-/* Hover effect for route links in the navigation map */
+/* Hover styles for navigation routes */
 .navroute a:hover {
     text-decoration: underline;
 }
 
+/* Styles for last navigation route */
 .lastnavroute a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-/* Hover effect for route links in the navigation map */
+/* Hover styles for last navigation route */
 .lastnavroute a:hover {
     text-decoration: underline;
 }
 
-/* Styling for the info container */
+/* Styles for register main container */
+#registermain {
+    background-color: var(--background-color);
+    margin-bottom: 10vh;
+}
+
+/* Styles for register list container */
+#registerlistcontainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for register list container */
+#registerlistcontainer {
+    margin-top: 7vh!important;
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+}
+
+/* Styles for register list items */
+#registerlistcontainer li {
+    border-bottom: 1px solid var(--primary-opacity);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1.5vh 0 1.5vh 3vw;
+    font-size: 1.1vw;
+}
+
+/* Styles for register list headings */
+#registerlistcontainer h2 {
+    margin: 1.5vh 0 1.5vh 0;
+    font-size: 1.5vw;
+    font-family: Outfit;
+}
+
+/* Styles for register list links */
+#registerlistcontainer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Hover styles for register list links */
+#registerlistcontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: .5vh;
+    text-decoration-color: var(--secondary-color);
+}
+
+/* Scroll margins for anchor links */
+#scroll10, #scroll11, #scroll5, #scroll6, #scroll7, #scroll8, #scroll9 {
+    scroll-margin-top: 37vh;
+}
+
+/* Styles for register horizontal rule */
+.registerhr {
+    background-color: var(--primary-opacity);
+    height: .2vh;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Styles for register container */
+.registercontainer {
+    padding: 1.5vw;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+    padding: 2vh 3vw 5vh 3vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* Styles for register container paragraphs */
+.registercontainer p {
+    font-family: Hind Siliguri;
+    color: var(--text-color);
+    font-size: 1.1vw;
+}
+
+/* Styles for register container headings and labels */
+.registercontainer h2, .registercontainer label {
+    font-family: Outfit;
+    color: var(--text-color);
+    font-size: 1.3vw;
+}
+
+/* Styles for register input fields */
+.registercontainer input[type=text] {
+    padding: 1vh 1vw;
+    width: 92%;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
+    font-family: Hind Siliguri;
+    margin: 2vh 0 2vh 0;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+/* Focus styles for register input fields */
+.registercontainer input[type=text]:focus {
+    border: 2px solid var(--primary-color);
+    outline: 0;
+}
+
+/* Styles for register button */
+.registerbtn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 1.5vh 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    opacity: .9;
+    font-family: Outfit;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
+
+/* Hover styles for register button */
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Styles for info container */
 #infocontainer {
     display: flex;
     justify-content: center;
-    margin-top: 10vh; /* 10% of viewport height */
+    margin-top: 10vh;
     gap: 2vw;
 }
 
-/* Styling for the heading inside the info container */
+/* Styles for info container headings */
 #infocontainer h4 {
     position: absolute;
     margin-top: -6vh;
-    font-weight: normal;
+    font-weight: 400;
     color: var(--text-color);
     font-size: 1.2vw;
     font-family: Outfit;
 }
 
-/* Styling for the figure element inside the info container */
+/* Styles for info container figure */
 #infocontainer figure {
-    width: 30vw; /* 30% of viewport width */
+    width: 30vw;
     border: 10px solid var(--primary-color);
     outline: 20px solid var(--primary-opacity);
     border-radius: 10px;
-    margin-bottom: 10vh; /* 10% of viewport height */
-    margin-top: 6vh; /* 6% of viewport height */
+    margin-bottom: 10vh;
+    margin-top: 6vh;
 }
 
-/* Styling for images inside the figure element */
+/* Styles for info container images */
 #infocontainer img {
-    width: 30vw; /* 30% of viewport width */
-    height: 35vh; /* 35% of viewport height */
+    width: 30vw;
+    height: 35vh;
     border-bottom: 4px solid var(--primary-color);
 }
 
-/* Styling for captions inside the figure element */
+/* Styles for info container captions */
 #infocontainer figcaption {
     margin: 0;
-    margin-top: -0.7vh;
-    width: 30vw; /* 30% of viewport width */
-    height: 115vh; /* 100% of viewport height */
+    margin-top: -.7vh;
+    width: 30vw;
+    height: 115vh;
 }
 
+/* Styles for info container headings */
 #infocontainer h2 {
     text-align: center;
     margin: 0;
@@ -306,7 +482,7 @@ body {
     font-family: Outfit;
 }
 
-/* Styling for headings and paragraphs inside the info container */
+/* Styles for info container subheadings */
 #infocontainer h3 {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
@@ -315,6 +491,7 @@ body {
     font-family: Outfit;
 }
 
+/* Styles for info container paragraphs */
 #infocontainer p {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
@@ -324,233 +501,191 @@ body {
     line-height: 2.5vh;
 }
 
+/* Styles for info container links */
 #infocontainer a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
+/* Hover styles for info container links */
 #infocontainer a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.8vh;
+    text-underline-offset: .8vh;
 }
 
-/* Styling for the slogan image */
+/* Styles for slogan image */
 #slogan {
     margin: auto;
     display: block;
     margin-top: 5vh;
-    width: 20vw !important; /* 20% of viewport width */
-    height: 20vh !important; /* 20% of viewport height */
+    width: 20vw!important;
+    height: 20vh!important;
 }
 
-/* Styling for the TripAdvisor image */
+/* Styles for TripAdvisor image */
 #tripadvisor {
     margin: auto;
     display: block;
     margin-top: 5vh;
-    width: 25vw !important; /* 25% of viewport width */
-    height: 15vh !important; /* 15% of viewport height */
+    width: 25vw!important;
+    height: 15vh!important;
 }
 
+/* Styles for footer */
 footer {
     background-color: var(--primary-color);
 }
 
+/* Styles for footer container */
 .footercontainer {
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
-    text-align: center;
     border-top: 2px solid var(--secondary-color);
+    padding-bottom: 1vh;
 }
 
-.footercontainer ul, .hourscontainer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
+/* Styles for footer links */
 .footercontainer a {
     text-decoration: none;
     color: var(--background-color);
 }
 
+/* Hover styles for footer links */
 .footercontainer a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.4vh;
+    text-underline-offset: .4vh;
     text-decoration-color: var(--secondary-color);
 }
 
-/* Styling for headings and paragraphs inside the info container */
-.footercontainer h2 {
-    padding: 3.5vh 0 0.8vh 0;
-    margin: 0 0 2vh 0;
-    font-size: 2.2vw;
-    color: var(--background-color);
-    font-family: Outfit;
+/* Styles for footer list */
+.footerlist {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Styling for headings and paragraphs inside the info container */
-.footercontainer li {
-    padding: 0.5vh 0 0.8vh 0;
-    margin: 0;
+/* Styles for footer list items */
+.footerlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styles for footer list items */
+.footerlist li {
+    text-align: center;
     color: var(--background-color);
     font-style: normal;
     font-size: 1.2vw;
     font-family: Hind Siliguri;
     line-height: 1.5vh;
+    padding: .7vh 0 .7vh 0;
 }
 
+/* Styles for footer headings */
+.footerlist h2 {
+    text-align: center;
+    font-size: 2.2vw;
+    color: var(--background-color);
+    font-family: Outfit;
+}
+
+/* Styles for footer address */
+.footerlist address {
+    font-style: normal;
+}
+
+/* Styles for footer horizontal rule */
+.footercontainerhr {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: var(--background-color);
+    position: absolute;
+    width: 60%;
+    height: 2px;
+}
+
+/* Styles for hours container */
 .hourscontainer {
+    padding: 1vh 0 1vh 0;
+}
+
+/* Styles for hours container list */
+.hourscontainer ul {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 10vw;
+    gap: 11vw;
+}
+
+/* Styles for hours container list items */
+.hourscontainer li {
+    padding: .5vh 0 .8vh 0;
+    color: var(--background-color);
+    font-size: 1.1vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
     text-align: center;
 }
 
+/* Styles for hours container headings */
 .hourscontainer h3 {
-    padding: 2vh 0 0.8vh 0;
+    padding: 2vh 0 .8vh 0;
     margin: 0 0 2vh 0;
     color: var(--background-color);
     font-size: 1.4vw;
     font-family: Outfit;
 }
 
-.hourscontainer li {
-    padding: 0.5vh 0 0.8vh 0;
-    margin: 0;
-    color: var(--background-color);
-    font-size: 1.1vw;
-    font-family: Hind Siliguri;
-    line-height: 1.5vh;
+/* Styles for hours container horizontal rule */
+.hourscontainerhr {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: var(--background-color);
+    position: absolute;
+    width: 80%;
+    height: 2px;
 }
 
+/* Styles for footer logos */
 .footerlogos {
     display: flex;
     justify-content: center;
     gap: 10vw;
-    padding-bottom: 2vh;
     text-align: center;
 }
 
+/* Styles for footer logo and slogan */
 .footerlogo, .footerslogan {
     width: 20vw;
     height: 20vh;
 }
 
-.footercontainerhr {
-    margin: 0 auto;
-    background-color: var(--background-color);
-    width: 60%;
-    margin-top: 2vh;
-    height: 2px;
+/* Styles for footer icons */
+.footericons {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh 0 2.5vh 0;
 }
 
-.hourscontainerhr {
-    margin: 0 auto;
-    background-color: var(--background-color);
-    width: 80%;
-    margin-top: 2vh;
-    height: 2px;
+/* Styles for footer icon links */
+.footericons a {
+    color: var(--background-color);
 }
 
-#registermain {
-    padding-top: 23vh;
-    background-color: var(--background-color);
-    margin-bottom: 20vh;
-}
-.registerlistcontainer ul
-{
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
+/* Hover styles for footer icon links */
+.footericons a:hover {
+    color: var(--secondary-color);
 }
 
-.registerlistcontainer
-{
-    margin-top: 7vh !important;
-    margin: 0 auto;
-    width: 50%;
-    border: 5px solid var(--primary-opacity);
-    border-radius: 10px;
+/* Styles for footer icons */
+.footericons i {
+    font-size: 3.5vw;
 }
-
-.registerlistcontainer li {
-    border-bottom: 1px solid var(--primary-opacity);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 1.5vh 0 1.5vh 3vw;
-    font-size: 1.1vw;
-}
-
-.registerlistcontainer a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.registerlistcontainer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.5vh;
-    text-decoration-color: var(--secondary-color);
-}
-
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
-    background-color: var(--background-color);
-    margin: 0 auto;
-    width: 50%;
-    border: 5px solid var(--primary-opacity);
-    border-radius: 10px;
-    padding-left: 3vw;
-  }
-  
-  /* Full-width input fields */
-  .container input[type=text], .container input[type=password] {
-    padding: 1vh 1vw 1vh 1vw;
-    margin: 0 auto;
-    width: 90%;
-    display: block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  .container input[type=text]:focus, .container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-    margin: 0 auto;
-    width: 90%;
-  }
-  
-  /* Set a style for the submit button */
-  .registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
