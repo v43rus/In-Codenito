@@ -74,7 +74,7 @@ body {
 }
 
 /* Define scroll margins for specific elements with IDs 'scroll1' and 'scroll2' */
-#scroll1, #scroll2 {
+#scroll1, #scroll2, #scroll3, #scroll4 {
     scroll-margin-top: 30vh; /* 30% of viewport height */
 }
 
@@ -452,3 +452,105 @@ footer {
     margin-top: 2vh;
     height: 2px;
 }
+
+#registermain {
+    padding-top: 23vh;
+    background-color: var(--background-color);
+    margin-bottom: 20vh;
+}
+.registerlistcontainer ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.registerlistcontainer
+{
+    margin-top: 7vh !important;
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+}
+
+.registerlistcontainer li {
+    border-bottom: 1px solid var(--primary-opacity);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1.5vh 0 1.5vh 3vw;
+    font-size: 1.1vw;
+}
+
+.registerlistcontainer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.registerlistcontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5vh;
+    text-decoration-color: var(--secondary-color);
+}
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+    padding-left: 3vw;
+  }
+  
+  /* Full-width input fields */
+  .container input[type=text], .container input[type=password] {
+    padding: 1vh 1vw 1vh 1vw;
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .container input[type=text]:focus, .container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
