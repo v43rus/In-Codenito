@@ -6,46 +6,10 @@
     --text-color: #000000;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    min-height: 100vh;
-}
-
-header h1 {
-    display: inline;
-    font-size: 2vw;
-}
-
-header section {
+.skolwrapper{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100vw;
+    flex-wrap: wrap;
 }
-
-header nav {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 100%;
-}
-
-header nav a {
-    font-size: 1.2rem;
-    height: 20px;
-    color: var(--background-color);
-    text-decoration: none;
-    padding: 10px 25px;
-}
-
-header nav a:hover {
-    background-color: var(--background-color);
-    color: var(--secondary-color);
-}
-
 
 .navOverview li{
 	   display: inline;
@@ -53,13 +17,29 @@ header nav a:hover {
 
 .navskolor{
 	   height: 200px;
-	   width: fit-content;
+	   width: 110px;
 	   padding-right: 20px;
 	   border-right: 3px solid;
+       border-color: #A44040;
+       margin-right: 40px;
 }
 
 .navskolor li, a{
-	   margin-bottom: 20px;
+	   margin-bottom: 18px;
 	   list-style-type: none;
 	   text-decoration: none;
+}
+
+.titelSkola{
+    width: 70%;
+    margin-top: -20px;
+}
+
+.skolbild{
+    width: 480px;
+}
+
+.infoSkola{
+    width: 95%;
+    margin: auto;
 }
