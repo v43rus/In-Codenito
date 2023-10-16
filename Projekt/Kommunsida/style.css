@@ -169,6 +169,7 @@ main {
     grid-template-columns: 1fr 1fr;
     max-width: 710px;
     background-color: var(--background-color);
+}
 
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
@@ -176,11 +177,6 @@ main {
 }
 .aktuellt-section article img{
     max-width: 250px;
-}
-
-
-.b-btn{
-    margin-top:10px;
 }
 
 
@@ -196,6 +192,7 @@ main {
     max-width: 250px;
     background-color: var(--background-color-color);
 }
+
 .cykelstråk{
     border-bottom: solid var(--secondary-color);
     max-width: 250px;
@@ -206,30 +203,6 @@ main {
     border-bottom: solid var(--secondary-color);
     max-width: 250px;
     background-color: var(--background-color-color);
-
-.aktuellt-section {
-    /* section som tar hela width och delar upp sidan till olika delar */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60vw;
-    background-color: var(--background-color);
-}
-
-.solenergi {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
-}
-
-.bibliotek {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
-
-
-}
-
-.cykelstråk {
-    margin: 10px 10px;
-    background-color: var(--primary-color);
 }
 
 .k-btn {
@@ -245,5 +218,4 @@ main {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: var(--text-color);
-    /* White Color */
 }
