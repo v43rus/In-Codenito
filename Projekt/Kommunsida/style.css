@@ -66,7 +66,59 @@ header nav a:hover {
     color: var(--secondary-color);
 }
 
+footer {
+    background-color: var(--primary-color);
+    backdrop-filter: blur(1px);
+    width: 100%;
+    max-height: fit-content;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
 
+footer li {
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+footer section {
+    padding: 10px 20px;
+}
+
+.footerHeading {
+    font-weight: 700;
+}
+
+.footerSubHeading {
+    font-weight: 700;
+}
+
+.footerIcon {
+    max-width: 20px;
+}
+
+.footerSocialIcon {
+    max-width: 36px;
+    padding: 3px;
+}
+
+.footerLinks {
+    text-decoration: none;
+    padding: 0px 5px;
+    color: black;
+}
+
+.footerIconLink {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
 
 
 
@@ -86,14 +138,14 @@ header nav a:hover {
 
 /* MAIN CONTENT */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.hero{
+.hero {
     background-image: url(../Kommunsida/Images/city-map-4320755_1280.png);
     background-position: top;
     background-blend-mode: multiply;
@@ -110,7 +162,7 @@ main{
     border: solid #8B8852;
 }
 
-.aktuellt-section{
+.aktuellt-section {
     border-top: solid 4px var(--accent-color);
     /* border-radius: 2px; */
     text-align: center;
@@ -118,41 +170,44 @@ main{
     width: 100%;
 }
 
-.aktuellt-section{   /* section som tar hela width och delar upp sidan till olika delar */
+.aktuellt-section {
+    /* section som tar hela width och delar upp sidan till olika delar */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width:60vw ;
+    width: 60vw;
     background-color: var(--background-color);
 }
 
-.solenergi{
+.solenergi {
     margin: 10px 10px;
     background-color: var(--primary-color);
 }
 
-.bibliotek{
+.bibliotek {
     margin: 10px 10px;
     background-color: var(--primary-color);
 
 
 }
-.cykelstråk{
+
+.cykelstråk {
     margin: 10px 10px;
     background-color: var(--primary-color);
 }
 
-.k-btn{
+.k-btn {
     display: inline-block;
     margin: 4px;
     cursor: pointer;
     border: 2px solid var(--accent-color);
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
     border-radius: 5px;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: var(--text-color); /* White Color */
+    color: var(--text-color);
+    /* White Color */
 
 }
