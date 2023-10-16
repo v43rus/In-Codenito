@@ -1,25 +1,26 @@
 <!DOCTYPE html> <!-- Declares the document type and version of HTML -->
-<html lang="sv"> <!-- Specifies the language of the document (English in this case) -->
+<html lang="sv"> <!-- Specifies the language of the document (Swedish) -->
 <head>
     <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport properties for responsive design -->
     <link rel="stylesheet" href="/css/style.css"> <!-- Links an external stylesheet for styling -->
-    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/mediaqueries.css"> <!-- Links another external stylesheet for media queries -->
+    <link rel="stylesheet" href="/css/fonts.css"> <!-- Links another external stylesheet for fonts -->
     <link rel="stylesheet" href="fa/css/all.css"> <!-- Links Font Awesome icons stylesheet -->
-    <link rel="icon" type="image/ico" href="img/favicon.ico" sizes="16x16">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" sizes="16x16"> <!-- Sets the favicon for the website -->
     <title>In-Codenito Badet | Simhall | Relax Spa | Gym</title> <!-- Sets the title of the web page -->
 </head>
 <body>
     <nav class="navbar"> <!-- Navigation section of the webpage -->
         <ul class="toolbar"> <!-- Unordered list for toolbar items -->
-            <li><a href="#scroll1"><i class="fa-solid fa-arrow-up"></i>Tillbaka Upp</a></li> <!-- Link for user login with a user icon -->
-            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Öppettider</a></li> <!-- Link for user login with a user icon -->
-            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Simskola</a></li> <!-- Link for user login with a user icon -->
-            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Priser</a></li> <!-- Link for user login with a user icon -->
-            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Om Oss</a></li> <!-- Link for user login with a user icon -->        
-            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Adress</a></li> <!-- Link for user login with a user icon -->        
-            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Kontakt</a></li> <!-- Link for user login with a user icon -->        
-            <li><a href="/html/simskola.html"><i class="fa-regular fa-user"></i>Boka Simskola</a></li> <!-- Link for user login with a user icon -->
+            <li><a href="#scroll1"><i class="fa-solid fa-arrow-up"></i>Tillbaka Upp</a></li> <!-- Link for scrolling to the top with an arrow icon -->
+            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Öppettider</a></li> <!-- Link for scrolling to opening hours section with a question mark icon --> 
+            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Simskola</a></li> <!-- Link for scrolling to swim school section with a question mark icon --> 
+            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Priser</a></li> <!-- Link for scrolling to price section with a question mark icon --> 
+            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Om Oss</a></li> <!-- Link for scrolling to about us section with a question mark icon -->        
+            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Adress</a></li> <!-- Link for scrolling to address section with a question mark icon -->         
+            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Kontakt</a></li> <!-- Link for scrolling to contact section with a question mark icon -->         
+            <li><a href="/html/simskola.html"><i class="fa-regular fa-user"></i>Boka Simskola</a></li> <!-- Link to the book swim school page with a user icon -->
         </ul>
         <nav class="logobar"> <!-- Secondary navigation section with a logo and search bar -->
             <figure class="logofigure"> <!-- Logo image container with a link to the homepage -->
@@ -35,14 +36,14 @@
     </nav>
     <header id="headerbar"> <!-- Header section of the webpage -->
         <p id="scroll1">
-            JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>. <!-- Text content with superscript and underline elements -->
+            JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>.
         </p>
     </header>
     <main>
-        <img id="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset">
-        <section id="hometextcontainer">
+        <img id="homebackground" src="img/homebackground.png" alt="Bild inifrån badhuset"> <!-- Background image for the home section -->
+        <section id="hometextcontainer"> <!-- Section for the home text -->
             <h2 id="homeheading">IN-CODENITO BADET</h2> <!-- Heading for the homepage section -->
-            <p id="hometext"> <!-- Welcome text for the homepage -->
+            <p id="hometext"> <!-- Home text -->
                 Välkommen till oss, det prisbelönta badhuset som har erövrat 
                 <br>
                 Sveriges hjärtan och blivit årets badhus tre år i rad 
@@ -58,11 +59,11 @@
                 skapar minnesvärda stunder för alla. Kom och upptäck en värld av nöje, välbefinnande och hälsa hos oss!
             </p>
         </section>
-        <ul class="navmap">
-            <li>Du är här:</li> <!-- Breadcrumb navigation indicating the current page -->
+        <ul class="navmap"> <!-- Breadcrumb navigation indicating the current page -->
+            <li>Du är här:</li> <!-- List items indicating navigation path with hyperlinks -->
             <li class="navroute">&emsp;<a href="index.html">Start</a></li>
         </ul>
-        <section id="infocontainer">
+        <section id="infocontainer"> <!-- Information about opening hours, prices, swimming school, and about us section -->
             <h4>Just nu är det 20% rabatt för <b>barn</b> och <b>ungdomar</b>, på alla priser.</h4>
             <article>
                 <figure id="scroll2">
@@ -277,14 +278,14 @@
                             <br>
                             värld av nöje, hälsa och gemenskap!
                         </p>
-                            <img id="tripadvisor" src="/img/tripadvisor.png" alt="Tripadvisor logo">
+                        <img id="tripadvisor" src="/img/tripadvisor.png" alt="Tripadvisor logo">
                     </figcaption>
                 </figure>
             </article>
         </section>
     </main>
-    <footer id="scroll4" class="footercontainer">
-        <ul class="footerlist">
+    <footer id="scroll4" class="footercontainer"> <!-- Footer section with address and contact information -->
+        <ul class="footerlist"> <!-- Unordered list containing address and contact details -->
             <li>
                 <h2>Sidor</h2>
                 <ul>
@@ -315,40 +316,45 @@
             </li>
         </ul>
     </footer>
-    <hr class="footercontainerhr">
-    <footer class="hourscontainer">
-        <ul>
+    <hr class="footercontainerhr"> <!-- Horizontal rule separating sections in the footer -->
+    <footer class="hourscontainer"> <!-- Footer section with opening hours for different facilities -->
+        <ul> <!-- Unordered list containing opening hours for the swimming hall, spa, and gym -->
             <li>
                 <h3>Simhallen</h3>
-                <time datetime="Mo-Th 07:00-20:00">Måndag - Torsdag: 07:00 - 20:00</time>
-                <time datetime="Fr-Sa 08:00-21:00">Fredag - Lördag: 08:00 - 21:00</time>
-                <time datetime="Su 10:00-19:00">Söndag: 10:00 - 19:00</time>
+                Måndag - Torsdag: 07:00 - 20:00
+                <br><br>
+                Fredag - Lördag: 08:00 - 21:00
+                <br><br>
+                Söndag: 10:00 - 19:00
             </li>
             <li>
                 <h3>Spa Relax</h3>
-                <time datetime="Mo-Th 14:00-18:00">Måndag - Torsdag: 14:00 - 18:00</time>
-                <time datetime="Fr-Sa 15:00-20:00">Fredag - Lördag: 15:00 - 20:00</time>
-                <time datetime="Su">Söndag: Stängt</time>
+                Måndag - Torsdag: 14:00 - 18:00
+                <br><br>
+                Fredag - Lördag: 15:00 - 20:00
+                <br><br>
+                Söndag: Stängt
             </li>
             <li>
                 <h3>Gymmet</h3>
-                <time datetime="Mo-Sa 06:00-21:00">Måndag - Lördag: 06:00 - 21:00</time>
-                <time datetime="Su 10:00-19:00">Söndag: 10:00 - 19:00</time>
+                Måndag - Lördag: 06:00 - 21:00
+                <br><br>
+                Söndag: 10:00 - 19:00
             </li>
         </ul>
     </footer>
-    <hr class="hourscontainerhr">
-    <footer class="footerlogos">
+    <hr class="hourscontainerhr"> <!-- Horizontal rule separating sections in the footer -->
+    <footer class="footerlogos"> <!-- Footer section with logos and slogans -->
         <figure>
-            <img class="footerlogo" src="/img/footerlogo.png" alt="Badhusets Logotyp">
-            <img class="footerslogan" src="/img/footerslogan.png" alt="Badhusets Slogan Logotyp">
+            <img class="footerlogo" src="/img/footerlogo.png" alt="Badhusets Logotyp"> <!-- Footer Logo image -->
+            <img class="footerslogan" src="/img/footerslogan.png" alt="Badhusets Slogan Logotyp"> <!-- Footer Slogan image -->
         </figure>
     </footer>
-    <hr class="footercontainerhr">
-    <footer class="footericons">
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    <hr class="footercontainerhr"> <!-- Horizontal rule separating sections in the footer -->
+    <footer class="footericons"> <!-- Footer section with social media icons -->
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a> <!-- Facebook icon with hyperlink -->
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a> <!-- Instagram icon with hyperlink -->
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a> <!-- Twitter icon with hyperlink -->
     </footer>
 </body>
 </html>
