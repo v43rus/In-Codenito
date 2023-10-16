@@ -6,6 +6,7 @@
     --text-color: #000000;
 }
 
+/* #region HEADER & FOOTER RULES */
 
 #logo {
     max-width: 12.5%;
@@ -13,16 +14,18 @@
 }
 
 body {
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 
 header {
     background-image: url("Images/kommunheader.jpg");
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     max-height: fit-content;
     margin: 0px;
     padding: 0px;
@@ -67,11 +70,12 @@ header nav a:hover {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
     backdrop-filter: blur(1px);
     width: 100%;
     max-height: fit-content;
-    margin: 0px 0px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -88,7 +92,7 @@ footer ul {
 }
 
 footer section {
-    padding: 10px 20px;
+    padding: 1% 5%;
 }
 
 .footerHeading {
@@ -101,17 +105,21 @@ footer section {
 
 .footerIcon {
     max-width: 20px;
+    padding: 1%;
 }
 
 .footerSocialIcon {
+
     max-width: 36px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .footerLinks {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     padding: 0px 5px;
-    color: black;
+    color: white;
 }
 
 .footerIconLink {
@@ -120,7 +128,7 @@ footer section {
     padding: 8px 0px;
 }
 
-
+/* #endregion */
 
 
 
