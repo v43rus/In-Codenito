@@ -9,6 +9,10 @@
     --primary-opacity: rgba(1, 123, 142, 0.8);
 }
 
+*::selection {
+    background-color: var(--accent-color);
+}
+
 /* Reset margin for the entire body and set background color */
 body {
     margin: 0;
@@ -17,12 +21,13 @@ body {
 
 /* Styling for the fixed navigation bar */
 .navbar {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 5px solid var(--primary-color);
     position: fixed;
     width: 100%;
     z-index: 2;
     height: 21vh; /* 21% of viewport height */
     background-color: var(--background-color);
+    box-shadow: 0 4px 2px -2px var(--primary-opacity);
 }
 
 /* Styling for the list inside the navigation menu */
@@ -53,7 +58,8 @@ body {
     align-items: center;
     gap: 1vw; /* 1% of viewport width */
     height: 4vh; /* 4% of viewport height */
-    padding: 0;
+    padding: 0 2vw 0 0;
+    font-family: Rajdhani;
 }
 
 /* Styling for list items in the toolbar */
@@ -80,7 +86,7 @@ body {
 }
 
 /* Styling for the logo */
-.logo {
+.logofigure {
     margin: 0;
     text-align: center;
     padding-bottom: 5vh;
@@ -88,7 +94,7 @@ body {
 }
 
 /* Styling for the logo image */
-#logo {
+.logo {
     width: 15vw; /* 15% of viewport width */
     height: 15vh; /* 15% of viewport height */
 }
@@ -129,11 +135,11 @@ body {
     border: none;
     border-left: none;
     padding: 0.8vh 0 0.8vh 0.8vw;
-    margin-left: -0.3vw;
     font-size: 1vw; /* 1% of viewport width */
     width: 9vw; /* 9% of viewport width */
     color: var(--text-color);
     background-color: var(--background-color);
+    font-family: Rajdhani;
 }
 
 /* Styling for focused search input */
@@ -152,35 +158,37 @@ body {
 }
 
 /* Styling for the header bar */
-.headerbar {
+#headerbar {
     text-align: center;
     font-size: 1.3vw; /* 1.3% of viewport width */
-    height: 4.5vh; /* 4.5% of viewport height */
-    line-height: 3vh;
+    height: 5vh; /* 4.5% of viewport height */
+    line-height: 4vh;
     position: relative;
     margin: 0;
     margin-left: -3.5vw;
     padding-top: 21vh; /* 21% of viewport height */
+    background-color: var(--primary-opacity);
 }
 
 /* Styling for the header bar text */
-.headerbar p {
+#headerbar p {
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--background-color);
+    font-family: Hind Siliguri;
 }
 
 /* Styling for the home background image */
-.homebackground {
+#homebackground {
     margin: 0;
     width: 100%;
     height: 80vh; /* 80% of viewport height */
     object-fit: cover;
-    margin-bottom: 4vh;
+    border-bottom: 10px solid var(--primary-color);
 }
 
 /* Styling for the text container inside the home section */
-.hometextcontainer {
+#hometextcontainer {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -191,17 +199,18 @@ body {
 }
 
 /* Styling for the home section heading */
-.homeheading {
+#homeheading {
     margin: 0;
     font-size: 2vw; /* Adjust the font size as needed */
     text-align: center;
     padding-bottom: 2vh;
     color: var(--background-color);
-    text-shadow: 1px 1px 2px var(--text-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Outfit;
 }
 
 /* Styling for text inside the home text container */
-.hometext {
+#hometext {
     font-size: 1.1vw; /* Example font size for <p> element inside text container */
     margin: 10px 0; /* Optional: Adjust the margin as needed */
     line-height: 3vh;
@@ -209,7 +218,8 @@ body {
     letter-spacing: 0.1vw;
     padding-left: 2vw;
     color: var(--background-color);
-    text-shadow: 1px 1px 2px var(--text-color);
+    text-shadow: 2px 2px 2px var(--text-color);
+    font-family: Hind Siliguri;
 }
 
 /* Styling for the navigation map */
@@ -218,13 +228,13 @@ body {
     flex-direction: row;
     list-style-type: none;
     padding: 2vh 0 0 10vw;
-    border-top: 2px solid var(--secondary-color);
     color: var(--text-color);
     font-size: 1vw;
+    font-family: Hind Siliguri;
 }
 
 /* Styling for navigation links in the map */
-.navmap a {
+.navroute a {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -234,8 +244,18 @@ body {
     text-decoration: underline;
 }
 
+.lastnavroute a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* Hover effect for route links in the navigation map */
+.lastnavroute a:hover {
+    text-decoration: underline;
+}
+
 /* Styling for the info container */
-.infocontainer {
+#infocontainer {
     display: flex;
     justify-content: center;
     margin-top: 10vh; /* 10% of viewport height */
@@ -243,16 +263,17 @@ body {
 }
 
 /* Styling for the heading inside the info container */
-.infocontainer h4 {
+#infocontainer h4 {
     position: absolute;
     margin-top: -6vh;
     font-weight: normal;
     color: var(--text-color);
     font-size: 1.2vw;
+    font-family: Outfit;
 }
 
 /* Styling for the figure element inside the info container */
-.infocontainer figure {
+#infocontainer figure {
     width: 30vw; /* 30% of viewport width */
     border: 10px solid var(--primary-color);
     outline: 20px solid var(--primary-opacity);
@@ -262,45 +283,59 @@ body {
 }
 
 /* Styling for images inside the figure element */
-.infocontainer img {
+#infocontainer img {
     width: 30vw; /* 30% of viewport width */
     height: 35vh; /* 35% of viewport height */
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 /* Styling for captions inside the figure element */
-.infocontainer figcaption {
+#infocontainer figcaption {
     margin: 0;
     margin-top: -0.7vh;
     width: 30vw; /* 30% of viewport width */
-    height: 105vh; /* 100% of viewport height */
+    height: 115vh; /* 100% of viewport height */
 }
 
-.infocontainer h2 {
+#infocontainer h2 {
     text-align: center;
     margin: 0;
     padding: 2.5vh 0 0 0;
     color: var(--text-color);
     font-size: 1.65vw;
+    font-family: Outfit;
 }
 
 /* Styling for headings and paragraphs inside the info container */
-.infocontainer h3 {
+#infocontainer h3 {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
     color: var(--text-color);
     font-size: 1.3vw;
+    font-family: Outfit;
 }
 
-.infocontainer p {
+#infocontainer p {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
     color: var(--text-color);
     font-size: 1.1vw;
+    font-family: Hind Siliguri;
+    line-height: 2.5vh;
+}
+
+#infocontainer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#infocontainer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.8vh;
 }
 
 /* Styling for the slogan image */
-.slogan {
+#slogan {
     margin: auto;
     display: block;
     margin-top: 5vh;
@@ -309,7 +344,7 @@ body {
 }
 
 /* Styling for the TripAdvisor image */
-.tripadvisor {
+#tripadvisor {
     margin: auto;
     display: block;
     margin-top: 5vh;
@@ -317,20 +352,19 @@ body {
     height: 15vh !important; /* 15% of viewport height */
 }
 
+footer {
+    background-color: var(--primary-color);
+}
+
 .footercontainer {
-    border-top: 2px solid var(--secondary-color);
-    background-color: var(--primary-opacity);
     display: flex;
     justify-content: center;
     gap: 5vw;
+    text-align: center;
+    border-top: 2px solid var(--secondary-color);
 }
 
-.footercontainer ul {
-    list-style-type: none;
-    padding: 0 0 0 1.5vw;
-}
-
-.hourscontainer ul {
+.footercontainer ul, .hourscontainer ul {
     list-style-type: none;
     padding: 0;
 }
@@ -342,7 +376,7 @@ body {
 
 .footercontainer a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.7vh;
+    text-underline-offset: 0.4vh;
     text-decoration-color: var(--secondary-color);
 }
 
@@ -352,8 +386,7 @@ body {
     margin: 0 0 2vh 0;
     font-size: 2.2vw;
     color: var(--background-color);
-    text-align: center;
-
+    font-family: Outfit;
 }
 
 /* Styling for headings and paragraphs inside the info container */
@@ -363,14 +396,15 @@ body {
     color: var(--background-color);
     font-style: normal;
     font-size: 1.2vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
 }
 
 .hourscontainer {
     display: flex;
     justify-content: center;
     gap: 10vw;
-    padding-bottom: 7vh;
-    background-color: var(--primary-opacity);
+    text-align: center;
 }
 
 .hourscontainer h3 {
@@ -378,7 +412,7 @@ body {
     margin: 0 0 2vh 0;
     color: var(--background-color);
     font-size: 1.4vw;
-    text-align: center;
+    font-family: Outfit;
 }
 
 .hourscontainer li {
@@ -386,4 +420,35 @@ body {
     margin: 0;
     color: var(--background-color);
     font-size: 1.1vw;
+    font-family: Hind Siliguri;
+    line-height: 1.5vh;
+}
+
+.footerlogos {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.footerlogo, .footerslogan {
+    width: 20vw;
+    height: 20vh;
+}
+
+.footercontainerhr {
+    margin: 0 auto;
+    background-color: var(--background-color);
+    width: 60%;
+    margin-top: 2vh;
+    height: 2px;
+}
+
+.hourscontainerhr {
+    margin: 0 auto;
+    background-color: var(--background-color);
+    width: 80%;
+    margin-top: 2vh;
+    height: 2px;
 }
