@@ -19,6 +19,8 @@
 body {
     margin: 0;
     background-color: var(--background-color);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Styles for the fixed navigation bar */
@@ -326,6 +328,7 @@ body {
     border-bottom-right-radius: 10px;
     padding: 1.5vh 0 1.5vh 3vw;
     font-size: 1.1vw;
+    font-family: Hind Siliguri;
 }
 
 /* Styles for register list headings */
@@ -435,6 +438,7 @@ body {
     justify-content: center;
     margin-top: 10vh;
     gap: 2vw;
+    width: 100%;
 }
 
 /* Styles for info container headings */
