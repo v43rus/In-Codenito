@@ -12,6 +12,13 @@
     }
 }
 
+/* For Laptops, Styles for navigation links */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .navbar a {
+        font-size: 1.5vw;
+    }
+}
+
 /* For Phones, Styles for logo image */
 @media only screen and (min-width: 0px) and (max-width: 500px) {
     .logo {
@@ -19,10 +26,17 @@
     }
 }
 
-/* For Tablets, Styles for logo image*/
+/* For Tablets, Styles for logo image */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .logo {
         width: 30vw;
+    }
+}
+
+/* For Laptops, Styles for logo image */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .logo {
+        width: 20vw;
     }
 }
 
@@ -42,11 +56,20 @@
     }
 }
 
+/* For Laptops, Styles for search input */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .searchbar input[type=text] {
+        width: 11vw;
+        font-size: 1.7vw;
+    }
+}
+
 /* For Phones, Styles for header bar */
 @media only screen and (min-width: 0px) and (max-width: 500px) {
     #headerbar {
         font-size: 2vw;
-        line-height: 5vh;
+        line-height: 4vh;
+        height: 4vh;
     }
 }
 
@@ -55,6 +78,21 @@
     #headerbar {
         font-size: 2vw;
         line-height: 4.5vh;
+    }
+}
+
+/* For Laptops, Styles for header bar */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #headerbar {
+        font-size: 1.5vw;
+        line-height: 4.5vh;
+    }
+}
+
+/* For Phones, Styles for home and register background image */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #homebackground, #registerbackground {
+        border-bottom: 5px solid var(--primary-color);
     }
 }
 
@@ -69,6 +107,13 @@
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     #hometextcontainer, #registertextcontainer {
         width: 80%;
+    }
+}
+
+/* For Laptops, Styles for home and register container */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #hometextcontainer, #registertextcontainer {
+        width: 60%;
     }
 }
 
@@ -88,6 +133,14 @@
     }
 }
 
+/* For Laptops, Styles for home and register heading */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #homeheading, #registerheading {
+        font-size: 2.7vw;
+        padding-bottom: 0;
+    }
+}
+
 /* For Phones, Styles for home and register text */
 @media only screen and (min-width: 0px) and (max-width: 500px) {
     #hometext, #registertext {
@@ -101,5 +154,288 @@
     #hometext, #registertext {
         font-size: 2.7vw;
         padding: 0 5vw 0 5vw;
+    }
+}
+
+/* For Laptops, Styles for home and register text */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #hometext, #registertext {
+        font-size: 2vw;
+        padding-bottom: 0 5vw 0 5vw;
+    }
+}
+
+/* For Phones, Styles for navigation map and routes */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .navmap {
+        font-size: 2.7vw;
+        padding: 0 0 0 10vw;
+    }
+}
+
+/* For Tablets, Styles for navigation map and routes */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .navmap {
+        font-size: 2.3vw;
+        padding: 0 0 0 10vw;
+    }
+}
+
+/* For Laptops, Styles for navigation map and routes */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    .navmap {
+        font-size: 2vw;
+        padding: 0 0 0 10vw;
+    }
+}
+
+/* For Phones, Styles for info container headings */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer h4 {
+        font-size: 2.7vw;
+        margin-top: -1vh;
+    }
+}
+
+/* For Tablets, Styles for info container headings */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer h4 {
+        font-size: 2.3vw;
+        margin-top: -1.5vh;
+    }
+}
+
+/* For Laptops, Styles for info container headings */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #infocontainer h4 {
+        font-size: 2vw;
+        margin-top: -3vh;
+    }
+}
+
+/* For Phones, Styles for info container */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer {
+        gap: 0;
+        margin-top: 3vh;
+    }
+}
+
+/* For Tablets, Styles for info container */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer {
+        margin-top: 3vh;
+        gap: 0;
+    }
+}
+
+/* For Laptops, Styles for info container */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #infocontainer {
+        margin-top: 5vh;
+    }
+}
+
+/* For Phones, Styles for info container figure */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer figure {
+        border: 5px solid var(--primary-color);
+        outline: 7px solid var(--primary-opacity);
+        width: 70%;
+        margin-bottom: 5vh;
+    }
+}
+
+/* For Tablets, Styles for info container figure */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer figure {
+        border: 5px solid var(--primary-color);
+        outline: 7px solid var(--primary-opacity);
+        width: 70%;
+        margin-bottom: 5vh;
+    }
+}
+
+/* For Phones, Styles for info container images */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer img {
+        width: 100%;
+        height: 15vh;
+    }
+}
+
+/* For Tablets, Styles for info container images */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer img {
+        width: 100%;
+        height: 25vh;
+    }
+}
+
+/* For Phones, Styles for info container captions */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer figcaption {
+        height: 105vh;
+    }
+}
+
+/* For Tablets, Styles for info container captions */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer figcaption {
+        height: 105vh;
+    }
+}
+
+/* For Phones, Styles for info container headings */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer h2 {
+        font-size: 3vw;
+    }
+}
+
+/* For Tablets, Styles for info container headings */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer h2 {
+        font-size: 2.7vw;
+    }
+}
+
+/* For Laptops, Styles for info container headings */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #infocontainer h2 {
+        font-size: 2.3vw;
+    }
+}
+
+/* For Phones, Styles for info container subheadings */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer h3 {
+        font-size: 2.4vw;
+    }
+}
+
+/* For Tablets, Styles for info container subheadings */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer h3 {
+        font-size: 2.2vw;
+    }
+}
+
+/* For Laptops, Styles for info container subheadings */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #infocontainer h3 {
+        font-size: 1.9vw;
+    }
+}
+
+/* For Phones, Styles for info container paragraphs */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer p {
+        font-size: 2.1vw;
+    }
+}
+
+/* For Tablets, Styles for info container paragraphs */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #infocontainer p {
+        font-size: 1.8vw;
+    }
+}
+
+/* For Laptops, Styles for info container paragraphs */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #infocontainer p {
+        font-size: 1.6vw;
+    }
+}
+
+/* For Phones, Styles for info container links */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer a {
+        text-align: center;
+        display: block;
+        padding-top: 5vh;
+    }
+}
+
+/* For Phones, Hover styles for info container links */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #infocontainer a:hover {
+        text-underline-offset: 0.25vh;
+    }
+}
+
+/* For Phones, Styles for paragraph and images for info container */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #remove, #tripadvisor, #slogan {
+        display: none;
+    }
+}
+
+/* For Tablets, Styles for paragraph and images for info container */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #remove, #tripadvisor {
+        display: none;
+    }
+}
+
+/* For Laptops, Styles for images for info container */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #tripadvisor {
+        display: none;
+    }
+}
+
+/* For Tablets, Styles for slogan image */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #slogan {
+        width: 25vw !important;
+        height: 13vh !important;
+        margin-top: 2vh;
+    }
+}
+
+/* For Phones, Styles for register list items */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #registerlistcontainer li {
+        font-size: 2.2vw;
+        padding: 1.2vh 0 1.2vh 3vw;
+    }
+}
+
+/* For Tablets, Styles for register list items */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #registerlistcontainer li {
+        font-size: 1.9vw;
+    }
+}
+
+/* For Laptops, Styles for register list items */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #registerlistcontainer li {
+        font-size: 1.5vw;
+    }
+}
+
+/* For Phones, Styles for register list headings */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #registerlistcontainer h2 {
+        font-size: 2.8vw;
+        margin: 1vh 0 1vh 0;
+    }
+}
+
+/* For Tablets, Styles for register list headings */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #registerlistcontainer h2 {
+        font-size: 2.5vw;
+        margin: 1vh 0 1vh 0;
+    }
+}
+
+/* For Laptops, Styles for register list headings */
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    #registerlistcontainer h2 {
+        font-size: 2vw;
     }
 }
