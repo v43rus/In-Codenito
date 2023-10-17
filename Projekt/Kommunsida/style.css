@@ -5,12 +5,22 @@
     --background-color: #FFFFFF;
     --text-color: #000000;
 }
+/* font förslag, poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap'); */
+
+body{
+    /* font-family: poppins, sans-serif; */
+}
 
 /* #region HEADER & FOOTER RULES */
 
 #logo {
-    max-width: 12.5%;
+    max-width: 100%;
     padding: 10px;
+}
+
+#logoLink {
+    max-width: 10%;
 }
 
 body {
@@ -20,6 +30,9 @@ body {
     padding: 0px;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -72,12 +85,11 @@ header nav a:hover {
 footer {
     background-color: var(--secondary-color);
     color: white;
-    backdrop-filter: blur(1px);
     width: 100%;
     max-height: fit-content;
-    margin: 0px;
     display: flex;
     justify-content: center;
+    bottom: 0px;
     margin-top: auto;
 }
 
@@ -144,12 +156,13 @@ footer section {
 
 
 
-/* MAIN CONTENT */
+/* MAIN CONTENT PÅ STARTSIDA */
 
-main {
+.kommun-startsida {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -163,63 +176,61 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25vh;
+    min-height: 25vh;
     width: 70%;
-    margin: 10px auto;
+    margin: 10px;
+    padding: 10px;
     background-color: var(--background-color);
-    border: solid #8B8852;
+    border: solid #626429;
 }
 
-                /* AKTUELL SECTION */
-.aktuellt-section {
-    display: grid;
-    gap: 75px;
-    grid-template-columns: 1fr 1fr;
-    max-width: 710px;
-    background-color: var(--background-color);
-}
-
+/* AKTUELL SECTION */
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
-    padding: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    gap: 155px;
+    row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    background-color: var(--background-color);
 }
 
 .aktuellt-section article img {
-    max-width: 250px;
+    max-width: 280px;
+    height: 40%;
 }
 
 
 
 .solenergi {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
 .bibliotek {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
 .cykelstråk {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
-                    /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
+/* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     /* flex-direction: column; */
     gap: 40px;
     max-width: 100%;
-    border-bottom: solid var(--accent-color);
     border-top: solid var(--accent-color);
-
 }
 
 .stacked {
@@ -249,13 +260,14 @@ main {
     overflow: hidden;
 }
 
-.card-content h2, .card-content p{
+.card-content h2,
+.card-content p {
     text-decoration: none;
     color: var(--text-color);
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -277,7 +289,7 @@ a{
 }
 
 
-                        /* MAIN BUTTON STYLE */
+/* MAIN BUTTON STYLE */
 .k-btn {
     display: inline-block;
     margin: 4px;
