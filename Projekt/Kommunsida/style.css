@@ -5,6 +5,12 @@
     --background-color: #FFFFFF;
     --text-color: #000000;
 }
+/* font förslag, poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap'); */
+
+body{
+    /* font-family: poppins, sans-serif; */
+}
 
 /* #region HEADER & FOOTER RULES */
 
@@ -150,9 +156,9 @@ footer section {
 
 
 
-/* MAIN CONTENT */
+/* MAIN CONTENT PÅ STARTSIDA */
 
-main {
+.kommun-startsida {
     display: flex;
     flex-direction: column;
     align-items: center;
