@@ -16,15 +16,16 @@
 }
 
 .navskolor{
-	   height: 200px;
+	   height: 210px;
 	   width: 110px;
 	   padding-right: 20px;
 	   border-right: 3px solid;
        border-color: #A44040;
+       margin-top: 30px;
        margin-right: 40px;
 }
 
-.navskolor li, a{
+.navskolor li{
 	   margin-bottom: 18px;
 	   list-style-type: none;
 	   text-decoration: none;
@@ -32,7 +33,6 @@
 
 .titelSkola{
     width: 70%;
-    margin-top: -20px;
 }
 
 .skolbild{
@@ -42,4 +42,27 @@
 .infoSkola{
     width: 95%;
     margin: auto;
+}
+
+@media screen and (max-width: 800px){
+    .navskolor{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        /*margin-top: 0px;
+        margin-right: 0px;*/
+        text-align: center;
+        /*border: 1px solid black;*/
+        border: none;
+    }
+    .navskolor li{
+        display: inline;
+        padding: 6px;
+        border: 1px solid black;
+        border-radius: 40px;
+        background-color: #8B8852;
+    }
+    .navskolor a{
+        color:#FFFFFF;
+    }
 }
