@@ -156,6 +156,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -171,24 +172,29 @@ main {
     align-items: center;
     min-height: 25vh;
     width: 70%;
-    margin: 10px auto;
+    margin: 10px;
+    padding: 10px;
     background-color: var(--background-color);
-    border: solid #8B8852;
+    border: solid #626429;
 }
 
 /* AKTUELL SECTION */
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
-    padding: 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     display: grid;
-    gap: 75px;
+    align-items: center;
+    text-align: center;
+    gap: 155px;
+    row-gap: 32px;
     grid-template-columns: 1fr 1fr;
-    max-width: 710px;
+    max-width: 800px;
     background-color: var(--background-color);
 }
 
 .aktuellt-section article img {
-    max-width: 250px;
+    max-width: 280px;
     height: 40%;
 }
 
@@ -196,19 +202,16 @@ main {
 
 .solenergi {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
 .bibliotek {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
 .cykelstråk {
     border-bottom: solid var(--secondary-color);
-    max-width: 250px;
     background-color: var(--background-color-color);
 }
 
@@ -217,13 +220,11 @@ main {
 .container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     /* flex-direction: column; */
     gap: 40px;
     max-width: 100%;
-    border-bottom: solid var(--accent-color);
     border-top: solid var(--accent-color);
-
 }
 
 .stacked {
