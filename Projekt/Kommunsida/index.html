@@ -13,7 +13,7 @@
 <body>
     <header>
         <section>
-            <img id="logo" src="Images/logotype.png">
+            <a id="logoLink" href="index.html" alt="Incodenito Startsida"><img id="logo" src="Images/logotype.png"></a>
         </section>
 
         <nav>
@@ -23,6 +23,11 @@
             <a href="">Kultur &amp; Fritid</a>
             <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
             <a href="">Kommun &amp; Politik</a>
+            <a href="ledigajobb.html" alt="Lediga jobb i Incodenito kommun">Lediga Jobb</a>
+            <a href="naringsliv.html" alt="Näringsliv">Näringsliv</a>
+            <a href="kulturochfritid.html" alt="Vad finns att göra i kommunen">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html" alt="Barn och utbildning">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html" alt="Kommun och politik">Kommun &amp; Politik</a>
         </nav>
     </header>
 
@@ -46,23 +51,18 @@
     <main>
         <!--    HERO SECTION-->
         <section class="hero">
-            <img src="" alt="">
             <h1>Välkommen till In-codenito Kommun</h1>
             <p>Här hittar du information om lediga jobb, näringsliv, kultur & fritid, barn & utbildning och kommun &
                 politik.
             <p>Hitta jobb, hitta arbete, hitta nöje.</p>
-            </p>
-
         </section>
 
         <!--    AKTUELLT SECTION-->
 
         <h2>Aktuellt</h2>
         <section class="aktuellt-section">
-
-
             <article class="bibliotek">
-                <img src="images/architecture-5705042_1280.jpg" alt="bibliotek" height="160px">
+                <img src="images/architecture-5705042_1280.jpg" alt="bibliotek">
                 <h3>Nytt bibliotek öppnar i Incodenito</h3>
                 <p>Ett nytt bibliotek öppnar i Incodenito den 15 mars. Biblioteket kommer att ligga i den gamla
                     järnvägsstationsgatan, vid Polisen huset.</p>
@@ -82,17 +82,17 @@
                 <img src="images/bicycle-path-3444914_1280.jpg" alt="cykelstråk">
                 <h3>Nytt gång- och cykelstråk invigs i Incodenito</h3>
                 <p>Ett nytt gång- och cykelstråk invigs i Incodenito den 20 mars. Stråket kommer att gå från centrum
-                    till järnvägsstationen.</p>
+                    till järnvägsstationen. <br><br> </p>
                 <button class="k-btn">Läs mer</button>
             </article>
 
             <article class="bibliotek">
-                <img src="../Badhus/img/badhuset.png" alt="bibliotek" height="160px">
-                <h3>In-codenito Badhus</h3> <br>
-                <p> Upplev en unik atmosfär av avkoppling och glädje hos vårt badhus, där finns pooler för små och
-                    stora.
+                <img src="../Badhus/img/badhuset.png" alt="bibliotek">
+                <h3>In-codenito Badhus</h3> 
+                <p> Upplev en unik atmosfär av avkoppling och glädje hos vårt badhus,
+                    där finns pooler för små och stora.
                     Vänliga personal skapar minnesvärda stunder för alla.</p>
-                <button class="k-btn"><a href="../Badhus/index.html">Läs mer</a></button>
+                <a href="../Badhus/index.html"><button class="k-btn">Läs mer</button></a>
             </article>
         </section>
     </main>
@@ -101,7 +101,7 @@
     <section class="container">
         <a href="#">
             <figure class="card stacked">
-                <img src="../Badhus/img/badhuset.png" alt="sallad sås" class="card-img">
+                <img src="../Badhus/img/badhuset.png" alt="badhus" class="card-img">
                 <div class="card-content">
                     <h2 class="card-titel">BADHUSET</h2>
                     <p class="card-price">Ta ett dopp i vårt badhus!</p>
@@ -110,23 +110,23 @@
         </a>
         <a href="#">
             <figure class="card stacked">
-                <img src="../Kommunsida/Images/hus-7191112_640.jpg" alt="äpple sås" class="card-img">
+                <img src="../Kommunsida/Images/hus-7191112_640.jpg" alt="fritidshus" class="card-img">
                 <div class="card-content">
                     <h2 class="card-titel">FRITIDSHUSET</h2>
-                    <p class="card-price">En plats för ungdomar</p>
+                    <p class="card-price">En plats för ungdomar.</p>
                 </div>
             </figure>
         </a>
     </section>
     <!-- form för jobb ansökningar -->
 
-    <summary class="jobbansökan">
+    <!-- <summary class="jobbansökan">
         <h2>Jobbansökning</h2>
     </summary>
 
     <aside class="jobb-ansökan">
         <article>
-            <!-- en paragraf om att söka jobb i in-codenito kommun -->
+
             <h2>Sök jobb i in-codenito kommun!</h2>
             <p>Hitta arbetet som passar dig, både dagtid eller helger. Vi har många lediga tjänster </p>
             <p>
@@ -150,11 +150,11 @@
             <input type="text" id="namn" name="name" placeholder="Namn" required><br>
             <label for="email"></label><br />
             <input type="email" id="email" name="email" placeholder="E-postadress" required><br>
-            <!-- en input knapp som skickar infon till servern -->
+    
             <input class="k-btn" type="submit" value="Skicka in!">
 
         </form>
-    </aside>
+    </aside> -->
 
     <footer>
         <section>
