@@ -225,7 +225,7 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 40px;
     max-width: 100%;
     border-top: solid var(--accent-color);
@@ -286,6 +286,41 @@ a {
     margin-left: 5px;
 }
 /* #endregion */
+
+
+/* #region  EFFEKTER */
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in;
+}
+
+/* #endregion */
+
+/* #region  MEDIA QUERIES YO*/
+
+@media (max-width: 650px){
+    .container{
+        gap: 0px;
+    }
+
+    .card-content{
+        margin: 0;
+    }
+    .card-content h2,
+    .card-content p {
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+    .card-img{
+        width: 200px;
+        object-fit: cover;
+    }
+}
+
+/* #endregion  */
 
 /* MAIN BUTTON STYLE */
 .k-btn {
