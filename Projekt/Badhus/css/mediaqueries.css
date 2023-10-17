@@ -1,0 +1,105 @@
+/* For Phones, Styles for navigation links */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .navbar a {
+        font-size: 2vw;
+    }
+}
+
+/* For Tablets, Styles for navigation links */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .navbar a {
+        font-size: 1.7vw;
+    }
+}
+
+/* For Phones, Styles for logo image */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .logo {
+        width: 35vw;
+    }
+}
+
+/* For Tablets, Styles for logo image*/
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .logo {
+        width: 30vw;
+    }
+}
+
+/* For Phones, Styles for search input */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .searchbar input[type=text] {
+        font-size: 2.1vw;
+        width: 15vw;
+    }
+}
+
+/* For Tablets, Styles for search input */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    .searchbar input[type=text] {
+        font-size: 2.1vw;
+        width: 15vw;
+    }
+}
+
+/* For Phones, Styles for header bar */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #headerbar {
+        font-size: 2vw;
+        line-height: 5vh;
+    }
+}
+
+/* For Tablets, Styles for header bar */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #headerbar {
+        font-size: 2vw;
+        line-height: 4.5vh;
+    }
+}
+
+/* For Phones, Styles for home and register container */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #hometextcontainer, #registertextcontainer {
+        width: 80%;
+    }
+}
+
+/* For Tablets, Styles for home and register container */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #hometextcontainer, #registertextcontainer {
+        width: 80%;
+    }
+}
+
+/* For Phones, Styles for home and register heading */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #homeheading, #registerheading {
+        font-size: 3.5vw;
+        padding-bottom: 0;
+    }
+}
+
+/* For Tablets, Styles for home and register heading */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #homeheading, #registerheading {
+        font-size: 3.5vw;
+        padding-bottom: 0;
+    }
+}
+
+/* For Phones, Styles for home and register text */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #hometext, #registertext {
+        font-size: 2.7vw;
+        padding: 0 5vw 0 5vw;
+    }
+}
+
+/* For Tablets, Styles for home and register text */
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    #hometext, #registertext {
+        font-size: 2.7vw;
+        padding: 0 5vw 0 5vw;
+    }
+}
