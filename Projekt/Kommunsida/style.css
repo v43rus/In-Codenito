@@ -156,7 +156,7 @@ footer section {
 
 
 
-/* MAIN CONTENT PÅ STARTSIDA */
+/* #region MAIN CONTENT PÅ STARTSIDA */
 
 .kommun-startsida {
     display: flex;
@@ -203,8 +203,6 @@ footer section {
     max-width: 280px;
     height: 40%;
 }
-
-
 
 .solenergi {
     border-bottom: solid var(--secondary-color);
@@ -287,7 +285,7 @@ a {
     font-size: large;
     margin-left: 5px;
 }
-
+/* #endregion */
 
 /* MAIN BUTTON STYLE */
 .k-btn {
