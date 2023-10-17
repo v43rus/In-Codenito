@@ -377,18 +377,18 @@ body {
     margin-bottom: 10vh;
 }
 
-/* Styles for register container paragraphs */
-.registercontainer p {
-    font-family: Hind Siliguri;
-    color: var(--text-color);
-    font-size: 1.1vw;
-}
-
 /* Styles for register container headings and labels */
 .registercontainer h2, .registercontainer label {
     font-family: Outfit;
     color: var(--text-color);
     font-size: 1.3vw;
+}
+
+/* Styles for register container paragraphs */
+.registercontainer p {
+    font-family: Hind Siliguri;
+    color: var(--text-color);
+    font-size: 1.1vw;
 }
 
 /* Styles for register input fields */
