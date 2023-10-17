@@ -9,8 +9,12 @@
 /* #region HEADER & FOOTER RULES */
 
 #logo {
-    max-width: 12.5%;
+    max-width: 100%;
     padding: 10px;
+}
+
+#logoLink {
+    max-width: 10%;
 }
 
 body {
@@ -20,6 +24,9 @@ body {
     padding: 0px;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -72,12 +79,11 @@ header nav a:hover {
 footer {
     background-color: var(--secondary-color);
     color: white;
-    backdrop-filter: blur(1px);
     width: 100%;
     max-height: fit-content;
-    margin: 0px;
     display: flex;
     justify-content: center;
+    bottom: 0px;
     margin-top: auto;
 }
 
@@ -170,7 +176,7 @@ main {
     border: solid #8B8852;
 }
 
-                /* AKTUELL SECTION */
+/* AKTUELL SECTION */
 .aktuellt-section {
     display: grid;
     gap: 75px;
@@ -208,7 +214,7 @@ main {
     background-color: var(--background-color-color);
 }
 
-                    /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
+/* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
 .container {
     display: flex;
@@ -249,13 +255,14 @@ main {
     overflow: hidden;
 }
 
-.card-content h2, .card-content p{
+.card-content h2,
+.card-content p {
     text-decoration: none;
     color: var(--text-color);
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -277,7 +284,7 @@ a{
 }
 
 
-                        /* MAIN BUTTON STYLE */
+/* MAIN BUTTON STYLE */
 .k-btn {
     display: inline-block;
     margin: 4px;
