@@ -1,7 +1,6 @@
-/* Set smooth scroll behavior for the entire document */
+/* Root Variables */
 :root {
     scroll-behavior: smooth;
-    /* Define custom color variables */
     --text-color: rgb(25, 3, 0);
     --background-color: rgb(255, 246, 245);
     --primary-color: rgb(1, 123, 142);
@@ -10,12 +9,12 @@
     --primary-opacity: rgba(1, 123, 142, 0.8);
 }
 
-/* Style selected text */
+/* Text Selection */
 ::selection {
     background-color: var(--accent-color);
 }
 
-/* Basic styles for the body element */
+/* Body Styles */
 body {
     margin: 0;
     background-color: var(--background-color);
@@ -23,7 +22,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Styles for the fixed navigation bar */
+/* Navbar Styles */
 .navbar {
     border-bottom: 5px solid var(--primary-color);
     position: fixed;
@@ -34,21 +33,19 @@ body {
     box-shadow: 0 4px 2px -2px var(--primary-opacity);
 }
 
-/* Styles for navigation links */
 .navbar a {
     text-decoration: none;
     font-size: .8vw;
     color: var(--text-color);
 }
 
-/* Hover styles for navigation links */
 .navbar a:hover {
     text-decoration: underline;
     text-underline-offset: .4vh;
     text-decoration-color: var(--accent-color);
 }
 
-/* Styles for toolbar */
+/* Toolbar Styles */
 .toolbar {
     display: flex;
     flex-direction: row;
@@ -62,30 +59,27 @@ body {
     margin: 0;
 }
 
-/* Styles for toolbar list items */
 .toolbar li {
     padding-right: .5vw;
 }
 
-/* Styles for toolbar icons */
 .toolbar i {
     padding-right: .3vw;
     color: var(--accent-color);
 }
 
-/* Scroll margin for anchor links */
+/* Scroll Anchors */
 #scroll1, #scroll2, #scroll3, #scroll4 {
     scroll-margin-top: 30vh;
 }
 
-/* Styles for logobar */
+/* Logo Styles */
 .logobar {
     width: 100%;
     height: 10vh;
     padding: 0;
 }
 
-/* Styles for logo container */
 .logofigure {
     margin: 0;
     text-align: center;
@@ -93,13 +87,12 @@ body {
     margin-top: 0;
 }
 
-/* Styles for logo image */
 .logo {
     width: 15vw;
     height: 15vh;
 }
 
-/* Styles for searchbar */
+/* Searchbar Styles */
 .searchbar {
     display: flex;
     justify-content: start;
@@ -108,29 +101,22 @@ body {
     margin-left: 4vw;
 }
 
-/* Styles for search form */
+/* Form Styles */
 .searchbar form {
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     overflow: hidden;
 }
 
-/* Focus styles for search form */
-.searchbar form:focus-within {
-    border: 1px solid var(--primary-color);
-}
-
-/* Styles for search button */
 .searchbar button {
+    height: 4.5vh;
     border: none;
-    border-right: none;
-    padding: 1vh 0 .8vh .8vw;
     cursor: pointer;
+    font-size: 1vw;
     background-color: var(--background-color);
-    color: var(--text-color);
 }
 
-/* Styles for search input */
+/* Input Styles */
 .searchbar input[type=text] {
     border: none;
     border-left: none;
@@ -142,22 +128,22 @@ body {
     font-family: Rajdhani;
 }
 
-/* Placeholder styles for search input */
+/* Placeholder Styles */
 .searchbar input[type=text]::placeholder {
     color: var(--text-color);
 }
 
-/* Focus styles for search input */
+/* Focus Styles */
 .searchbar input[type=text]:focus {
     outline: 0;
 }
 
-/* Hide placeholder text on focus */
+/* Focus Placeholder Styles */
 .searchbar input[type=text]:focus::placeholder {
     color: transparent;
 }
 
-/* Styles for header bar */
+/* Header Bar Styles */
 #headerbar {
     text-align: center;
     font-size: 1.3vw;
@@ -170,7 +156,7 @@ body {
     background-color: var(--primary-opacity);
 }
 
-/* Styles for header text */
+/* Header Bar Text Styles */
 #headerbar p {
     margin: 0;
     padding: 0;
@@ -178,7 +164,7 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styles for home background image */
+/* Home Section Styles */
 #homebackground {
     margin: 0;
     width: 100%;
@@ -187,7 +173,6 @@ body {
     border-bottom: 10px solid var(--primary-color);
 }
 
-/* Styles for home text container */
 #hometextcontainer {
     position: absolute;
     top: 60%;
@@ -198,7 +183,6 @@ body {
     background-color: var(--primary-opacity);
 }
 
-/* Styles for home heading */
 #homeheading {
     margin: 0;
     font-size: 2vw;
@@ -209,7 +193,7 @@ body {
     font-family: Outfit;
 }
 
-/* Styles for home text */
+/* Home Text Container Styles */
 #hometext {
     font-size: 1.1vw;
     margin: 10px 0;
@@ -222,7 +206,7 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styles for register background image */
+/* Register Background Styles */
 #registerbackground {
     margin: 20vh 0 0 0;
     width: 100%;
@@ -231,7 +215,7 @@ body {
     border-bottom: 10px solid var(--primary-color);
 }
 
-/* Styles for register text container */
+/* Register Text Container Styles */
 #registertextcontainer {
     position: absolute;
     top: 60%;
@@ -242,7 +226,7 @@ body {
     background-color: var(--primary-opacity);
 }
 
-/* Styles for register heading */
+/* Register Heading Styles */
 #registerheading {
     margin: 0;
     font-size: 2vw;
@@ -253,7 +237,7 @@ body {
     font-family: Outfit;
 }
 
-/* Styles for register text */
+/* Register Text Styles */
 #registertext {
     font-size: 1.1vw;
     margin: 10px 0;
@@ -266,7 +250,7 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styles for navigation map and routes */
+/* Navigation Map Styles */
 .navmap {
     display: flex;
     flex-direction: row;
@@ -277,42 +261,39 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styles for navigation routes */
+/* Navigation Route Styles */
 .navroute a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-/* Hover styles for navigation routes */
 .navroute a:hover {
     text-decoration: underline;
 }
 
-/* Styles for last navigation route */
+/* Last Navigation Route Styles */
 .lastnavroute a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-/* Hover styles for last navigation route */
 .lastnavroute a:hover {
     text-decoration: underline;
 }
 
-/* Styles for register main container */
+/* Register Main Styles */
 #registermain {
     background-color: var(--background-color);
     margin-bottom: 5vh;
 }
 
-/* Styles for register list container */
+/* Register List Container Styles */
 #registerlistcontainer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/* Styles for register list container */
 #registerlistcontainer {
     margin: 0 auto;
     width: 50%;
@@ -321,7 +302,6 @@ body {
     margin-bottom: 10vh;
 }
 
-/* Styles for register list items */
 #registerlistcontainer li {
     border-top: 1px solid var(--primary-opacity);
     border-top-left-radius: 10px;
@@ -331,12 +311,13 @@ body {
     font-family: Hind Siliguri;
 }
 
-/* Styles for register list items */
+/* Register List Summary Styles */
 #registerlistcontainer summary {
     padding-left: 1vw;
+    cursor: pointer;
 }
 
-/* Styles for register list headings */
+/* Register List Headings Styles */
 #registerlistcontainer h1 {
     margin: 1.5vh 0 1.5vh 0;
     font-size: 2vw;
@@ -344,9 +325,8 @@ body {
     padding-left: 2vw;
 }
 
-/* Styles for register list headings */
 #registerlistcontainer h2 {
-    margin: 0 -3vw 0 -3vw !important;
+    margin: 0 -3vw 0 -3vw!important;
     text-align: center;
     padding: 4vh 0 1.5vh 0;
     font-size: 1.7vw;
@@ -356,24 +336,19 @@ body {
     border-top-right-radius: 10px;
 }
 
-/* Styles for register list links */
+/* Register List Link Styles */
 #registerlistcontainer a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-/* Hover styles for register list links */
 #registerlistcontainer a:hover {
     text-decoration: underline;
     text-underline-offset: .5vh;
     text-decoration-color: var(--secondary-color);
 }
 
-
-
-
-
-/* Styles for register input fields */
+/* Register Content Input Styles */
 .register-content input[type=text] {
     padding: 1vh 1vw;
     width: 92%;
@@ -381,21 +356,18 @@ body {
     border: 2px solid var(--secondary-color);
     background-color: var(--background-color);
     font-family: Hind Siliguri;
-    margin: 2vh 0 2vh 0;
+    margin: 2vh 0;
     color: var(--text-color);
     border-radius: 10px;
     font-size: 1vw;
 }
 
-/* Focus styles for register input fields */
 .register-content input[type=text]:focus {
     border: 2px solid var(--primary-color);
     outline: 0;
 }
 
-
-
-/* Styles for register button */
+/* Register Button Styles */
 .registerbtn {
     background-color: var(--accent-color);
     color: var(--text-color);
@@ -412,12 +384,11 @@ body {
     font-size: 1.2vw;
 }
 
-/* Hover styles for register button */
 .registerbtn:hover {
     opacity: 1;
 }
 
-/* Styles for info container */
+/* Info Container Styles (Continued) */
 #infocontainer {
     display: flex;
     justify-content: center;
@@ -426,7 +397,6 @@ body {
     width: 100%;
 }
 
-/* Styles for info container headings */
 #infocontainer h4 {
     position: absolute;
     margin-top: -6vh;
@@ -436,7 +406,6 @@ body {
     font-family: Outfit;
 }
 
-/* Styles for info container figure */
 #infocontainer figure {
     width: 30vw;
     border: 10px solid var(--primary-color);
@@ -446,14 +415,12 @@ body {
     margin-top: 6vh;
 }
 
-/* Styles for info container images */
 #infocontainer img {
     width: 30vw;
     height: 35vh;
     border-bottom: 4px solid var(--primary-color);
 }
 
-/* Styles for info container captions */
 #infocontainer figcaption {
     margin: 0;
     margin-top: -.7vh;
@@ -461,7 +428,6 @@ body {
     height: 115vh;
 }
 
-/* Styles for info container headings */
 #infocontainer h2 {
     text-align: center;
     margin: 0;
@@ -471,7 +437,6 @@ body {
     font-family: Outfit;
 }
 
-/* Styles for info container subheadings */
 #infocontainer h3 {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
@@ -480,7 +445,6 @@ body {
     font-family: Outfit;
 }
 
-/* Styles for info container paragraphs */
 #infocontainer p {
     padding: 1.5vh 1.5vw 0 2vw;
     margin: 0;
@@ -490,19 +454,17 @@ body {
     line-height: 2.5vh;
 }
 
-/* Styles for info container links */
 #infocontainer a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-/* Hover styles for info container links */
+/* Info Container Styles (Continued) */
 #infocontainer a:hover {
     text-decoration: underline;
     text-underline-offset: .8vh;
 }
 
-/* Styles for slogan image */
 #slogan {
     margin: auto;
     display: block;
@@ -511,7 +473,6 @@ body {
     height: 20vh!important;
 }
 
-/* Styles for TripAdvisor image */
 #tripadvisor {
     margin: auto;
     display: block;
@@ -520,31 +481,27 @@ body {
     height: 15vh!important;
 }
 
-/* Styles for footer */
+/* Footer Styles */
 footer {
     background-color: var(--primary-color);
 }
 
-/* Styles for footer container */
 .footercontainer {
     border-top: 2px solid var(--secondary-color);
     padding-bottom: 1vh;
 }
 
-/* Styles for footer links */
 .footercontainer a {
     text-decoration: none;
     color: var(--background-color);
 }
 
-/* Hover styles for footer links */
 .footercontainer a:hover {
     text-decoration: underline;
     text-underline-offset: .4vh;
     text-decoration-color: var(--secondary-color);
 }
 
-/* Styles for footer list */
 .footerlist {
     display: flex;
     justify-content: center;
@@ -553,13 +510,11 @@ footer {
     padding: 0;
 }
 
-/* Styles for footer list items */
 .footerlist ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Styles for footer list items */
 .footerlist li {
     text-align: center;
     color: var(--background-color);
@@ -570,7 +525,6 @@ footer {
     padding: .7vh 0 .7vh 0;
 }
 
-/* Styles for footer headings */
 .footerlist h2 {
     text-align: center;
     font-size: 2.2vw;
@@ -578,12 +532,10 @@ footer {
     font-family: Outfit;
 }
 
-/* Styles for footer address */
 .footerlist address {
     font-style: normal;
 }
 
-/* Styles for footer horizontal rule */
 .footercontainerhr {
     left: 0;
     right: 0;
@@ -596,12 +548,10 @@ footer {
     height: 2px;
 }
 
-/* Styles for hours container */
 .hourscontainer {
     padding: 1vh 0 1vh 0;
 }
 
-/* Styles for hours container list */
 .hourscontainer ul {
     list-style-type: none;
     padding: 0;
@@ -610,7 +560,6 @@ footer {
     gap: 11vw;
 }
 
-/* Styles for hours container list items */
 .hourscontainer li {
     padding: .5vh 0 .8vh 0;
     color: var(--background-color);
@@ -620,7 +569,6 @@ footer {
     text-align: center;
 }
 
-/* Styles for hours container headings */
 .hourscontainer h3 {
     padding: 2vh 0 .8vh 0;
     margin: 0 0 2vh 0;
@@ -629,7 +577,6 @@ footer {
     font-family: Outfit;
 }
 
-/* Styles for hours container horizontal rule */
 .hourscontainerhr {
     left: 0;
     right: 0;
@@ -642,7 +589,6 @@ footer {
     height: 2px;
 }
 
-/* Styles for footer logos */
 .footerlogos {
     display: flex;
     justify-content: center;
@@ -650,13 +596,11 @@ footer {
     text-align: center;
 }
 
-/* Styles for footer logo and slogan */
 .footerlogo, .footerslogan {
     width: 20vw;
     height: 20vh;
 }
 
-/* Styles for footer icons */
 .footericons {
     display: flex;
     justify-content: center;
@@ -664,17 +608,14 @@ footer {
     padding: 5vh 0 2.5vh 0;
 }
 
-/* Styles for footer icon links */
 .footericons a {
     color: var(--background-color);
 }
 
-/* Hover styles for footer icon links */
 .footericons a:hover {
     color: var(--secondary-color);
 }
 
-/* Styles for footer icons */
 .footericons i {
     font-size: 3.5vw;
 }

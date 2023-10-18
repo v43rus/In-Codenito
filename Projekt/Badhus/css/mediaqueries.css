@@ -1,45 +1,65 @@
-/* For Phones, See style.css for explanation */
+/* For phones, See style.css for explanations */
 @media only screen and (min-width: 0px) and (max-width: 500px) {
+    .navbar {
+        height: 25vh;
+        padding-top: 3vh;
+    }
     .navbar a {
-        font-size: 2vw;
+        font-size: 3.5vw;
+    }
+    .toolbar {
+        flex-wrap: wrap;
     }
     .logo {
-        width: 35vw;
+        width: 50vw;
+        margin-right: -35vw;
+        margin-top: 4vh;
+    }
+    .searchbar {
+        margin-top: -15vh;
+    }
+    .searchbar button {
+        font-size: 4.5vw;
     }
     .searchbar input[type=text] {
-        font-size: 2.1vw;
-        width: 15vw;
+        font-size: 5vw;
+        width: 25vw;
     }
     #headerbar {
-        font-size: 2vw;
-        line-height: 4vh;
-        height: 4vh;
+        display: none;
     }
-    #homebackground, #registerbackground {
+    #homebackground,
+    #registerbackground {
         border-bottom: 5px solid var(--primary-color);
+        margin: 28vh 0 0 0;
     }
-    #hometextcontainer, #registertextcontainer {
+    #hometextcontainer,
+    #registertextcontainer {
         width: 80%;
+        top: 67%;
     }
-    #homeheading, #registerheading {
-        font-size: 3.5vw;
+    #homeheading,
+    #registerheading {
+        font-size: 6vw;
         padding-bottom: 0;
     }
-    #hometext, #registertext {
-        font-size: 2.7vw;
-        padding: 0 5vw 0 5vw;
+    #hometext,
+    #registertext {
+        font-size: 4.5vw;
+        margin: 0 5vw 0 5vw;
+        line-height: 3.5vh;
     }
     .navmap {
-        font-size: 2.7vw;
-        padding: 0 0 0 10vw;
+        font-size: 5vw;
+        padding: 0 0 0 7.5vw;
     }
     #infocontainer h4 {
-        font-size: 2.7vw;
-        margin-top: -1vh;
+        display: none;
     }
     #infocontainer {
         gap: 0;
         margin-top: 3vh;
+        flex-direction: column;
     }
     #infocontainer figure {
         border: 5px solid var(--primary-color);
@@ -49,78 +69,100 @@
     }
     #infocontainer img {
         width: 100%;
-        height: 15vh;
+        height: 20vh;
     }
     #infocontainer figcaption {
-        height: 105vh;
+        height: fit-content;
+        width: 90%;
+        margin-bottom: 10vh;
     }
     #infocontainer h2 {
-        font-size: 3vw;
+        font-size: 6vw;
+        white-space: nowrap;
     }
     #infocontainer p {
-        font-size: 2.1vw;
+        font-size: 5vw;
+        padding-left: 3vw;
+        line-height: 3.5vh;
     }
     #infocontainer h3 {
-        font-size: 2.4vw;
+        font-size: 5.5vw;
+        white-space: nowrap;
     }
     #infocontainer a {
         text-align: center;
         display: block;
-        padding-top: 5vh;
+        padding: 5vh 0 0 0;
     }
     #infocontainer a:hover {
         text-underline-offset: 0.25vh;
     }
-    #remove, #tripadvisor, #slogan {
+    #remove,
+    #slogan,
+    #tripadvisor {
         display: none;
     }
-    #registerlistcontainer li {
-        font-size: 2.2vw;
-        padding: 1.2vh 0 1.2vh 3vw;
+    #registerlistcontainer {
+        width: 70%;
     }
-    #registerlistcontainer h2 {
-        font-size: 2.8vw;
+    #registerlistcontainer li {
+        font-size: 5vw;
+        padding: 1.2vh 1vw 1.2vh 1vw;
+        line-height: 3.5vh;
+    }
+    #registerlistcontainer h1 {
+        font-size: 6vw;
         margin: 1vh 0 1vh 0;
     }
-    .registercontainer p, .registercontainer input[type=text] {
-        font-size: 2.3vw;
+    #registerlistcontainer h2 {
+        font-size: 5vw;
     }
-    .registercontainer h2, .registercontainer label {
-        font-size: 2.7vw;
+    .register-content input[type=text] {
+        font-size: 3vw;
     }
     .registerbtn {
-        font-size: 2.7vw;
+        font-size: 4vw;
     }
     .footerlist li {
-        font-size: 2.7vw;
+        font-size: 5vw;
     }
     .footerlist h2 {
-        font-size: 5vw;
+        font-size: 8vw;
     }
     .hourscontainer ul {
         gap: 0;
     }
     .hourscontainer li {
-        font-size: 2.7vw;
+        font-size: 5vw;
     }
     .hourscontainer h3 {
-        font-size: 4vw;
+        font-size: 7vw;
     }
-    .footerlogo, .footerslogan {
-        width: 35vw;
+    .footerlogo,
+    .footerslogan,
+    .hourscontainerhr {
+        display: none;
     }
     .footericons i {
-        font-size: 6vw;
+        font-size: 10vw;
+    }
+    .footerlist,
+    .hourscontainer ul {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
-/* For Tablets, See style.css for explanation */
+/* For Tablets, See style.css for explanations */
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .navbar a {
         font-size: 1.7vw;
     }
     .logo {
         width: 30vw;
+    }
+    .searchbar button {
+        font-size: 2.1vw;
     }
     .searchbar input[type=text] {
         font-size: 2.1vw;
@@ -130,14 +172,17 @@
         font-size: 2vw;
         line-height: 4.5vh;
     }
-    #hometextcontainer, #registertextcontainer {
+    #hometextcontainer,
+    #registertextcontainer {
         width: 80%;
     }
-    #homeheading, #registerheading {
+    #homeheading,
+    #registerheading {
         font-size: 3.5vw;
         padding-bottom: 0;
     }
-    #hometext, #registertext {
+    #hometext,
+    #registertext {
         font-size: 2.7vw;
         padding: 0 5vw 0 5vw;
     }
@@ -161,7 +206,7 @@
     }
     #infocontainer img {
         width: 100%;
-        height: 25vh;
+        height: 20vh;
     }
     #infocontainer figcaption {
         height: 105vh;
@@ -175,12 +220,13 @@
     #infocontainer p {
         font-size: 1.8vw;
     }
-    #remove, #tripadvisor {
+    #remove,
+    #tripadvisor {
         display: none;
     }
     #slogan {
-        width: 25vw !important;
-        height: 13vh !important;
+        width: 25vw!important;
+        height: 13vh!important;
         margin-top: 2vh;
     }
     #registerlistcontainer li {
@@ -189,12 +235,6 @@
     #registerlistcontainer h2 {
         font-size: 2.5vw;
         margin: 1vh 0 1vh 0;
-    }
-    .registercontainer p, .registercontainer input[type=text] {
-        font-size: 2vw;
-    }
-    .registercontainer h2, .registercontainer label {
-        font-size: 2.4vw;
     }
     .registerbtn {
         font-size: 2.4vw;
@@ -214,24 +254,25 @@
     .hourscontainer h3 {
         font-size: 3.4vw;
     }
-    .footerlogo, .footerslogan {
-        width: 30vw;
+    .footerlogo,
+    .footerslogan {
+        width: 35vw;
     }
     .footericons i {
         font-size: 5vw;
     }
 }
 
-
-
-
-/* For Laptops, See style.css for explanation */
+/* For Laptops, see style.css for explanations */
 @media only screen and (min-width: 901px) and (max-width: 1100px) {
     .navbar a {
         font-size: 1.5vw;
     }
     .logo {
         width: 20vw;
+    }
+    .searchbar button {
+        font-size: 1.7vw;
     }
     .searchbar input[type=text] {
         width: 11vw;
@@ -241,16 +282,19 @@
         font-size: 1.5vw;
         line-height: 4.5vh;
     }
-    #hometextcontainer, #registertextcontainer {
+    #hometextcontainer,
+    #registertextcontainer {
         width: 60%;
     }
-    #homeheading, #registerheading {
+    #homeheading,
+    #registerheading {
         font-size: 2.7vw;
         padding-bottom: 0;
     }
-    #hometext, #registertext {
+    #hometext,
+    #registertext {
         font-size: 2vw;
-        padding-bottom: 0 5vw 0 5vw;
+        padding: 0 5vw 0 5vw;
     }
     .navmap {
         font-size: 2vw;
@@ -280,12 +324,7 @@
     }
     #registerlistcontainer h2 {
         font-size: 2vw;
-    }
-    .registercontainer p, .registercontainer input[type=text] {
-        font-size: 1.7vw;
-    }
-    .registercontainer h2, .registercontainer label {
-        font-size: 2vw;
+        margin: 1vh 0 1vh 0;
     }
     .registerbtn {
         font-size: 2vw;
@@ -301,5 +340,9 @@
     }
     .hourscontainer h3 {
         font-size: 2vw;
+    }
+    .footerlogo,
+    .footerslogan {
+        width: 35vw;
     }
 }
