@@ -6,21 +6,22 @@
     --text-color: #000000;
 }
 
+.mainSkolor{
+    width: 100%;
+}
+
 .skolwrapper{
     display: flex;
     flex-wrap: wrap;
 }
-
-.navOverview li{
-	   display: inline;
-}
-
+/*----------------Navigation styling börjar här--------------*/
 .navskolor{
-	   height: 210px;
+       height: 210px;
 	   width: 110px;
-	   padding-right: 20px;
+	   padding-right: 35px;
 	   border-right: 3px solid;
-       border-color: #A44040;
+       /*border-color: #A44040;*/
+       border-image: linear-gradient(#FFFFFF,#A44040,#A44040, #FFFFFF) 1;
        margin-top: 30px;
        margin-right: 40px;
 }
@@ -29,57 +30,72 @@
 	   list-style-type: none;
 	   text-decoration: none;
 }
-
+.navskolor a{
+    color:#8B8852;
+}
+.navskolor a:hover{
+    color:#CBBD98;
+}
+.currentLink {
+    text-decoration: underline;
+}
+/*------------------------Navigation styling slutar här-------------*/
 .titelSkola{
     width: 100%;
     text-align: center;
 }
 
-/*
 .skolbildcontainer{
-    width: 35%;
-}
-*/
-/*
-.infoSkola{
-    width: 40%;
+    width: 90%;
     margin: auto;
 }
-*/
+
+.skolbild{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 800px){   /*På små skärmar ska sidomenyn se annorlunda ut*/
-    .navskolor{
+    .navskolor{                         /*och byta plats med skoltiteln.*/
         width: 100%;
         height: fit-content;
         margin: auto;
-        /*margin-top: 0px;
-        margin-right: 0px;*/
+        margin-top: -170px;
         text-align: center;
-        /*border: 1px solid black;*/
         border: none;
     }
+
     .navskolor li{
-        display: inline;
-        padding: 6px;
-        border: 1px solid black;
+        display: inline-block;
+        margin: 8px;
+        padding: 8px;
+        border: 1px solid #8B8852;
         border-radius: 40px;
         background-color: #8B8852;
     }
+
     .navskolor a{
         color:#FFFFFF;
     }
+
+    .titelSkola{
+        margin-top: 90px;
+    }
 }
 
-@media screen and (min-width: 1000px){   /*Laptop, surfplatta och mobil ska ha denna layout*/
+@media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
     .skolbildcontainer{
-        width: 70%;
-    }
-    .skolbild{
-        width: 100%;
-        object-fit: contain;
+        width: 35%;
+        margin: 0;
     }
     
     .infoSkola{
-        width: 95%;
+        width: 40%;
         margin: auto;
+    }
+
+    #skolstartsida{
+        width: 80%;
     }
 }
