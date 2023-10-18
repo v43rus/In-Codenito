@@ -5,12 +5,43 @@
     --background-color: #FFFFFF;
     --text-color: #000000;
 }
+
 /* font förslag, poppins */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap'); */
 
-body{
+/* #region GENERELLA RULES */
+
+body {
     /* font-family: poppins, sans-serif; */
 }
+
+.navOverview ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    max-height: fit-content;
+}
+
+.navOverview li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inlineIcon {
+    max-width: 20px;
+    padding: 5px;
+}
+
+.inlineImgLink {
+    display: flex;
+    align-items: center;
+}
+
+/* #endregion */
+
+
 
 /* #region HEADER & FOOTER RULES */
 
@@ -145,7 +176,29 @@ footer section {
 
 
 
+/* #region KOMMUN & POLITIK RULES */
 
+#kommun-politik-startsida {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#mainContentKP {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+#forvaltningar {}
+
+#forvaltningarLista {}
+
+#forvaltningarInfo
+/* #endregion */
 
 
 
@@ -285,6 +338,7 @@ a {
     font-size: large;
     margin-left: 5px;
 }
+
 /* #endregion */
 
 
@@ -299,22 +353,24 @@ a {
 
 /* #region  MEDIA QUERIES YO*/
 
-@media (max-width: 650px){
-    .container{
+@media (max-width: 650px) {
+    .container {
         gap: 0px;
     }
 
-    .card-content{
+    .card-content {
         margin: 0;
     }
+
     .card-content h2,
     .card-content p {
-    text-decoration: none;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-    .card-img{
+        text-decoration: none;
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .card-img {
         width: 200px;
         object-fit: cover;
     }
