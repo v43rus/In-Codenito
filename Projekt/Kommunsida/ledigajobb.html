@@ -43,7 +43,7 @@
                     alt="Ansök till jobbet som lärare idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
-                    <a href="#"><button class="read-button">ANSÖK NU</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
 
@@ -54,7 +54,7 @@
                     alt="Ansök till jobbet som sopåkare idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
-                    <a href="#"><button class="read-button">ANSÖK NU</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
 
@@ -65,7 +65,7 @@
                     alt="Ansök till jobbet som busschaufför idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
-                    <a href="#"><button class="read-button">ANSÖK NU</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
 
@@ -76,7 +76,7 @@
                     alt="Ansök till jobbet som parkarbetare idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
-                    <a href="#"><button class="read-button">ANSÖK NU</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
 
@@ -87,13 +87,56 @@
                     alt="Ansök till jobbet som parkarbetare idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
-                    <a href="#"><button class="read-button">ANSÖK NU</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
 
         </section>
+        
 
+        <!--Form for job application-->
+        <form id="application-form" method="post" autocomplete="on">
+            <h2 id="h2-form">Ansök till din framtid idag!</h2>
 
+            <!--Division with grid for form elements-->
+            <div id="formgrid">
+
+                <!--Personal information-->
+                <input type="text" id="fname" class="job-application-input" name="fname" required autocomplete="on" placeholder="Förnamn">
+                <input type="text" id="lname" class="job-application-input" name="lname" required autocomplete="on" placeholder="Efternamn">
+                <br>
+                <input type="text" id="adress" class="job-application-input" name="adress" required autocomplete="on" placeholder="Adress">
+                <br>
+                <input type="text" id="postalcode" class="job-application-input" name="postalcode" required autocomplete="on" placeholder="Postnummer">
+                <input type="text" id="city" class="job-application-input" name="city" required autocomplete="on" placeholder="Stad">
+                <br>
+                <input type="email" id="email" class="job-application-input" name="email" required autocomplete="on" placeholder="E-post adress">
+                <input type="text" id="phone-number" class="job-application-input" name="phone-number" required autocomplete="on" placeholder="Telefonnummer">
+
+                <!--Profession to apply for-->
+                <label for="profession" id="label-profession">Vilket yrke söker du?</label>
+                <select name="profession" id="profession" required>
+                    <option value="-" selected>-</option>
+                    <option value="Lärare">Lärare</option>
+                    <option value="Sopåkare">Sopåkare</option>
+                    <option value="Busschaufför">Busschaufför</option>
+                    <option value="Parkarbetare">Parkarbetare</option>
+                    <option value="Biblotekarie">Biblotekarie</option>
+                </select>
+
+                <!--Files for applicant to upload-->
+                <label for="CV-file" id="label-CV-file">Ladda upp ditt CV:</label>
+                <input type="file" name="CV-file" id="CV-file">
+                <label for="PB-file" id="label-PB-file">Ladda upp ditt personliga brev:</label>
+                <input type="file" name="PB-file" id="PB-file">
+                
+                <!--Message box-->
+                <textarea name="message" id="message" placeholder="Övriga noteringar" cols="30" rows="10"></textarea>
+
+                <!--Submit button-->
+                <input type="submit" value="Submit" id="submit-button">
+            </div>
+        </form>
     </main>
 
     <footer>
