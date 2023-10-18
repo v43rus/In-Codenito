@@ -7,7 +7,7 @@
 }
 
 /* font förslag, poppins */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap');
 
 /* #region GENERELLA RULES */
 
@@ -55,6 +55,7 @@ body {
 }
 
 body {
+    font-family: poppins, sans-serif; /* mhattias font förslag */
     overflow-y: auto;
     overflow-x: hidden;
     margin: 0px;
@@ -231,7 +232,7 @@ footer section {
     align-items: center;
     min-height: 25vh;
     width: 70%;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     background-color: var(--background-color);
     border: solid #626429;
