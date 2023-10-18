@@ -24,7 +24,6 @@
        margin-top: 30px;
        margin-right: 40px;
 }
-
 .navskolor li{
 	   margin-bottom: 18px;
 	   list-style-type: none;
@@ -32,19 +31,22 @@
 }
 
 .titelSkola{
-    width: 70%;
+    width: 100%;
+    text-align: center;
 }
 
-.skolbild{
-    width: 480px;
+/*
+.skolbildcontainer{
+    width: 35%;
 }
-
+*/
+/*
 .infoSkola{
-    width: 95%;
+    width: 40%;
     margin: auto;
 }
-
-@media screen and (max-width: 800px){
+*/
+@media screen and (max-width: 800px){   /*På små skärmar ska sidomenyn se annorlunda ut*/
     .navskolor{
         width: 100%;
         height: fit-content;
@@ -64,5 +66,20 @@
     }
     .navskolor a{
         color:#FFFFFF;
+    }
+}
+
+@media screen and (min-width: 1000px){   /*Laptop, surfplatta och mobil ska ha denna layout*/
+    .skolbildcontainer{
+        width: 70%;
+    }
+    .skolbild{
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .infoSkola{
+        width: 95%;
+        margin: auto;
     }
 }
