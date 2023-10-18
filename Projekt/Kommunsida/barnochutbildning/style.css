@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+/*----------------Navigation styling börjar här--------------*/
 .navskolor{
        height: 210px;
 	   width: 110px;
@@ -30,7 +30,16 @@
 	   list-style-type: none;
 	   text-decoration: none;
 }
-
+.navskolor a{
+    color:#8B8852;
+}
+.navskolor a:hover{
+    color:#CBBD98;
+}
+.currentLink {
+    text-decoration: underline;
+}
+/*------------------------Navigation styling slutar här-------------*/
 .titelSkola{
     width: 100%;
     text-align: center;
@@ -56,6 +65,7 @@
         text-align: center;
         border: none;
     }
+
     .navskolor li{
         display: inline-block;
         margin: 8px;
@@ -64,6 +74,7 @@
         border-radius: 40px;
         background-color: #8B8852;
     }
+
     .navskolor a{
         color:#FFFFFF;
     }
@@ -82,5 +93,9 @@
     .infoSkola{
         width: 40%;
         margin: auto;
+    }
+
+    #skolstartsida{
+        width: 80%;
     }
 }
