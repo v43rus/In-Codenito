@@ -334,6 +334,7 @@ body {
 /* Styles for register list items */
 #registerlistcontainer summary {
     padding-left: 1vw;
+    cursor: pointer;
 }
 
 /* Styles for register list headings */
