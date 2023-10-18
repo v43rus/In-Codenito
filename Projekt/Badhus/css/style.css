@@ -302,7 +302,7 @@ body {
 /* Styles for register main container */
 #registermain {
     background-color: var(--background-color);
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 /* Styles for register list container */
@@ -314,28 +314,46 @@ body {
 
 /* Styles for register list container */
 #registerlistcontainer {
-    margin-top: 7vh!important;
     margin: 0 auto;
     width: 50%;
     border: 5px solid var(--primary-opacity);
     border-radius: 10px;
+    margin-bottom: 10vh;
 }
 
 /* Styles for register list items */
 #registerlistcontainer li {
-    border-bottom: 1px solid var(--primary-opacity);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 1.5vh 0 1.5vh 3vw;
+    border-top: 1px solid var(--primary-opacity);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1.5vh 3vw 1.5vh 3vw;
     font-size: 1.1vw;
     font-family: Hind Siliguri;
 }
 
+/* Styles for register list items */
+#registerlistcontainer summary {
+    padding-left: 1vw;
+}
+
+/* Styles for register list headings */
+#registerlistcontainer h1 {
+    margin: 1.5vh 0 1.5vh 0;
+    font-size: 2vw;
+    font-family: Outfit;
+    padding-left: 2vw;
+}
+
 /* Styles for register list headings */
 #registerlistcontainer h2 {
-    margin: 1.5vh 0 1.5vh 0;
-    font-size: 1.5vw;
+    margin: 0 -3vw 0 -3vw !important;
+    text-align: center;
+    padding: 4vh 0 1.5vh 0;
+    font-size: 1.7vw;
     font-family: Outfit;
+    border-top: 1px solid var(--primary-opacity);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Styles for register list links */
@@ -351,48 +369,12 @@ body {
     text-decoration-color: var(--secondary-color);
 }
 
-/* Scroll margins for anchor links */
-#scroll10, #scroll11, #scroll5, #scroll6, #scroll7, #scroll8, #scroll9 {
-    scroll-margin-top: 37vh;
-}
 
-/* Styles for register horizontal rule */
-.registerhr {
-    background-color: var(--primary-opacity);
-    height: .2vh;
-    margin: 0 auto;
-    width: 80%;
-}
 
-/* Styles for register container */
-.registercontainer {
-    padding: 1.5vw;
-    background-color: var(--background-color);
-    margin: 0 auto;
-    width: 50%;
-    border: 5px solid var(--primary-opacity);
-    border-radius: 10px;
-    padding: 2vh 3vw 5vh 3vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
 
-/* Styles for register container headings and labels */
-.registercontainer h2, .registercontainer label {
-    font-family: Outfit;
-    color: var(--text-color);
-    font-size: 1.3vw;
-}
-
-/* Styles for register container paragraphs */
-.registercontainer p {
-    font-family: Hind Siliguri;
-    color: var(--text-color);
-    font-size: 1.1vw;
-}
 
 /* Styles for register input fields */
-.registercontainer input[type=text] {
+.register-content input[type=text] {
     padding: 1vh 1vw;
     width: 92%;
     display: block;
@@ -406,10 +388,12 @@ body {
 }
 
 /* Focus styles for register input fields */
-.registercontainer input[type=text]:focus {
+.register-content input[type=text]:focus {
     border: 2px solid var(--primary-color);
     outline: 0;
 }
+
+
 
 /* Styles for register button */
 .registerbtn {
@@ -424,6 +408,7 @@ body {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 4vh;
     font-size: 1.2vw;
 }
 
