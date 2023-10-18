@@ -230,35 +230,40 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     min-height: 25vh;
-    width: 70%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 20px auto;
     padding: 10px;
     background-color: var(--background-color);
     border: solid #626429;
 }
 
 /* AKTUELL SECTION */
+#news{
+    margin-left: 5%;
+}
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
     padding-top: 40px;
     padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: grid;
     align-items: center;
     text-align: center;
     gap: 155px;
-    row-gap: 32px;
     grid-template-columns: 1fr 1fr;
     max-width: 800px;
     background-color: var(--background-color);
 }
 
 .aktuellt-section article img {
-    max-width: 280px;
-    height: 40%;
+    max-width: 70%;
 }
 
-.solenergi {
+.fritidsgård {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
 }
@@ -268,13 +273,22 @@ footer section {
     background-color: var(--background-color-color);
 }
 
-.cykelstråk {
+.bio {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
 }
 
+.badhus {
+    border-bottom: solid var(--secondary-color);
+    background-color: var(--background-color-color);
+
+}
+
 /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
+#twoCards{
+   padding: 0 auto;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -355,6 +369,8 @@ a {
 /* #region  MEDIA QUERIES YO*/
 
 @media (max-width: 650px) {
+    
+    /* CARD QUERY */
     .container {
         gap: 0px;
     }
@@ -372,9 +388,22 @@ a {
     }
 
     .card-img {
-        width: 200px;
-        object-fit: cover;
+        width: 260px;
+        object-fit:cover;
     }
+
+    /* NYHETER QUERY */
+    .aktuellt-section{
+        gap: 15px;
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    } 
+    .aktuellt-section article p{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
 }
 
 /* #endregion  */
