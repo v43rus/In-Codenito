@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="naringsliv.css">
     <title>Näringsliv - Incodenito Kommun</title>
 </head>
 
@@ -16,16 +17,67 @@
         </section>
 
         <nav>
-            <a href="ledigajobb.html" alt="Lediga jobb i Incodenito kommun">Lediga Jobb</a>
-            <a href="naringsliv.html" alt="Näringsliv">Näringsliv</a>
-            <a href="kulturochfritid.html" alt="Vad finns att göra i kommunen">Kultur &amp; Fritid</a>
-            <a href="barnochutbildning.html" alt="Barn och utbildning">Barn &amp; Utbildning</a>
-            <a href="kommunochpolitik.html" alt="Kommun och politik">Kommun &amp; Politik</a>
+            <a href="ledigajobb.html">Lediga Jobb</a>
+            <a href="naringsliv.html">Näringsliv</a>
+            <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
+            <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
+            <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
         </nav>
     </header>
 
-    <main>Main Content</main>
+    <main class="mainNaringsliv">
+        <nav class="navOverview">
+            <ul>
+                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png"><a href="index.html">Startsida</a></li>
+                <li>/</li>
+                <li>Näringsliv</li>
+            </ul>
+        </nav>
 
+        <section class="naringslivwrapper">
+            <section class="titelNaringsliv">
+                <h1 class="naringsliv">Näringsliv</h1>
+            </section>
+
+            <section id="formNaringsliv">
+                <form id="event-form" method="post" autocomplete="on">
+                    <h4 id="h4-event">Ansökan om att hålla ett event.</h4>
+
+                    <!--Info-->
+                    <input type="text" id="fname" class="eventAnsokan" name="fname" required autocomplete="on" placeholder="Förnamn">
+                    <input type="text" id="lname" class="eventAnsokan" name="lname" required autocomplete="on" placeholder="Efternamn">
+                    <br>
+                    <input type="text" id="adress" class="eventAnsokan" name="adress" required autocomplete="on" placeholder="Adress">
+                    <br>
+                    <input type="text" id="postalcode" class="eventAnsokan" name="postalcode" required autocomplete="on" placeholder="Postnummer">
+                    <input type="text" id="city" class="eventAnsokan" name="city" required autocomplete="on" placeholder="Stad">
+                    <br>
+                    <input type="email" id="email" class="eventAnsokan" name="email" required autocomplete="on" placeholder="E-post adress">
+                    <input type="text" id="phone-number" class="eventAnsokan" name="phone-number" required autocomplete="on" placeholder="Telefonnummer">
+
+                    <!--Events-->
+                    <label for="events" id="label-events">Välj event</label>
+                    <select name="events" id="events" required>
+                        <option value="-" selected>-</option>
+                        <option value="Event">Event</option>
+                        <option value="Tävling">Tävling</option>
+                        <option value="Festival">Festival</option>
+                    </select>
+                
+                    <!--Submit-->
+                    <input type="submit" value="Skicka ansökan" id="submit-button">
+                </form>
+            </section>
+
+            <section id="infoNaringsliv">
+                <p>
+                    Här kommer det inom kort fyllas på med information. Under tiden
+                    kan du stirra på denna fina text.
+                </p>
+            </section>
+            
+        </section>
+    </main>
 
     <footer>
         <section>
