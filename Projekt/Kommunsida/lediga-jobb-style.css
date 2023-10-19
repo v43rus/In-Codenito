@@ -10,7 +10,7 @@ html{
 }
 
 /*text at beginning of page*/
-summary {
+#job-summary {
     width: fit-content;
     text-align: center;
     margin: auto;
@@ -139,6 +139,7 @@ summary {
 /*Division cotaining the grid in the form*/
 #formgrid{
     background-color: #CBBD98;
+    background-color: var(--secondary-color);
     border-radius: 5px;
 
     display: inline-grid;
