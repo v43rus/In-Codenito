@@ -298,7 +298,6 @@ footer section {
     background-position: top;
     background-blend-mode: multiply;
     /* background-repeat: no-repeat; */
-    background-size: fill;
     background-attachment: local;
     display: flex;
     flex-direction: column;
@@ -360,9 +359,9 @@ footer section {
 
 /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
-#twoCards {
+/* #twoCards {
     padding: 0 auto;
-}
+} */
 
 .container {
     display: flex;
