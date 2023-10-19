@@ -11,8 +11,19 @@
 
 /* #region GENERELLA RULES */
 
+
 body {
-    /* font-family: poppins, sans-serif; */
+    font-family: poppins, sans-serif;
+    /* mhattias font förslag */
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navOverview ul {
@@ -29,6 +40,10 @@ body {
     justify-content: center;
 }
 
+#kommunensHistoriaImg {
+    width: 100%;
+}
+
 .inlineIcon {
     max-width: 20px;
     padding: 5px;
@@ -37,6 +52,7 @@ body {
 .inlineImgLink {
     display: flex;
     align-items: center;
+    margin: 0px;
 }
 
 /* #endregion */
@@ -54,18 +70,6 @@ body {
     max-width: 10%;
 }
 
-body {
-    font-family: poppins, sans-serif; /* mhattias font förslag */
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 header {
     background-image: url("Images/kommunheader.jpg");
@@ -172,6 +176,11 @@ footer section {
     padding: 8px 0px;
 }
 
+#earIcon {
+    max-width: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
 /* #endregion */
 
 
@@ -191,14 +200,78 @@ footer section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    width: 80%;
 }
 
-#forvaltningar {}
+#figureKP {
+    border: 1px #6e6e6e solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
 
-#forvaltningarLista {}
+#figCaptionKP {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
 
-#forvaltningarInfo
+.sideBySide {
+    display: flex;
+    flex-direction: row;
+}
+
+.screenFifty {
+    max-width: 50%;
+    margin: 10px;
+}
+
+.screenThirty {
+    max-width: 30%;
+    margin: 10px;
+}
+
+.screenSeventy {
+    max-width: 70%;
+    margin: 10px;
+}
+
+#forvaltningar {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    padding: 0;
+}
+
+#forvaltningar ul {
+    margin: 0px 10px 0px 0px;
+}
+
+#forvaltningarLista li {
+    list-style-type: none;
+    border: solid var(--text-color);
+    border-width: 2px 2px 0px 2px;
+    padding: 15px 10px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+#forvaltningar li:last-child {
+    border-width: 2px 2px 2px 2px;
+}
+
+
+
+#forvaltningarInfo {
+    font-size: 90%;
+    border: solid 1px black;
+    width: 60%;
+    padding: 10px;
+}
+
 /* #endregion */
 
 
@@ -241,9 +314,10 @@ footer section {
 }
 
 /* AKTUELL SECTION */
-#news{
+#news {
     margin-left: 5%;
 }
+
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
     padding-top: 40px;
@@ -286,9 +360,10 @@ footer section {
 
 /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
-#twoCards{
-   padding: 0 auto;
+#twoCards {
+    padding: 0 auto;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -369,7 +444,7 @@ a {
 /* #region  MEDIA QUERIES YO*/
 
 @media (max-width: 650px) {
-    
+
     /* CARD QUERY */
     .container {
         gap: 0px;
@@ -389,17 +464,18 @@ a {
 
     .card-img {
         width: 260px;
-        object-fit:cover;
+        object-fit: cover;
     }
 
     /* NYHETER QUERY */
-    .aktuellt-section{
+    .aktuellt-section {
         gap: 15px;
         grid-template-columns: 1fr;
         max-width: 450px;
         margin: 0 auto;
-    } 
-    .aktuellt-section article p{
+    }
+
+    .aktuellt-section article p {
         font-size: 0.9rem;
         font-weight: 500;
     }
