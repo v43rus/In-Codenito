@@ -7,7 +7,6 @@
     <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
     <title>Lediga jobb - Incodenito Kommun</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lediga-jobb-style.css">
 </head>
 
 <body>
@@ -28,7 +27,7 @@
 
     <main>
 
-        <summary>
+        <summary id="job-summary">
             <h1>Lediga jobb</h1>
             <p>Här hittar du våra lediga tjänster i kommunen</p>
             <p>Vill du ansöka till ett jobb gör du det i formuläret längs ned på sidan</p>
@@ -38,7 +37,7 @@
             <!--Some images are attributed to a second kind of class depending on their need of positioning-->
             <!--Job offer-->
             <article class="job-offer-box">
-                <h2 class="job-offer-name">&nbsp;Lärare&nbsp;</h2>
+                <h2 class="job-offer-name">&nbsp;Fritidsledare&nbsp;</h2>
                 <img class="job-offer-img-kind-1" src="Images/ledigajobb - lärare.jpg"
                     alt="Ansök till jobbet som lärare idag">
                 <section class="button-section">
@@ -49,9 +48,9 @@
 
             <!--Job offer-->
             <article class="job-offer-box">
-                <h2 class="job-offer-name">&nbsp;Sopåkare&nbsp;</h2>
-                <img class="job-offer-img-kind-1" src="Images/ledigajobb - sopåkare.jpg"
-                    alt="Ansök till jobbet som sopåkare idag">
+                <h2 class="job-offer-name">&nbsp;Biovärd&nbsp;</h2>
+                <img class="job-offer-img-kind-1" src="Images/ledigajobb - biovärd.jpg"
+                    alt="Ansök till jobbet som biovärd idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
                     <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
@@ -71,9 +70,9 @@
 
             <!--Job offer-->
             <article class="job-offer-box">
-                <h2 class="job-offer-name">&nbsp;Parkarbetare&nbsp;</h2>
-                <img class="job-offer-img-kind-2" src="Images/ledigajobb - parkarbetare.jpg"
-                    alt="Ansök till jobbet som parkarbetare idag">
+                <h2 class="job-offer-name">&nbsp;Utvecklings-&nbsp;<br>&nbsp;ingenjör&nbsp;</h2>
+                <img class="job-offer-img-kind-2" src="Images/ledigajobb - Utvecklingsingenjör 2.jpg"
+                    alt="Ansök till jobbet som utvecklingsingenjör idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
                     <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
@@ -84,14 +83,25 @@
             <article class="job-offer-box">
                 <h2 class="job-offer-name">&nbsp;Biblotekarie&nbsp;</h2>
                 <img class="job-offer-img-kind-2" src="Images/ledigajobb - biblotekarie.jpg"
-                    alt="Ansök till jobbet som parkarbetare idag">
+                    alt="Ansök till jobbet som biblotekarie idag">
+                <section class="button-section">
+                    <a href=""><button class="read-button">LÄS MER</button></a>
+                    <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
+                </section>
+            </article>
+        
+
+            <!--Job offer-->
+            <article class="job-offer-box">
+                <h2 class="job-offer-name">&nbsp;Badmästare&nbsp;</h2>
+                <img class="job-offer-img-kind-2" src="Images/ledigajobb - badvakt.jpg"
+                    alt="Ansök till jobbet som badmästare idag">
                 <section class="button-section">
                     <a href=""><button class="read-button">LÄS MER</button></a>
                     <a href="#application-form"><button class="read-button">ANSÖK NU</button></a>
                 </section>
             </article>
         </section>
-        
 
         <!--Form for job application-->
         <form id="application-form" method="post" autocomplete="on">
@@ -116,11 +126,12 @@
                 <label for="profession" id="label-profession">Vilket yrke söker du?</label>
                 <select name="profession" id="profession" required>
                     <option value="-" selected>-</option>
-                    <option value="Lärare">Lärare</option>
-                    <option value="Sopåkare">Sopåkare</option>
+                    <option value="Fritidsledare">Fritidsledare</option>
+                    <option value="Biovärd">Biovärd</option>
                     <option value="Busschaufför">Busschaufför</option>
-                    <option value="Parkarbetare">Parkarbetare</option>
+                    <option value="Utvecklingsingenjör">Utvecklingsingenjör</option>
                     <option value="Biblotekarie">Biblotekarie</option>
+                    <option value="Badmästare">Badmästare</option>
                 </select>
 
                 <!--Files for applicant to upload-->
