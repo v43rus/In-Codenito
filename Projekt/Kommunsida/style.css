@@ -40,6 +40,10 @@ body {
     justify-content: center;
 }
 
+#kommunensHistoriaImg {
+    width: 100%;
+}
+
 .inlineIcon {
     max-width: 20px;
     padding: 5px;
@@ -48,6 +52,7 @@ body {
 .inlineImgLink {
     display: flex;
     align-items: center;
+    margin: 0px;
 }
 
 /* #endregion */
@@ -195,14 +200,78 @@ footer section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    width: 80%;
 }
 
-#forvaltningar {}
+#figureKP {
+    border: 1px #6e6e6e solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
 
-#forvaltningarLista {}
+#figCaptionKP {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
 
-#forvaltningarInfo
+.sideBySide {
+    display: flex;
+    flex-direction: row;
+}
+
+.screenFifty {
+    max-width: 50%;
+    margin: 10px;
+}
+
+.screenThirty {
+    max-width: 30%;
+    margin: 10px;
+}
+
+.screenSeventy {
+    max-width: 70%;
+    margin: 10px;
+}
+
+#forvaltningar {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: fit-content;
+    padding: 0;
+}
+
+#forvaltningar ul {
+    margin: 0px 10px 0px 0px;
+}
+
+#forvaltningarLista li {
+    list-style-type: none;
+    border: solid var(--text-color);
+    border-width: 2px 2px 0px 2px;
+    padding: 15px 10px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+#forvaltningar li:last-child {
+    border-width: 2px 2px 2px 2px;
+}
+
+
+
+#forvaltningarInfo {
+    font-size: 90%;
+    border: solid 1px black;
+    width: 60%;
+    padding: 10px;
+}
+
 /* #endregion */
 
 
