@@ -1,0 +1,222 @@
+/* MAIN CONTENT FOR KULTUR & FRITID IS DONE AS MOBILE FIRST, WORKS WELL ON EVERY PHONE */
+
+:root { /* <--- Color variables for the page */
+    --primary-color: #CBBD98; /* <--- Light beige */
+    --secondary-color: #8B8852; /* <--- Dark brown/beige */
+    --accent-color: #A44040; /* <--- Red */
+    --background-color: #FFFFFF; /* <--- White */
+    --text-color: #000000; /* <--- Black */
+    --link-color: #4339d5; /* <--- Darker blue */
+}
+
+.KF { /* <--- The main content of the page */
+    padding-left: 1rem; /* <--- Padding makes the content be displayed further away from the edge */
+    padding-right: 1rem; /* <--- Padding makes the content be displayed further away from the edge */
+    max-width: 100%;
+    font-family: poppins, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.KF a { /* <--- For all links inside the main content */
+    color: var(--link-color);
+    text-decoration: none; /* <--- Removes the underline */
+    font-weight: 600; /* <--- Makes text bolder */
+    font-size: 4.5vw;
+}
+
+.KF hr { /* <--- For the horizontal rule */
+    background-color: var(--accent-color);
+    height: .3vh;
+    width: 90%;
+}
+
+.KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content */
+    font-size: 4.5vw;
+    line-height: 3vh;
+    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+    margin-bottom: 2rem; /* <--- Margin makes the contents edge be displayed further away */
+    padding-left: 2rem; /* <--- Padding makes the content be displayed further away from the edge */
+    padding-right: 2rem; /* <--- Padding makes the content be displayed further away from the edge */
+}
+
+.page-finder ul { /* <--- For the list in the navigation map */
+    display: flex; /* <--- Displays items on same line */
+    list-style-type: none; /* <--- Removes bullets from the ul */
+    align-items: center; /* <--- Aligns vertically */
+    justify-content: center; /* <--- Aligns horizontally */
+    gap: 2vw;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 4.5vw;
+}
+
+.page-finder .last-page { /* <--- For the last page you were on in the navigation map */
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.KF-container h2 { /* <--- For the larger headings */
+    font-size: 7vw;
+    text-align: center;
+    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+    margin-bottom: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+    white-space: nowrap; /* <--- Whitespace is used to change the way the text wraps (nowrap in this case) */
+}
+
+.KF-container figure { /* <--- For the figure element */
+    margin: 0;
+}
+
+.KF-container img { /* <--- For the images */ 
+    width: 100%;
+    height: auto;
+    filter: grayscale(70%);
+    border-top: .6vh solid var(--secondary-color);
+}
+
+.KF-container h3 { /* <--- For the smaller headings */
+    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+    margin-bottom: 0;
+    font-size: 4.5vw;
+    line-height: 3vh;
+}
+
+.KF-container p { /* <--- For the paragraphs */
+    font-size: 4.5vw;
+    line-height: 3vh;
+    margin-top: 0;
+    margin-bottom: 2rem; /* <--- Margin makes the contents edge be displayed further away */
+}
+
+.KF-container .download { /* <--- For the download links */
+    display: block; /* <--- Makes the item start at a new line, and take up all available width */
+    text-align: center;
+    margin-bottom: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+}
+
+.KF-container a:hover { /* <--- For the links inside the sections when hovered */
+    text-decoration: underline;
+}
+
+.KF-container .motion, /* <--- For the images inside the motion section */
+.KF-container .tips { /* <--- For the images inside the tips section */
+    filter: grayscale(40%);
+}
+
+/* MEDIA QUERIES FOR TABLETS, WORKS WELL ON EVERY TABLET */
+@media all and (min-width: 480px) {
+    .KF { /* <--- The main content of the page, Padding makes the content be displayed further away from the edge */
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .KF a { /* <--- For all links inside the main content */
+        font-size: 3vw;
+    }
+    .page-finder ul { /* <--- For the list in the navigation map */
+        font-size: 3vw;
+    }
+    .KF-container h2 { /* <--- For the larger headings */
+        font-size: 6vw;
+    }
+    .KF-container h3, /* <--- For the smaller headings and the paragraphs */
+    .KF-container p {
+        font-size: 3vw;
+        line-height: 3.5vh;
+    }
+    .KF-container .download { /* <--- For the download links, Margin makes the contents edge be displayed further away */
+        margin-bottom: 2rem;
+    }
+    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
+                                from the edge, Margin makes the contents edge be displayed further away */
+        font-size: 3vw;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+/* MEDIA QUERIES FOR LAPTOPS, WORKS WELL ON EVERY LAPTOP */
+@media all and (min-width: 950px) {
+    .KF { /* <--- The main content of the page, Padding makes the content be displayed further away from the edge */
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    .KF a {  /* <--- For all links inside the main content */
+        font-size: 2vw;
+    }
+    .page-finder ul { /* <--- For the list in the navigation map */
+        font-size: 2vw;
+        gap: 1vw;
+    }
+    .KF-container h2 { /* <--- For the larger headings, Margin makes the contents edge be displayed further away */
+        font-size: 3vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .KF-container .double { /* <--- For the double images in the first section, flex makes items be on same line, flex direction makes 
+                                    the items be horizontal, space between means that the first item is at the start and the last item is 
+                                    at the end with space between, flex wrap makes in this case the paragraph to wrap under the images */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .double figcaption { /* <--- For the figcaption inside the double image figure */
+        width: 100%;
+    }
+    .double img { /* <--- For the images inside the double figure */
+        width: 49% !important;
+    }
+    .KF-container h3, /* <--- For the smaller headings and the paragraphs */
+    .KF-container p {
+        font-size: 2vw;
+        line-height: 3.5vh;
+    }
+    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
+                                from the edge, Margin makes the contents edge be displayed further away */
+        font-size: 2vw;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .KF-container img { /* <--- For the images, Block makes the item start at a new line, and take up all available width, margin auto in
+                                this case makes the image be centered horizontally */ 
+        display: block;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* MEDIA QUERIES FOR DESKTOPS, WORKS WELL ON EVERY DESKTOP */
+@media all and (min-width: 1400px) {
+    .KF a {  /* <--- For all links inside the main content */
+        font-size: 1.5vw;
+    }
+    .page-finder ul { /* <--- For the list in the navigation map */
+        font-size: 1.5vw;
+        gap: 1vw;
+    }
+    .KF-container h3 { /* <--- For the smaller headings, Margin makes the contents edge be displayed further away */
+        font-size: 1.5vw;
+        line-height: 3.5vh;
+        margin-top: 2rem;
+    }
+    .KF-container p { /* <--- For the paragraphs, Margin makes the contents edge be displayed further away */
+        font-size: 1.5vw;
+        line-height: 4vh;
+        margin-bottom: 4rem;
+    }
+    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
+                                from the edge, Margin makes the contents edge be displayed further away */
+        font-size: 1.5vw;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        line-height: 3.5vh;
+    }
+}
