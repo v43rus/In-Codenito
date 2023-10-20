@@ -89,7 +89,7 @@ body {
 
 .logo {
     width: 15vw;
-    height: 15vh;
+    height: auto;
 }
 
 /* Searchbar Styles */
@@ -417,7 +417,7 @@ body {
 
 #infocontainer img {
     width: 30vw;
-    height: 35vh;
+    height: 40vh;
     border-bottom: 4px solid var(--primary-color);
 }
 
@@ -470,7 +470,7 @@ body {
     display: block;
     margin-top: 5vh;
     width: 20vw!important;
-    height: 20vh!important;
+    height: auto !important;
 }
 
 #tripadvisor {
@@ -478,7 +478,7 @@ body {
     display: block;
     margin-top: 5vh;
     width: 25vw!important;
-    height: 15vh!important;
+    height: auto !important;
 }
 
 /* Footer Styles */
@@ -598,7 +598,7 @@ footer {
 
 .footerlogo, .footerslogan {
     width: 20vw;
-    height: 20vh;
+    height: auto;
 }
 
 .footericons {
