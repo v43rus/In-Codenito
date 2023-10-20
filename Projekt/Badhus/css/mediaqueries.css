@@ -69,7 +69,7 @@
     }
     #infocontainer img {
         width: 100%;
-        height: 20vh;
+        height: 30vh;
     }
     #infocontainer figcaption {
         height: fit-content;
@@ -206,7 +206,7 @@
     }
     #infocontainer img {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
     #infocontainer figcaption {
         height: 105vh;
@@ -226,7 +226,7 @@
     }
     #slogan {
         width: 25vw!important;
-        height: 13vh!important;
+        height: auto !important;
         margin-top: 2vh;
     }
     #registerlistcontainer li {
