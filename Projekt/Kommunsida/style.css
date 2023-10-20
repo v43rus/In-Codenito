@@ -95,9 +95,20 @@ header h1 {
 header section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100vw;
 }
+
+#searchBar {
+    background-color: var(--primary-color);
+    border: solid 3px var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+header input {}
 
 header nav {
     display: flex;
