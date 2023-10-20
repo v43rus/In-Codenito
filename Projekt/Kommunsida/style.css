@@ -709,6 +709,7 @@ a {
     /*Declaring the grid for the form*/
     #formgrid{
         width: 95%;
+        max-width: 400px;
         grid-template-columns: auto;
         grid-template-rows: repeat(15, auto);
     }
@@ -794,4 +795,84 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
+/*#endregion*/
+
+
+/*#region Style for job information pages*/
+#job-info-flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#job-article{
+    width: 40vw;
+}
+#job-article img{
+    width: 40vw;
+}
+
+#job-qualifications{
+    background-color: lightcyan;
+    border-radius: 15px;
+
+    height: fit-content;
+    width: fit-content;
+    padding: 0 15px;
+    margin-left: 80px;
+}
+
+#to-form-button{
+    width: 8em;
+    height: 2em;
+    margin: 10px auto 20px auto;
+
+    background-color: white;
+    color: #000000;
+    border-radius: 25px;
+    border-width: 1.5px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/*Mobile verision of site*/
+@media screen and (max-width: 1024px) {
+    #job-info-flex-container{
+        justify-content :flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    #job-article{
+        width: 95%;
+    }
+    #job-article img{
+        width: 95%;
+    }
+    
+    #job-qualifications{
+        margin: 15px 0;
+    }
+    
+    #to-form-button{ /*ej färdig*/
+        width: 8em;
+        height: 2em;
+        margin: 10px auto;
+    
+        background-color: white;
+        color: #000000;
+        border-radius: 25px;
+        border-width: 1.5px;
+    
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    
+        cursor: pointer;
+    }
+}
+
 /*#endregion*/
