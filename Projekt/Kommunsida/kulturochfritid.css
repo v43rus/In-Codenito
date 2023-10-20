@@ -44,7 +44,7 @@
     display: flex; /* <--- Displays items on same line */
     list-style-type: none; /* <--- Removes bullets from the ul */
     align-items: center; /* <--- Aligns vertically */
-    justify-content: center; /* <--- Aligns horizontally */
+    justify-content: center; /* <--- Aligns horizontally at the start */
     gap: 2vw;
     padding-left: 0;
     margin-bottom: 0;
@@ -146,8 +146,11 @@
     .KF a {  /* <--- For all links inside the main content */
         font-size: 2vw;
     }
-    .page-finder ul { /* <--- For the list in the navigation map */
+    .page-finder ul { /* <--- For the list in the navigation map, Aligns horizontally at the start, Padding makes the content be 
+                              displayed further away from the edge */
         font-size: 2vw;
+        justify-content: start;
+        padding-left: 3rem;
         gap: 1vw;
     }
     .KF-container h2 { /* <--- For the larger headings, Margin makes the contents edge be displayed further away */
