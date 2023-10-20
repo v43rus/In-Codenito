@@ -660,6 +660,8 @@ a {
 @media screen and (max-width: 1024px) {
     #application-form {
         width: 95%;
+        display: inline;
+        margin: 0 auto 50px auto;
     }
 }
 
@@ -892,7 +894,9 @@ a {
 #to-form-button {
     width: 8em;
     height: 2em;
-    margin: 10px auto 20px auto;
+
+    display: block; /*The button wouldn't be centered with margin without this*/
+    margin: 20px auto;
 
     background-color: white;
     color: #000000;
@@ -931,33 +935,24 @@ a {
     }
 
     #job-article {
-        width: 95%;
+        width: 90%;
+        margin: 0 5%;
     }
 
     #job-article img {
-        width: 95%;
+        width: 100%;
+
     }
 
     #job-qualifications {
-        margin: 15px 0;
+        margin: 15px 5%;
     }
 
     #to-form-button {
         /*ej färdig*/
         width: 8em;
-        height: 2em;
-        margin: 10px auto;
-
-        background-color: white;
-        color: #000000;
-        border-radius: 25px;
-        border-width: 1.5px;
-
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-
-        cursor: pointer;
+        aspect-ratio: 8 / 2;
+        margin: 10px auto 20px;
     }
 }
 
