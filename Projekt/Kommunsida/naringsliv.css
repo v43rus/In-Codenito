@@ -25,6 +25,35 @@
     height: fit-content;
     margin: auto;
 }
+
+/*--------------------Dropdownrutorna med företagsinfo--------------------*/
+details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare on hover*/
+    cursor: pointer;
+}
+
+summary {
+    /*background-color: #8B8852;*/  /*Rubriken ska ha en bakgrundsfärg*/
+    background-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF);
+    padding-left: 10px;
+}
+
+details {                           /*Och hela rutan ska ha en ram*/
+    /*border: 1px solid #8B8852;*/
+    border: 1px solid;
+    border-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF) 1;
+}
+
+details p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foretag{
+    width: 96%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+/*-------------------------------------------------------------------------*/
 /*
 .skolbildcontainer{
     width: 90%;
