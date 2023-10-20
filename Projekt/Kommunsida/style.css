@@ -1,15 +1,21 @@
-:root {
-    --primary-color: #CBBD98;
-    --secondary-color: #8B8852;
-    --accent-color: #A44040;
-    --background-color: #FFFFFF;
-    --text-color: #000000;
+:root { /* <--- Color variables for the page */
+    --primary-color: #CBBD98; /* <--- Light beige */
+    --secondary-color: #8B8852; /* <--- Dark brown/beige */
+    --accent-color: #A44040; /* <--- Red */
+    --background-color: #FFFFFF; /* <--- White */
+    --text-color: #000000; /* <--- Black */
+    --link-color: #4339d5; /* <--- Darker blue */
 }
 
 /* font förslag, poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap');
 
 /* #region GENERELLA RULES */
+*::selection { /* <--- For all items when selected  */
+    background-color: var(--link-color);
+    color: var(--background-color);
+}
+
 html {
     scroll-behavior: smooth;
 }
