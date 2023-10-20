@@ -51,6 +51,10 @@
     font-size: 4.5vw;
 }
 
+.page-finder i { /* <--- For the home icon in the navigation map */
+    cursor: pointer;
+}
+
 .page-finder .last-page { /* <--- For the last page you were on in the navigation map */
     color: var(--text-color);
     font-weight: normal;
