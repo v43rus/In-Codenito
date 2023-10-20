@@ -28,6 +28,12 @@ body {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .navOverview ul {
     display: flex;
     flex-direction: row;
@@ -261,7 +267,7 @@ footer section {
 }
 
 #forvaltningar ul {
-    margin: 0px 10px 0px 0px;
+    margin: 0px;
 }
 
 #forvaltningarLista li {
@@ -280,7 +286,7 @@ footer section {
 
 
 #forvaltningarInfo {
-    font-size: 90%;
+    font-size: 80%;
     border: solid 1px black;
     width: 60%;
     padding: 10px;
@@ -904,8 +910,12 @@ a {
         padding: 7px;
     }
 
-    #earIcon {
+    .hideAt1024 {
         display: none;
+    }
+
+    #forvaltningarInfo .inlineImgLink {
+        align-items: center;
     }
 
     #job-info-flex-container {
