@@ -233,14 +233,14 @@
     }
 }
 
-@keyframes flash {
+@keyframes flash {  /* <--- For the animation of style "flash" */
     0% {
-      color: var(--accent-color); /* Start with red color */
+      color: var(--accent-color); /* <--- Start with red color */
     }
     50% {
-      color: var(--link-color); /* Change back to blue color halfway through the animation */
+      color: var(--link-color); /* <--- Change back to blue color halfway through the animation */
     }
     100% {
-      color: var(--accent-color); /* End with red color */
+      color: var(--accent-color); /* <--- End with red color */
     }
 }
