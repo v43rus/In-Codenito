@@ -587,7 +587,7 @@ a {
 /*#region Job offers*/
 
 /*text at beginning of page*/
-#job-summary {
+#job-details {
     width: fit-content;
     text-align: center;
     margin: auto;
@@ -710,7 +710,8 @@ a {
 
 @media screen and (max-width: 1024px) {
     #application-form {
-        width: 95%;
+        width: 80%;
+        max-width: 700px;
         display: inline;
         margin: 0 auto 50px auto;
     }
@@ -810,7 +811,8 @@ a {
     /*Declaring the grid for the form*/
     #formgrid {
         width: 95%;
-        max-width: 400px;
+        max-width: 700px;
+        margin: 0 auto;
         grid-template-columns: auto;
         grid-template-rows: repeat(15, auto);
     }
