@@ -31,35 +31,15 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
     cursor: pointer;
 }
 
-.mobilSummary {
-    /*background-color: #8B8852;*/  /*Rubriken ska ha en bakgrundsfärg*/
-    background-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF);
-    padding-left: 10px;
-}
-
-.mobilDetails {                           /*Och hela rutan ska ha en ram*/
-    /*border: 1px solid #8B8852;*/
-    border: 1px solid;
-    border-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF) 1;
-}
-
-.mobilDetails p{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.mobilForetag{
-    width: 96%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-/*TEST*/
 .foretag{
     position: relative;
     width: 100%;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.foretagTitel{          /*Titeln ska centreras*/
+    text-align: center;
 }
 
 .summaryTitle{
@@ -79,14 +59,14 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
 #startup{
     margin-right: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     left: 0;
 }
 
 #utveckla{
     margin: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     left: 0;
     right: 0;
 }
@@ -94,7 +74,7 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
 #etablera{
     margin-left: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     right: 0;
 }
 
@@ -105,59 +85,20 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
     margin-bottom: 5px;
 }
 /*-------------------------------------------------------------------------*/
-/*
-.skolbildcontainer{
-    width: 90%;
-    margin: auto;
-}
 
-.skolbild{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 15px;
-}
-*/
-/*
 @media screen and (max-width: 800px){  
-    .navskolor{                         
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-        margin-top: -170px;
-        text-align: center;
-        border: none;
+    .imgForetag{
+        width: 80%;
+        margin-bottom: 10px;
     }
-
-    .navskolor li{
-        display: inline-block;
-        margin: 8px;
-        padding: 8px;
-        border: 1px solid #8B8852;
-        border-radius: 40px;
-        background-color: #8B8852;
-    }
-
-    .navskolor a{
-        color:#FFFFFF;
-    }
-
-    .titelSkola{
-        margin-top: 90px;
+    .imgForetagWrapper{
+        display: flex;
+        justify-content: center;
     }
 }
-*/
-@media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
-    .skolbildcontainer{
-        width: 35%;
-        margin: 0;
-    }
-    
-    .infoSkola{
-        width: 40%;
-        margin: auto;
-    }
 
-    #skolstartsida{
+@media screen and (min-width: 2000px){   /*Layout för stora skärmar*/
+    .mainNaringsliv{
         width: 80%;
     }
 }
