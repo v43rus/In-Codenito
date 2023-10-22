@@ -715,14 +715,13 @@ a {
     right: -50%;
     top: 35%;
 }
+
 #img-2-application-form{
     position: absolute;
     width: 40%;
     left: -50%;
     top: 35%;
 }
-
-
 
 @media screen and (max-width: 1024px) {
     #application-form {
