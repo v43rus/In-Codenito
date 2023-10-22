@@ -86,7 +86,67 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
 }
 /*-------------------------------------------------------------------------*/
 
-@media screen and (max-width: 800px){  
+/*---------------Formulärens styling---------------------------------------*/
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border: 3px solid #f1f1f1;
+  transform: translateY(-50%);
+  box-shadow: 0 10px 20px 20px #ccc;
+}
+
+.form-container {
+  max-width: 480px;
+  max-height: 600px;
+  background-color: white;
+  padding: 10px;
+  overflow: scroll;
+}
+/*
+.form-container input[type=text], .form-container input[type=number], .form-container[select] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+*/
+/*-------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){   /*Layout for små skärmar*/
     .imgForetag{
         width: 80%;
         margin-bottom: 10px;

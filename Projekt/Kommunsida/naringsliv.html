@@ -39,6 +39,57 @@
                 <h1 class="naringsliv">Näringsliv</h1>
             </section>
 
+            <section id="formNaringsliv">
+                <button class="open-button" onclick="openForm()">Ansök</button>
+
+                <div class="form-popup" id="myForm">
+                    <form action="" class="form-container">
+                      <h1>Ansök om event</h1>
+                      
+                      <!--Events-->
+                      <label for="events" id="label-events"><b>Välj event</b></label>
+                      <select name="events" id="events" required>
+                              <option value="-" selected>-</option>
+                              <option value="Event">Event</option>
+                              <option value="Tävling">Tävling</option>
+                              <option value="Festival">Festival</option>
+                      </select>
+                      
+                      <br><br>
+                      <label for="Namn"><b>Namn</b></label>
+                      <input type="text" placeholder="Ditt fullständiga namn" name="namn" required>
+                      
+                      <label for="Adress"><b>Adress</b></label>
+                      <input type="text" placeholder="Adress" name="adress" required>
+                      
+                      <label for="postnum"><b>Postnummer</b></label>
+                      <input type="number" placeholder="Postnummer" name="postnum" required>
+                      
+                      <label for="Ort"><b>Stad</b></label>
+                      <input type="text" placeholder="Stad" name="ort" required>
+                      
+                      <label for="email"><b>E-post</b></label>
+                      <input type="text" placeholder="E-post" name="email" required>
+                  
+                      <label for="tlfn"><b>Telefon</b></label>
+                      <input type="number" placeholder="Telefonnummer inklusive riktnummer" name="tlfn" required>
+                  
+                      <button type="submit" class="btn">Skicka ansökan</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Avbryt</button>
+                    </form>
+                  </div>
+
+                  <script>
+                    function openForm() {
+                      document.getElementById("myForm").style.display = "block";
+                    }
+                    
+                    function closeForm() {
+                      document.getElementById("myForm").style.display = "none";
+                    }
+                    </script>
+            </section>
+
             <section id="infoNaringsliv">
                 <section class="foretagInfo">
                     <section class="imgForetagWrapper">
@@ -65,36 +116,6 @@
                     attraktivitet. Med gemensamma krafter arbetar vi till exempel för att minska 
                     klimatpåverkan, skapa innovativa ekosystem, bekämpa brott och öka tryggheten.
                 </section>
-            </section>
-
-            <section id="formNaringsliv">
-                <form id="event-form" method="post" autocomplete="on">
-                    <h4 id="h4-event">Ansökan om att hålla ett event.</h4>
-
-                    <!--Info-->
-                    <input type="text" id="fname" class="eventAnsokan" name="fname" required autocomplete="on" placeholder="Förnamn">
-                    <input type="text" id="lname" class="eventAnsokan" name="lname" required autocomplete="on" placeholder="Efternamn">
-                    <br>
-                    <input type="text" id="adress" class="eventAnsokan" name="adress" required autocomplete="on" placeholder="Adress">
-                    <br>
-                    <input type="text" id="postalcode" class="eventAnsokan" name="postalcode" required autocomplete="on" placeholder="Postnummer">
-                    <input type="text" id="city" class="eventAnsokan" name="city" required autocomplete="on" placeholder="Stad">
-                    <br>
-                    <input type="email" id="email" class="eventAnsokan" name="email" required autocomplete="on" placeholder="E-post adress">
-                    <input type="text" id="phone-number" class="eventAnsokan" name="phone-number" required autocomplete="on" placeholder="Telefonnummer">
-
-                    <!--Events-->
-                    <label for="events" id="label-events">Välj event</label>
-                    <select name="events" id="events" required>
-                        <option value="-" selected>-</option>
-                        <option value="Event">Event</option>
-                        <option value="Tävling">Tävling</option>
-                        <option value="Festival">Festival</option>
-                    </select>
-                
-                    <!--Submit-->
-                    <input type="submit" value="Skicka ansökan" id="submit-button">
-                </form>
             </section>
             
             <section class="foretag">
