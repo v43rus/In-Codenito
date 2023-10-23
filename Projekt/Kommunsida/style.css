@@ -391,7 +391,7 @@ footer section {
 
 /* AKTUELL SECTION */
 #news {
-    margin-left: 5%;
+
 }
 
 .aktuellt-section {
@@ -416,21 +416,25 @@ footer section {
 .fritidsgård {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
+    height: 400px;
 }
 
 .bibliotek {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
+    height: 400px;
 }
 
 .bio {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
+    height: 400px;
 }
 
 .badhus {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
+    height: 400px;
 
 }
 
