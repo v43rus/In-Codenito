@@ -58,6 +58,11 @@ main {
     list-style-type: none;
     max-height: fit-content;
 }
+@media screen and (max-width: 1024px) {
+    .navOverview ul {
+        padding: 0;
+    }
+}
 
 .navOverview li {
     padding: 5px;
