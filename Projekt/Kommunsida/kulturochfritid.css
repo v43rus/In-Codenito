@@ -12,7 +12,7 @@
     font-family: poppins, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .KF a {
@@ -33,31 +33,10 @@
     width: 85%;
 }
 
-.content-list {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.content-list ul {
-    padding-left: 0;
-    list-style-type: none;
-    border-bottom: .3vh solid var(--secondary-color);
-    margin-top: 3.5rem;
-}
-
-.content-list li {
-    border-top: .3vh solid var(--secondary-color);
-    padding: 1rem 3rem 1rem 3rem;
-    white-space: nowrap;
-}
-
-
-
 .KF .KF-synlighet {
     font-size: 1rem;
     line-height: 3vh;
     padding-top: 1rem;
-    padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -137,6 +116,23 @@
     filter: grayscale(40%);
 }
 
+details {
+    border-left: .5vh solid var(--accent-color);
+}
+
+summary {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    outline: none;
+    padding-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+summary::marker {
+    color: var(--accent-color);
+}
+
 @media all and (min-width: 480px) {
     .KF-container {
         padding-left: 5.5rem;
@@ -165,12 +161,20 @@
         image-rendering: -webkit-optimize-contrast;
         height: 55vh;
     }
+    details[open] .KF-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media all and (min-width: 950px) {
-    .welcome-text {
-        padding-left: 6rem;
-        padding-right: 6rem;
+    .welcome-text,
+    summary {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    details {
+        margin-left: 3rem;
     }
     .page-finder ul {
         gap: 1vw;
@@ -199,8 +203,8 @@
         margin-top: 0!important;
     }
     .KF .KF-synlighet {
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         margin-top: 2rem;
         line-height: 2.3vh;
     }
@@ -211,22 +215,16 @@
     #sundberg {
         height: 35vh;
     }
-    .KF hr {
-        width: 65%;
-    }
-    .content-list {
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
-    .content-list li {
-        padding-left: 5rem;
-    }
 }
 
 @media all and (min-width: 1400px) {
-    .welcome-text {
-        padding-left: 14rem;
-        padding-right: 14rem;
+    .welcome-text,
+    summary {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    details {
+        margin-left: 5rem;
     }
     .KF-container h3,
     .KF-container p {
@@ -236,8 +234,8 @@
         gap: 5rem;
     }
     .KF .KF-synlighet {
-        padding-left: 15rem;
-        padding-right: 15rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
         padding-top: 2rem;
     }
     #bibloteket {
@@ -249,13 +247,6 @@
     }
     .KF-container img {
         width: 30%;
-    }
-    .KF hr {
-        width: 55%;
-    }
-    .content-list {
-        padding-left: 16rem;
-        padding-right: 16rem;
     }
 }
 
