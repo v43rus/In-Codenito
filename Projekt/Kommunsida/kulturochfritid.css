@@ -178,6 +178,7 @@ summary::marker {
     .page-finder ul {
         gap: 1vw;
         padding-left: 3.5rem;
+        margin-left: 0;
     }
     .KF-container {
         padding-left: 8rem;
