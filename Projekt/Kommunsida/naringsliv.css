@@ -7,7 +7,7 @@
 }
 
 .mainNaringsliv{
-    width: 100%;
+    width: 95%;
 }
 
 .naringslivwrapper{
@@ -25,59 +25,141 @@
     height: fit-content;
     margin: auto;
 }
-/*
-.skolbildcontainer{
-    width: 90%;
-    margin: auto;
+
+/*--------------------Dropdownrutorna med företagsinfo--------------------*/
+details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare on hover*/
+    cursor: pointer;
 }
 
-.skolbild{
+.foretag{
+    position: relative;
     width: 100%;
-    object-fit: contain;
-    border-radius: 15px;
+    margin: auto;
+    padding-bottom: 50px;
 }
-*/
+
+.foretagTitel{          /*Titeln ska centreras*/
+    text-align: center;
+}
+
+.summaryTitle{
+    background-color: #8B8852;
+    color: #FFFFFF;
+    width: 30%;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.detailsBox{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#startup{
+    margin-right: auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#utveckla{
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+#etablera{
+    margin-left: auto;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.imgForetag{
+    width: 480px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+/*-------------------------------------------------------------------------*/
+
+/*---------------Formulärens styling---------------------------------------*/
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  max-width: 680px;
+  top: 50%;                 /*Formuläret ska vara i mitten av skärmen*/
+  right: 0;                 /*hela tiden*/
+  left: 0;
+  margin: 0 auto;
+  border: 3px solid #f1f1f1;
+  transform: translateY(-50%);
+  z-index: 2;                   /*och ligga ovanpå andra element*/
+  box-shadow: 0 10px 20px 20px #ccc;
+}
+
+.form-container {
+  background-color: white;
+  max-height: 500px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.form-container input[type=text], .form-container input[type=number], .form-container[select] {
+  width: 96%;
+  padding: 4px;
+  margin: 5px 0 12px 0;
+  /*border: none;*/
+  background: #f1f1f1;
+}
 /*
-@media screen and (max-width: 800px){  
-    .navskolor{                         
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-        margin-top: -170px;
-        text-align: center;
-        border: none;
-    }
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
-    .navskolor li{
-        display: inline-block;
-        margin: 8px;
-        padding: 8px;
-        border: 1px solid #8B8852;
-        border-radius: 40px;
-        background-color: #8B8852;
-    }
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  margin-bottom:10px;
+}
 
-    .navskolor a{
-        color:#FFFFFF;
-    }
-
-    .titelSkola{
-        margin-top: 90px;
-    }
+.form-container .cancel {
+  background-color: red;
 }
 */
-@media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
-    .skolbildcontainer{
-        width: 35%;
-        margin: 0;
-    }
-    
-    .infoSkola{
-        width: 40%;
-        margin: auto;
-    }
+/*-------------------------------------------------------------------------*/
 
-    #skolstartsida{
+@media screen and (max-width: 800px){   /*Layout for små skärmar*/
+    .imgForetag{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .imgForetagWrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 2000px){   /*Layout för stora skärmar*/
+    .mainNaringsliv{
         width: 80%;
     }
 }

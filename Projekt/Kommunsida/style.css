@@ -1,17 +1,25 @@
-:root { /* <--- Color variables for the page */
-    --primary-color: #CBBD98; /* <--- Light beige */
-    --secondary-color: #8B8852; /* <--- Dark brown/beige */
-    --accent-color: #A44040; /* <--- Red */
-    --background-color: #FFFFFF; /* <--- White */
-    --text-color: #000000; /* <--- Black */
-    --link-color: #4339d5; /* <--- Darker blue */
+:root {
+    /* <--- Color variables for the page */
+    --primary-color: #CBBD98;
+    /* <--- Light beige */
+    --secondary-color: #8B8852;
+    /* <--- Dark brown/beige */
+    --accent-color: #A44040;
+    /* <--- Red */
+    --background-color: #FFFFFF;
+    /* <--- White */
+    --text-color: #000000;
+    /* <--- Black */
+    --link-color: #4339d5;
+    /* <--- Darker blue */
 }
 
 /* font förslag, poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap');
 
 /* #region GENERELLA RULES */
-*::selection { /* <--- For all items when selected  */
+*::selection {
+    /* <--- For all items when selected  */
     background-color: var(--link-color);
     color: var(--background-color);
 }
@@ -40,6 +48,10 @@ main {
     width: 100%;
 }
 
+.centerText {
+    text-align: center;
+}
+
 .navOverview ul {
     display: flex;
     flex-direction: row;
@@ -55,7 +67,8 @@ main {
 }
 
 #kommunensHistoriaImg {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .inlineIcon {
@@ -247,6 +260,12 @@ footer section {
 .sideBySide {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.screenSeventy {
+    max-width: 70%;
+    margin: 10px;
 }
 
 .screenFifty {
@@ -259,9 +278,41 @@ footer section {
     margin: 10px;
 }
 
-.screenSeventy {
-    max-width: 70%;
+.screenTwenty {
+    max-width: 20%;
     margin: 10px;
+}
+
+.verksamhet {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.verksamhet img {
+    padding: 5px;
+    max-width: 256px;
+    max-height: 256px;
+}
+
+.kommunStyrelsen {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.kommunStyrelsen img {
+    padding: 5px;
+    max-width: 128px;
+    max-height: 128px;
+}
+
+.inlineSection {
+    display: flex;
 }
 
 #forvaltningar {
@@ -536,7 +587,7 @@ a {
 /*#region Job offers*/
 
 /*text at beginning of page*/
-#job-summary {
+#job-details {
     width: fit-content;
     text-align: center;
     margin: auto;
@@ -655,11 +706,35 @@ a {
 #application-form {
     width: fit-content;
     margin: 0 auto 50px auto;
+    position: relative;
+}
+
+#img-1-application-form{
+    position: absolute;
+    width: 40%;
+    right: -50%;
+    top: 35%;
+}
+
+#img-2-application-form{
+    position: absolute;
+    width: 40%;
+    left: -50%;
+    top: 35%;
 }
 
 @media screen and (max-width: 1024px) {
     #application-form {
-        width: 95%;
+        width: 80%;
+        max-width: 700px;
+        display: inline;
+        margin: 0 auto 50px auto;
+    }
+    #img-1-application-form{
+        display: none;
+    }
+    #img-2-application-form{
+        display: none;
     }
 }
 
@@ -757,7 +832,8 @@ a {
     /*Declaring the grid for the form*/
     #formgrid {
         width: 95%;
-        max-width: 400px;
+        max-width: 700px;
+        margin: 0 auto;
         grid-template-columns: auto;
         grid-template-rows: repeat(15, auto);
     }
@@ -892,7 +968,9 @@ a {
 #to-form-button {
     width: 8em;
     height: 2em;
-    margin: 10px auto 20px auto;
+
+    display: block; /*The button wouldn't be centered with margin without this*/
+    margin: 20px auto;
 
     background-color: white;
     color: #000000;
@@ -931,33 +1009,23 @@ a {
     }
 
     #job-article {
-        width: 95%;
+        width: 90%;
+        margin: 0 5%;
     }
 
     #job-article img {
-        width: 95%;
+        width: 100%;
+
     }
 
     #job-qualifications {
-        margin: 15px 0;
+        margin: 15px 5%;
     }
 
     #to-form-button {
-        /*ej färdig*/
         width: 8em;
-        height: 2em;
-        margin: 10px auto;
-
-        background-color: white;
-        color: #000000;
-        border-radius: 25px;
-        border-width: 1.5px;
-
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-
-        cursor: pointer;
+        aspect-ratio: 8 / 2;
+        margin: 10px auto 20px;
     }
 }
 
