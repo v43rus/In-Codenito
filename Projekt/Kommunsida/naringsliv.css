@@ -7,7 +7,7 @@
 }
 
 .mainNaringsliv{
-    width: 100%;
+    width: 95%;
 }
 
 .naringslivwrapper{
@@ -31,118 +31,135 @@ details summary {           /*Rubrikerna i företag dropdown ska ha en muspekare
     cursor: pointer;
 }
 
-.summary {
-    /*background-color: #8B8852;*/  /*Rubriken ska ha en bakgrundsfärg*/
-    background-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF);
-    padding-left: 10px;
-}
-
-.details {                           /*Och hela rutan ska ha en ram*/
-    /*border: 1px solid #8B8852;*/
-    border: 1px solid;
-    border-image: linear-gradient(to right,#8B8852,#8B8852,#8B8852, #FFFFFF) 1;
-}
-
-.details p{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .foretag{
-    width: 96%;
+    position: relative;
+    width: 100%;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
-/*TEST*/
-.testForetag{
-    position: relative;
-    width: 96%;
-    margin: auto;
-    padding-bottom: 20px;
+.foretagTitel{          /*Titeln ska centreras*/
+    text-align: center;
 }
-.testSummary{
+
+.summaryTitle{
     background-color: #8B8852;
+    color: #FFFFFF;
     width: 30%;
+    height: 25px;
+    padding-top: 5px;
     padding-left: 10px;
 }
-.testDetails{
-    margin-left: 10px;
-    margin-right: 10px;
+
+.detailsBox{
+    margin-left: 5px;
+    margin-right: 5px;
 }
-#test1{
+
+#startup{
     margin-right: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     left: 0;
 }
-#test2{
+
+#utveckla{
     margin: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     left: 0;
     right: 0;
 }
-#test3{
+
+#etablera{
     margin-left: auto;
     position: absolute;
-    top: 41px;
+    top: 50px;
     right: 0;
 }
+
+.imgForetag{
+    width: 480px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
 /*-------------------------------------------------------------------------*/
-/*
-.skolbildcontainer{
-    width: 90%;
-    margin: auto;
+
+/*---------------Formulärens styling---------------------------------------*/
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
 }
 
-.skolbild{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 15px;
+.form-popup {
+  display: none;
+  position: fixed;
+  max-width: 680px;
+  top: 50%;                 /*Formuläret ska vara i mitten av skärmen*/
+  right: 0;                 /*hela tiden*/
+  left: 0;
+  margin: 0 auto;
+  border: 3px solid #f1f1f1;
+  transform: translateY(-50%);
+  z-index: 2;                   /*och ligga ovanpå andra element*/
+  box-shadow: 0 10px 20px 20px #ccc;
+}
+
+.form-container {
+  background-color: white;
+  max-height: 500px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.form-container input[type=text], .form-container input[type=number], .form-container[select] {
+  width: 96%;
+  padding: 4px;
+  margin: 5px 0 12px 0;
+  /*border: none;*/
+  background: #f1f1f1;
+}
+/*
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+  background-color: red;
 }
 */
-/*
-@media screen and (max-width: 800px){  
-    .navskolor{                         
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-        margin-top: -170px;
-        text-align: center;
-        border: none;
-    }
+/*-------------------------------------------------------------------------*/
 
-    .navskolor li{
-        display: inline-block;
-        margin: 8px;
-        padding: 8px;
-        border: 1px solid #8B8852;
-        border-radius: 40px;
-        background-color: #8B8852;
+@media screen and (max-width: 800px){   /*Layout for små skärmar*/
+    .imgForetag{
+        width: 80%;
+        margin-bottom: 10px;
     }
-
-    .navskolor a{
-        color:#FFFFFF;
-    }
-
-    .titelSkola{
-        margin-top: 90px;
+    .imgForetagWrapper{
+        display: flex;
+        justify-content: center;
     }
 }
-*/
-@media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
-    .skolbildcontainer{
-        width: 35%;
-        margin: 0;
-    }
-    
-    .infoSkola{
-        width: 40%;
-        margin: auto;
-    }
 
-    #skolstartsida{
+@media screen and (min-width: 2000px){   /*Layout för stora skärmar*/
+    .mainNaringsliv{
         width: 80%;
     }
 }
