@@ -242,13 +242,29 @@
                         <figcaption>
                             <h3>Hyr Idrottsall</h3>
                             <p>
-                                De Geergymnasiet tillhandahåller faciliteter för lokala verksamheter i vår kommun, vilka har möjlighet att hyra 
-                                vår idrottshall för sina behov. Vi erbjuder denna möjlighet för att underlätta och främja olika verksamheter inom 
-                                vårt samhälle. För att boka idrottshallen för din verksamhet, vänligen kontakta kommunen via telefonnummer <br>
-                                <a href="tel:08-333-54-01">08-333 54 01</a>. Vi ser fram emot att assistera dig med ditt arrangemang.
+                                Geergymnasiet erbjuder faciliteter för lokala verksamheter i vår kommun och ger dem möjlighet att hyra vår 
+                                idrottshall. Vi tillhandahåller denna möjlighet för att stödja och främja olika verksamheter inom vårt 
+                                samhälle. Idrottshallen står därför tillgänglig för verksamheter varje vardag mellan 16:00 och 20:00. 
+                                För att boka idrottshallen för din verksamhet, vänligen kontakta kommunen via telefonnummer:
+                                <a href="tel:08-333-54-01">08-333 54 01</a>. Alternativt kan du fylla i formuläret nedan. Vi ser fram 
+                                emot att assistera dig med ditt arrangemang.
                             </p>
                         </figcaption>
                     </figure>
+                    <form class="input-container" action="#">
+                        <label for="fname"><i class="fa fa-user icon"></i>Förnamn</label>
+                        <input id="fname" class="input-field" type="text" id="fname" name="firstname" placeholder="Ange bokarens förnamn:" required>
+                        <label for="lname"><i class="fa fa-user icon"></i>Efternamn</label>
+                        <input id="lname" class="input-field" type="text" id="lname" name="lastname" placeholder="Ange bokarens efternamn:" required>
+                        <label for="email"><i class="fa fa-envelope icon"></i>Email</label>
+                        <input id="email" class="input-field" type="email" placeholder="Ange bokarens email:" name="email" required>
+                        <label for="phone"><i class="fa-solid fa-phone icon"></i>Telefonnummer</label>
+                        <input  class="input-field" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        placeholder="Ange bokarens telefonnummer:" required>
+                        <label for="subject"><i class="fa-solid fa-keyboard icon"></i>Datum och Verksamhet</label>
+                        <textarea id="subject" name="subject" placeholder="Ange datum samt bokarens verksamhet:" required></textarea>
+                        <button class="btn" type="submit">Hyr Idrottshallen</button>
+                    </form>
                 <hr>
                 <p class="KF-synlighet">
                     Önskar er verksamhet synas här? Vänligen kontakta kommunen på telefonnummer <a href="tel:08-333-54-01">+46XXXXXXXX</a> 
