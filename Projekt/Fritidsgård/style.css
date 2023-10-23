@@ -82,7 +82,7 @@ main {
     object-fit:cover;
     object-position: center;
     width: 100vw;
-    height: 70vh;
+    height: 900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
