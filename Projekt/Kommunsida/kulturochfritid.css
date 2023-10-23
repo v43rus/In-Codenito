@@ -1,246 +1,272 @@
-/* MAIN CONTENT FOR KULTUR & FRITID IS DONE AS MOBILE FIRST, WORKS WELL ON EVERY PHONE */
-
-:root { /* <--- Color variables for the page */
-    --primary-color: #CBBD98; /* <--- Light beige */
-    --secondary-color: #8B8852; /* <--- Dark brown/beige */
-    --accent-color: #A44040; /* <--- Red */
-    --background-color: #FFFFFF; /* <--- White */
-    --text-color: #000000; /* <--- Black */
-    --link-color: #4339d5; /* <--- Darker blue */
+:root {
+    --primary-color: #CBBD98;
+    --secondary-color: #8B8852;
+    --accent-color: #A44040;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --link-color: #4339d5;
 }
 
-.KF { /* <--- The main content of the page */
-    padding-left: 1rem; /* <--- Padding makes the content be displayed further away from the edge */
-    padding-right: 1rem; /* <--- Padding makes the content be displayed further away from the edge */
+.KF {
     max-width: 100%;
     font-family: poppins, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin-bottom: 2rem;
 }
 
-.KF a { /* <--- For all links inside the main content */
+.KF a {
     color: var(--link-color);
-    text-decoration: none; /* <--- Removes the underline */
-    font-weight: 600; /* <--- Makes text bolder */
-    font-size: 4.5vw;
-    transition: color 0.3s; /* Makes a transition for color change */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color .3s;
 }
 
 .KF a:active {
-    animation: flash 0.5s infinite; /* Applies a flash animation when clicked on */
-  }
+    animation: flash .5s infinite;
+}
 
-.KF hr { /* <--- For the horizontal rule */
+.KF hr {
     background-color: var(--accent-color);
     height: .3vh;
-    width: 90%;
+    width: 85%;
 }
 
-.KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content */
-    font-size: 4.5vw;
-    line-height: 3vh;
-    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
-    margin-bottom: 2rem; /* <--- Margin makes the contents edge be displayed further away */
-    padding-left: 2rem; /* <--- Padding makes the content be displayed further away from the edge */
-    padding-right: 2rem; /* <--- Padding makes the content be displayed further away from the edge */
+.content-list {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.page-finder ul { /* <--- For the list in the navigation map */
-    display: flex; /* <--- Displays items on same line */
-    list-style-type: none; /* <--- Removes bullets from the ul */
-    align-items: center; /* <--- Aligns vertically */
-    justify-content: center; /* <--- Aligns horizontally at the start */
-    gap: 2vw;
+.content-list ul {
     padding-left: 0;
-    margin-bottom: 0;
-    font-size: 4.5vw;
+    list-style-type: none;
+    border-bottom: .3vh solid var(--secondary-color);
+    margin-top: 3.5rem;
 }
 
-.page-finder i { /* <--- For the home icon in the navigation map */
+.content-list li {
+    border-top: .3vh solid var(--secondary-color);
+    padding: 1rem 3rem 1rem 3rem;
+    white-space: nowrap;
+}
+
+
+
+.KF .KF-synlighet {
+    font-size: 1rem;
+    line-height: 3vh;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.page-finder ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 2vw;
+    font-size: 1rem;
+    padding-top: .7rem;
+    padding-left: 3.5rem;
+}
+
+.page-finder i {
     cursor: pointer;
 }
 
-.page-finder .last-page { /* <--- For the last page you were on in the navigation map */
+.page-finder .last-page {
     color: var(--text-color);
-    font-weight: normal;
+    font-weight: 400;
 }
 
-.KF-container h2 { /* <--- For the larger headings */
-    font-size: 7vw;
+.KF-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.KF-container h2 {
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
-    margin-bottom: 1rem; /* <--- Margin makes the contents edge be displayed further away */
-    white-space: nowrap; /* <--- Whitespace is used to change the way the text wraps (nowrap in this case) */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
-.KF-container figure { /* <--- For the figure element */
+.KF-container figure {
     margin: 0;
 }
 
-.KF-container img { /* <--- For the images */ 
+.KF-container img {
     width: 100%;
     height: auto;
     filter: grayscale(70%);
     border-top: .6vh solid var(--secondary-color);
 }
 
-.KF-container h3 { /* <--- For the smaller headings */
-    margin-top: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+.KF-container h3 {
+    margin-top: 1rem;
     margin-bottom: 0;
-    font-size: 4.5vw;
+    font-size: 1rem;
     line-height: 3vh;
 }
 
-.KF-container p { /* <--- For the paragraphs */
-    font-size: 4.5vw;
+.KF-container p {
+    font-size: 1rem;
     line-height: 3vh;
     margin-top: 0;
-    margin-bottom: 2rem; /* <--- Margin makes the contents edge be displayed further away */
+    margin-bottom: 1rem;
 }
 
-.KF-container .download { /* <--- For the download links */
-    display: block; /* <--- Makes the item start at a new line, and take up all available width */
+.KF-container .download {
+    display: block;
     text-align: center;
-    margin-bottom: 1rem; /* <--- Margin makes the contents edge be displayed further away */
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
-.KF-container a:hover { /* <--- For the links inside the sections when hovered */
+.KF-container a:hover {
     text-decoration: underline;
 }
 
-.KF-container .motion, /* <--- For the images inside the motion section */
-.KF-container .tips { /* <--- For the images inside the tips section */
+.KF-container .motion,
+.KF-container .tips {
     filter: grayscale(40%);
 }
 
-/* MEDIA QUERIES FOR TABLETS, WORKS WELL ON EVERY TABLET */
 @media all and (min-width: 480px) {
-    .KF { /* <--- The main content of the page, Padding makes the content be displayed further away from the edge */
-        padding-left: 7rem;
-        padding-right: 7rem;
+    .KF-container {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
-    .KF a { /* <--- For all links inside the main content */
-        font-size: 3vw;
-    }
-    .page-finder ul { /* <--- For the list in the navigation map */
-        font-size: 3vw;
-    }
-    .KF-container h2 { /* <--- For the larger headings */
-        font-size: 6vw;
-    }
-    .KF-container h3, /* <--- For the smaller headings and the paragraphs */
+    .KF-container h3,
     .KF-container p {
-        font-size: 3vw;
-        line-height: 3.5vh;
+        font-size: 1rem;
+        line-height: 2.5vh;
     }
-    .KF-container .download { /* <--- For the download links, Margin makes the contents edge be displayed further away */
-        margin-bottom: 2rem;
+    .KF .KF-synlighet {
+        line-height: 2.5vh;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 1rem;
     }
-    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
-                                from the edge, Margin makes the contents edge be displayed further away */
-        font-size: 3vw;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        margin-bottom: 3rem;
+    .KF-container img {
+        width: 90%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1rem;
         margin-top: 2rem;
+    }
+    #sundberg {
+        image-rendering: -webkit-optimize-contrast;
+        height: 55vh;
     }
 }
 
-/* MEDIA QUERIES FOR LAPTOPS, WORKS WELL ON EVERY LAPTOP */
 @media all and (min-width: 950px) {
-    .KF { /* <--- The main content of the page, Padding makes the content be displayed further away from the edge */
-        padding-left: 12rem;
-        padding-right: 12rem;
-    }
-    .KF a {  /* <--- For all links inside the main content */
-        font-size: 2vw;
-    }
-    .page-finder ul { /* <--- For the list in the navigation map, Aligns horizontally at the start, Padding makes the content be 
-                              displayed further away from the edge */
-        font-size: 2vw;
-        justify-content: start;
-        padding-left: 3rem;
-        gap: 1vw;
-    }
-    .KF-container h2 { /* <--- For the larger headings, Margin makes the contents edge be displayed further away */
-        font-size: 3vw;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .KF-container .double { /* <--- For the double images in the first section, flex makes items be on same line, flex direction makes 
-                                    the items be horizontal, space between means that the first item is at the start and the last item is 
-                                    at the end with space between, flex wrap makes in this case the paragraph to wrap under the images */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .double figcaption { /* <--- For the figcaption inside the double image figure */
-        width: 100%;
-    }
-    .double img { /* <--- For the images inside the double figure */
-        width: 49% !important;
-    }
-    .KF-container h3, /* <--- For the smaller headings and the paragraphs */
-    .KF-container p {
-        font-size: 2vw;
-        line-height: 3.5vh;
-    }
-    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
-                                from the edge, Margin makes the contents edge be displayed further away */
-        font-size: 2vw;
+    .welcome-text {
         padding-left: 6rem;
         padding-right: 6rem;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
     }
-    .KF-container img { /* <--- For the images, Block makes the item start at a new line, and take up all available width, margin auto in
-                                this case makes the image be centered horizontally */ 
-        display: block;
-        width: 55%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* MEDIA QUERIES FOR DESKTOPS, WORKS WELL ON EVERY DESKTOP */
-@media all and (min-width: 1400px) {
-    .KF a {  /* <--- For all links inside the main content */
-        font-size: 1.5vw;
-    }
-    .page-finder ul { /* <--- For the list in the navigation map */
-        font-size: 1.5vw;
+    .page-finder ul {
         gap: 1vw;
     }
-    .KF-container h3 { /* <--- For the smaller headings, Margin makes the contents edge be displayed further away */
-        font-size: 1.5vw;
-        line-height: 3.5vh;
-        margin-top: 2rem;
-    }
-    .KF-container p { /* <--- For the paragraphs, Margin makes the contents edge be displayed further away */
-        font-size: 1.5vw;
-        line-height: 4vh;
-        margin-bottom: 4rem;
-    }
-    .KF .KF-synlighet { /* <--- For the paragraph at the bottom of main content, Padding makes the content be displayed further away 
-                                from the edge, Margin makes the contents edge be displayed further away */
-        font-size: 1.5vw;
+    .KF-container {
         padding-left: 8rem;
         padding-right: 8rem;
-        margin-bottom: 3rem;
+    }
+    .KF-container h2 {
         margin-top: 2rem;
-        line-height: 3.5vh;
+        margin-bottom: 2rem;
+    }
+    .KF-container figure {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    .KF-container figcaption {
+        flex: 1;
+    }
+    .KF-container h3,
+    .KF-container p {
+        font-size: 1rem;
+        line-height: 2.3vh;
+        margin-top: 0!important;
+    }
+    .KF .KF-synlighet {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        margin-top: 2rem;
+        line-height: 2.3vh;
+    }
+    .KF-container img {
+        width: 50%;
+        height: 25vh;
+    }
+    #sundberg {
+        height: 35vh;
+    }
+    .KF hr {
+        width: 65%;
+    }
+    .content-list {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .content-list li {
+        padding-left: 5rem;
     }
 }
 
-@keyframes flash {  /* <--- For the animation of style "flash" */
+@media all and (min-width: 1400px) {
+    .welcome-text {
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+    .KF-container h3,
+    .KF-container p {
+        margin-top: 2rem;
+    }
+    .KF-container figure {
+        gap: 5rem;
+    }
+    .KF .KF-synlighet {
+        padding-left: 15rem;
+        padding-right: 15rem;
+        padding-top: 2rem;
+    }
+    #bibloteket {
+        height: 25vh;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    #sundberg {
+        height: 40vh;
+    }
+    .KF-container img {
+        width: 30%;
+    }
+    .KF hr {
+        width: 55%;
+    }
+    .content-list {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+}
+
+@keyframes flash {
     0% {
-      color: var(--accent-color); /* <--- Start with red color */
+        color: var(--accent-color);
     }
     50% {
-      color: var(--link-color); /* <--- Change back to blue color halfway through the animation */
+        color: var(--link-color);
     }
     100% {
-      color: var(--accent-color); /* <--- End with red color */
+        color: var(--accent-color);
     }
 }
