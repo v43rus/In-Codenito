@@ -58,6 +58,7 @@ main {
     list-style-type: none;
     max-height: fit-content;
 }
+
 @media screen and (max-width: 1024px) {
     .navOverview ul {
         padding: 0;
@@ -137,8 +138,6 @@ header section {
     justify-content: center;
     margin: 20px;
 }
-
-header input {}
 
 header nav {
     display: flex;
@@ -268,56 +267,108 @@ footer section {
     justify-content: center;
 }
 
+.screenHundred {
+    width: 100%;
+    margin: 10px;
+}
+
 .screenSeventy {
-    max-width: 70%;
+    width: 70%;
     margin: 10px;
 }
 
 .screenFifty {
-    max-width: 50%;
+    width: 50%;
     margin: 10px;
 }
 
 .screenThirty {
-    max-width: 30%;
+    width: 30%;
     margin: 10px;
 }
 
 .screenTwenty {
-    max-width: 20%;
+    width: 20%;
     margin: 10px;
 }
 
-.verksamhet {
-    margin: 20px;
+.verksamhet,
+.verksamhet p,
+.verksamhet h4 {
+    margin: 10px 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .verksamhet img {
     padding: 5px;
-    max-width: 256px;
-    max-height: 256px;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
 }
 
 .kommunStyrelsen {
-    margin: 20px;
+    color: var(--background-color);
+    padding: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    background-color: var(--primary-color);
+}
+
+.kommunStyrelsen:nth-child(1) {
+    border: thin white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.kommunStyrelsen:nth-last-of-type(1) {
+    border: thin white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.kommunStyrelsen:nth-child(2n) {
+    background-color: var(--secondary-color);
+}
+
+.kommunStyrelsen p {
+    padding: 0px 10px;
 }
 
 .kommunStyrelsen img {
     padding: 5px;
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 96px;
+    max-height: 96px;
 }
 
 .inlineSection {
     display: flex;
+}
+
+.flexLeft {
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+.centerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circularSquare {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
 }
 
 #forvaltningar {
@@ -395,9 +446,6 @@ footer section {
 }
 
 /* AKTUELL SECTION */
-#news {
-
-}
 
 .aktuellt-section {
     border-top: solid 4px var(--accent-color);
@@ -663,21 +711,31 @@ a {
 }
 
 /*Buttons in job-offer-box*/
-.read-button {
+.job-button {
     width: 8em;
     height: 2em;
-    margin: 1px 0 1px 0;
+    margin: 1px auto 1px auto;
 
     background-color: white;
     color: #000000;
+    border-color: #000000;
     border-radius: 25px;
-    border-width: 1.5px;
+    border-style: solid;
+    border-width: 1.3px;
+    cursor: pointer;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*The text in the buttons in the job offer*/
+.text-in-job-button {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-
-    cursor: pointer;
 }
 
 /*#endregion*/
@@ -697,14 +755,14 @@ a {
     position: relative;
 }
 
-#img-1-application-form{
+#img-1-application-form {
     position: absolute;
     width: 40%;
     right: -50%;
     top: 35%;
 }
 
-#img-2-application-form{
+#img-2-application-form {
     position: absolute;
     width: 40%;
     left: -50%;
@@ -718,10 +776,12 @@ a {
         display: inline;
         margin: 0 auto 50px auto;
     }
-    #img-1-application-form{
+
+    #img-1-application-form {
         display: none;
     }
-    #img-2-application-form{
+
+    #img-2-application-form {
         display: none;
     }
 }
@@ -953,11 +1013,17 @@ a {
     margin-left: 80px;
 }
 
+/*Creates line breaks in lists in job articles*/
+.job-article-list li {
+    margin-top: 20px;
+}
+
 #to-form-button {
     width: 8em;
     height: 2em;
 
-    display: block; /*The button wouldn't be centered with margin without this*/
+    display: block;
+    /*The button wouldn't be centered with margin without this*/
     margin: 20px auto;
 
     background-color: white;
