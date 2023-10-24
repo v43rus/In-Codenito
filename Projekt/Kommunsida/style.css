@@ -12,6 +12,8 @@
     /* <--- Black */
     --link-color: #4339d5;
     /* <--- Darker blue */
+    --navfooter-color: #504f3f;
+    /*<--- Darker Gray/Beige */
 }
 
 /* font förslag, poppins */
@@ -143,7 +145,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--navfooter-color);
     width: 100%;
     min-height: fit-content;
 }
@@ -158,12 +160,12 @@ header nav a {
 
 header nav a:hover {
     background-color: var(--background-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--navfooter-color);
+    color: var(--background-color);
     width: 100%;
     max-height: fit-content;
     display: flex;
@@ -317,6 +319,8 @@ footer section {
 }
 
 .verksamhet img {
+    border: thin white;
+    border-radius: 15px;
     padding: 5px;
     max-width: 200px;
     max-height: 200px;
@@ -403,6 +407,9 @@ footer section {
     border-width: 2px 2px 0px 2px;
     padding: 15px 10px;
     background-color: var(--accent-color);
+}
+
+#forvaltningarLista a {
     color: var(--background-color);
 }
 
@@ -430,7 +437,7 @@ footer section {
 
 
 
-/* #region MAIN CONTENT PÅ STARTSIDA */
+/* #region MAIN CONTENT PÅ STARTSIDA / Mhattias del */
 
 .kommun-startsida {
     display: flex;
@@ -480,36 +487,15 @@ footer section {
     max-width: 70%;
 }
 
-.fritidsgård {
+.nyhets-flöde {
     border-bottom: solid var(--secondary-color);
     background-color: var(--background-color-color);
     height: 400px;
-}
-
-.bibliotek {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-}
-
-.bio {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-}
-
-.badhus {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-
 }
 
 /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
-/* #twoCards {
-    padding: 0 auto;
-} */
+
 
 .container {
     display: flex;
@@ -583,7 +569,7 @@ a {
 
 .card:hover {
     transform: scale(1.05);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 /* #endregion */
