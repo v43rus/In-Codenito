@@ -12,6 +12,8 @@
     /* <--- Black */
     --link-color: #4339d5;
     /* <--- Darker blue */
+    --navfooter-color: #504f3f;
+    /*<--- Darker Gray/Beige */
 }
 
 /* font förslag, poppins */
@@ -143,7 +145,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--navfooter-color);
     width: 100%;
     min-height: fit-content;
 }
@@ -158,12 +160,12 @@ header nav a {
 
 header nav a:hover {
     background-color: var(--background-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--navfooter-color);
+    color: var(--background-color);
     width: 100%;
     max-height: fit-content;
     display: flex;
