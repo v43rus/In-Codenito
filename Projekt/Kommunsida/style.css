@@ -305,6 +305,8 @@ footer section {
 }
 
 .verksamhet img {
+    border: thin white;
+    border-radius: 15px;
     padding: 5px;
     max-width: 200px;
     max-height: 200px;
@@ -391,6 +393,9 @@ footer section {
     border-width: 2px 2px 0px 2px;
     padding: 15px 10px;
     background-color: var(--accent-color);
+}
+
+#forvaltningarLista a {
     color: var(--background-color);
 }
 
