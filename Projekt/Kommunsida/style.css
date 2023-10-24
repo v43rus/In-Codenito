@@ -365,7 +365,7 @@ footer section {
 
 
 
-/* #region MAIN CONTENT PÅ STARTSIDA */
+/* #region MAIN CONTENT PÅ STARTSIDA / Mhattias del */
 
 .kommun-startsida {
     display: flex;
@@ -424,30 +424,9 @@ footer section {
     height: 400px;
 }
 
-.bibliotek {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-}
-
-.bio {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-}
-
-.badhus {
-    border-bottom: solid var(--secondary-color);
-    background-color: var(--background-color-color);
-    height: 400px;
-
-}
-
 /* LÄNKAR TILL BADHUS/FRITIDSGÅRD */
 
-/* #twoCards {
-    padding: 0 auto;
-} */
+
 
 .container {
     display: flex;
@@ -521,7 +500,7 @@ a {
 
 .card:hover {
     transform: scale(1.05);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 /* #endregion */
