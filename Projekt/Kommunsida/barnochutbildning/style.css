@@ -13,36 +13,62 @@
 .skolwrapper{
     display: flex;
     flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
 }
 
 /*----------------Navigation styling börjar här--------------*/
-.navskolor{
-       height: 210px;
-	   width: 110px;
-	   padding-right: 35px;
-	   border-right: 3px solid;
-       border-color: #A44040;
-       /*border-image: linear-gradient(#FFFFFF,#A44040,#A44040, #FFFFFF) 1;*/
-       margin-top: 30px;
-       margin-right: 40px;
+.navskolor{     /*Container för navigationen*/
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
-.navskolor li{
-	   margin-bottom: 18px;
-	   list-style-type: none;
-	   text-decoration: none;
+.navbildcontainer{  /*Container för bilderna till navigationen*/
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.navskolor a{
-    color:#8B8852;
+.navbild{       /*Bilden ska fylla hela containern som den är i*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skollank{          /*Container för bilden och länktexten*/
+    border: 1px solid black;    /*Fungerar som en stor knapp*/
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.navtext{           /*Placera länktexten i en container och ge den en bakgrundsfärg*/
+    width: 100%;    
+    height: 30px;
+    background-color: #8B8852;
+    position: absolute;     /*Placera containern i mitten*/
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navskolor a{       /*Styla länkarna*/
+    color: black;
+    font-weight: bold;
+    position: absolute;     /*Och placera de i mitten*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navskolor a:hover{
     color:#CBBD98;
-}
-
-.currentLink {
-    text-decoration: underline;
 }
 /*------------------------Navigation styling slutar här-------------*/
 
@@ -67,37 +93,9 @@
     border-radius: 15px;
 }
 
-@media screen and (max-width: 800px){   /*På små skärmar ska sidomenyn se annorlunda ut*/
-    .navskolor{                         /*och byta plats med skoltiteln.*/
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-        margin-top: -170px;
-        text-align: center;
-        border: none;
-    }
-
-    .navskolor li{
-        display: inline-block;
-        margin: 8px;
-        padding: 8px;
-        border: 1px solid #8B8852;
-        border-radius: 40px;
-        background-color: #8B8852;
-    }
-
-    .navskolor a{
-        color:#FFFFFF;
-    }
-
-    .titelSkola{
-        margin-top: 90px;
-    }
-}
-
 @media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
     .skolbildcontainer{
-        width: 35%;
+        width: 50%;
         margin: 0;
     }
     
