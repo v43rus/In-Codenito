@@ -241,6 +241,7 @@ footer section {
     background-color: var(--secondary-color);
     background-color: lightskyblue;
     margin: 10px;
+    border-radius: 5px;
     
 }
 
