@@ -6,7 +6,6 @@
     --background-color: #FFFFFF;
     --text-color: #000000;
     --link-color: #4339d5;
-    --navfooter-color: #504f3f;
 }
 
 /* CONTAINER FOR MAIN CONTENT */
@@ -179,9 +178,9 @@ textarea:focus,
 /* FOR THE LABEL IN THE BOOKING FORM */
 label {
     padding: .6rem 0;
-    background: var(--navfooter-color);
-    border: 2px solid var(--navfooter-color);
-    color: #fff;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
     width: 100%;
     text-align: center;
     
@@ -196,13 +195,13 @@ label {
 .input-field {
     width: 100%;
     padding: .6rem 0;
-    border: 2px solid var(--navfooter-color);
+    border: 2px solid var(--primary-color);
     outline: none;
 }
   
 /* FOR THE INPUT FIELDS WHEN CLICKED ON */
 .input-field:focus {
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--secondary-color);
 }
 
 /* FOR THE PLACEHOLDER INSIDE THE INPUT FIELD */
@@ -227,20 +226,20 @@ textarea {
     width: 100%;
     height: 3.5rem;
     outline: none;
-    border: 2px solid var(--navfooter-color);
+    border: 2px solid var(--primary-color);
     box-sizing: content-box;
     padding: 0;
 }
 
 /* FOR THE TEXTAREA WHEN CLICKED ON */
 textarea:focus {
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--secondary-color);
 }
   
 /* FOR THE BOOKING BUTTON INSIDE THE BOOKING FORM */
 .btn {
-    background-color: var(--navfooter-color);
-    color: var(--background-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: .7rem 1rem;
     border-radius: 10px;
     border: none;
