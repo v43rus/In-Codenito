@@ -87,33 +87,40 @@
                 <aside id="forvaltningarLista">
 
                     <ul>
-                        <li><a href="">Om våra förvaltningar</a></li>
-                        <li><a href="">Kultur &amp; Fritid</a></li>
-                        <li><a href="">Tekniska Kontoret</a></li>
-                        <li><a href="">Utbildningsförvaltningen</a></li>
-                        <li><a href="">Socialförvaltningen</a></li>
-                        <li><a href="">Räddningstjänsten</a></li>
-                        <li><a href="">Stadskontoret</a></li>
+                        <li><button id="omForvaltningarKnapp" onclick=changeInfo(omForvaltningar)>Om våra
+                                förvaltningar</button></li>
+                        <li><button id="kulturFritidKnapp" onclick=changeInfo(kulturFritid)>Kultur &amp; Fritid</button>
+                        </li>
+                        <li><button id="tekniskaKontoretKnapp" onclick=changeInfo(tekniskaKontoret)>Tekniska
+                                Kontoret</button></li>
+                        <li><button id="utbildningsForvaltningenKnapp"
+                                onclick=changeInfo(utbildningsForvaltningen)>Utbildningsförvaltningen</button></li>
+                        <li><button id="socialForvaltningenKnapp"
+                                onclick=changeInfo(socialForvaltningen)>Socialförvaltningen</button></li>
+                        <li><button id="raddningsTjanstenKnapp"
+                                onclick=changeInfo(raddningsTjansten)>Räddningstjänsten</button></li>
+                        <li><button id="stadsKontoretKnapp" onclick=changeInfo(stadsKontoret)>Stadskontoret</button>
+                        </li>
                     </ul>
                 </aside>
                 <article id="forvaltningarInfo">
-                    <h3>Förvaltningsnamn</h3>
+                    <script src="kommunochpolitik.js"></script>
+                    <h3 id="forvaltningsNamn">Om våra förvaltningar</h3>
                     <h4>Organisation</h4>
-                    <p>
-                        ipsum dolor sit amet consectetur, adipisicing elit. Id voluptas
-                        voluptate odit vitae modi officiis? Et odit qui libero, necessitatibus vitae animi asperiores
-                        voluptatibus, neque maiores deleniti doloribus tempore consequuntur!
+                    <p id="orgInfo">
+                        Kommunens förvaltningsorganisation är indelad i sex förvaltningar/kontor, alla med sitt
+                        speciffika verksamhetsområde. Personalen som sköter de dagliga frågorna inom kommunen är
+                        anställda i en förvaltning eller ett bolag. Du kan läsa mer om de individuella förvaltningarna
+                        eller kontakta dem med hjälp av flikarna till höger.
                     </p>
                     <h4>Antal anställda</h4>
-                    <p>
-                        ipsum dolor sit amet consectetur, adipisicing elit. Id voluptas
-                        voluptate odit vitae modi officiis? Et odit qui libero, necessitatibus vitae animi asperiores
-                        voluptatibus, neque maiores deleniti doloribus tempore consequuntur!
+                    <p id="antalAnstallda">
+                        Totalt över alla förvaltningar är vi 321 anställda.
                     </p>
                     <h4>Kontakt</h4>
                     <p class="inlineImgLink">
-                        <img class="inlineIcon" src="icons/phoneiconblack.png">Genard Laha: <a
-                            href="tel:+46XXXXXXXX">+46XXXXXXXX</a>
+                        <img class="inlineIcon" src="icons/phoneiconblack.png"><span id="kontaktNamn">Mhattias Roswall:
+                        </span><a id="telefonNr" href="tel:XXXX-65400">XXXX-65400</a>
                     </p>
                 </article>
             </section>
