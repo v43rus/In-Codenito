@@ -1,22 +1,21 @@
 /* For phones, See style.css for explanations */
 @media only screen and (min-width: 0px) and (max-width: 500px) {
     .navbar {
-        height: 25vh;
+        height: 11vh;
         padding-top: 3vh;
     }
     .navbar a {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .toolbar {
         flex-wrap: wrap;
+        gap: 4vw;
     }
     .logo {
-        width: 50vw;
-        margin-right: -35vw;
-        margin-top: 4vh;
+        display: none;
     }
     .searchbar {
-        margin-top: -15vh;
+        display: none;
     }
     .searchbar button {
         font-size: 4.5vw;
@@ -31,12 +30,12 @@
     #homebackground,
     #registerbackground {
         border-bottom: 5px solid var(--primary-color);
-        margin: 28vh 0 0 0;
+        margin: 14.5vh 0 0 0;
     }
     #hometextcontainer,
     #registertextcontainer {
         width: 80%;
-        top: 67%;
+        top: 55%;
     }
     #homeheading,
     #registerheading {
@@ -102,19 +101,30 @@
     #tripadvisor {
         display: none;
     }
-    #registerlistcontainer {
+    .registerlistmessage {
         width: 70%;
     }
-    #registerlistcontainer li {
+    .registerlistmessage h2 {
+        font-size: 4.5vw;
+        line-height: 2.8vh;
+    }
+    .registerlistmessage p {
+        font-size: 4vw;
+        line-height: 2.8vh;
+    }
+    .registerlistcontainer {
+        width: 70%;
+    }
+    .registerlistcontainer li {
         font-size: 5vw;
         padding: 1.2vh 1vw 1.2vh 1vw;
         line-height: 3.5vh;
     }
-    #registerlistcontainer h1 {
+    .registerlistcontainer h1 {
         font-size: 6vw;
         margin: 1vh 0 1vh 0;
     }
-    #registerlistcontainer h2 {
+    .registerlistcontainer h2 {
         font-size: 5vw;
     }
     .register-content input[type=text] {
@@ -124,7 +134,8 @@
         font-size: 4vw;
     }
     .footerlist li {
-        font-size: 5vw;
+        font-size: 7vw;
+        line-height: 4.5vh;
     }
     .footerlist h2 {
         font-size: 8vw;
@@ -134,6 +145,7 @@
     }
     .hourscontainer li {
         font-size: 5vw;
+        line-height: 3vh;
     }
     .hourscontainer h3 {
         font-size: 7vw;
@@ -229,10 +241,21 @@
         height: auto !important;
         margin-top: 2vh;
     }
-    #registerlistcontainer li {
+    .registerlistmessage {
+        width: 60%;
+    }
+    .registerlistmessage h2 {
+        font-size: 3vw;
+        line-height: 2.5vh;
+    }
+    .registerlistmessage p {
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+    }
+    .registerlistcontainer li {
         font-size: 1.9vw;
     }
-    #registerlistcontainer h2 {
+    .registerlistcontainer h2 {
         font-size: 2.5vw;
         margin: 1vh 0 1vh 0;
     }
@@ -319,10 +342,10 @@
     #tripadvisor {
         display: none;
     }
-    #registerlistcontainer li {
+    .registerlistcontainer li {
         font-size: 1.5vw;
     }
-    #registerlistcontainer h2 {
+    .registerlistcontainer h2 {
         font-size: 2vw;
         margin: 1vh 0 1vh 0;
     }
