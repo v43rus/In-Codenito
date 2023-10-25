@@ -124,7 +124,10 @@ main {
     background: linear-gradient(0deg, rgba(191, 103, 53, 1) 0%, rgba(48, 79, 88, 1) 14%, rgba(34, 54, 73, 1) 35%, #131d26 75%);
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(170deg, #0b2964 0%, #05225E 35%, #013c48 100%); */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */ /* media query */
+    gap: 120px;    
 }
 
 
@@ -140,16 +143,35 @@ main {
     border-radius: 50px;
     box-shadow:  20px 20px 40px #0a0f13,
         -20px -20px 40px #1c2b39;
-    max-width: 250px;
-    height: 300px;
+    width: 350px;
+    height: max-content;
     position: relative;
     top: 80px;
-    left: 90px;
+    z-index: 1;
+    left: 110px;
+    font-size: 1.2rem; /* mediaquery */
     display: flex;
     justify-content: center;
     align-items:center;
 }
 
-.öppentider-bild{
-    position: relative;
+
+.öppentider #intro-text{
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.öppentider-container:hover{
+    background-color: #844e10d4;
+    transition: 1s ease-in-out;
+}
+
+#måne{
+    width: 40%;
+    z-index: 0;
+    position: absolute;
+    filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
+    top: 1020px;  /* media query */
+    right: 490px;
+    opacity: .2;
 }
