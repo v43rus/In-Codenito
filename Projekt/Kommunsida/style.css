@@ -1107,7 +1107,7 @@ a {
     cursor: pointer;
 }
 
-/*Scroll back to the top button*/
+/*Skrolla upp till toppen knapp*/
 #myBtn {
     display: none;
     position: fixed;
