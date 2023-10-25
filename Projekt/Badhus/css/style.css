@@ -287,14 +287,49 @@ body {
     margin-bottom: 5vh;
 }
 
+/* Register Container for Message*/
+.registerlistmessage {
+    margin: 0 auto;
+    width: 50%;
+    border: 5px solid var(--primary-opacity);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+    font-family: Hind Siliguri;
+}
+
+.registerlistmessage h2 {
+    padding: 5vh 7.5vw 0 7.5vw;
+    font-size: 1.2vw;
+    line-height: 3vh;
+}
+
+.registerlistmessage p {
+    padding: 2vh 7.5vw;
+    font-size: 1.2vw;
+    line-height: 3vh;
+}
+
+.registerlistmessage a {
+    color: var(--text-color);
+    text-decoration-color: var(--text-color);
+    text-underline-offset: .8vh;
+}
+
+.registerlistmessage a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+
+
+
 /* Register List Container Styles */
-#registerlistcontainer ul {
+.registerlistcontainer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#registerlistcontainer {
+.registerlistcontainer {
     margin: 0 auto;
     width: 50%;
     border: 5px solid var(--primary-opacity);
@@ -302,7 +337,7 @@ body {
     margin-bottom: 10vh;
 }
 
-#registerlistcontainer li {
+.registerlistcontainer li {
     border-top: 1px solid var(--primary-opacity);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -312,20 +347,20 @@ body {
 }
 
 /* Register List Summary Styles */
-#registerlistcontainer summary {
+.registerlistcontainer summary {
     padding-left: 1vw;
     cursor: pointer;
 }
 
 /* Register List Headings Styles */
-#registerlistcontainer h1 {
+.registerlistcontainer h1 {
     margin: 1.5vh 0 1.5vh 0;
     font-size: 2vw;
     font-family: Outfit;
     padding-left: 2vw;
 }
 
-#registerlistcontainer h2 {
+.registerlistcontainer h2 {
     margin: 0 -3vw 0 -3vw!important;
     text-align: center;
     padding: 4vh 0 1.5vh 0;
@@ -337,12 +372,12 @@ body {
 }
 
 /* Register List Link Styles */
-#registerlistcontainer a {
+.registerlistcontainer a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-#registerlistcontainer a:hover {
+.registerlistcontainer a:hover {
     text-decoration: underline;
     text-underline-offset: .5vh;
     text-decoration-color: var(--secondary-color);
