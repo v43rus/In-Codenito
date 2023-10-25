@@ -147,6 +147,7 @@ main {
     height: max-content;
     position: relative;
     top: 80px;
+    z-index: 1;
     left: 110px;
     font-size: 1.2rem; /* mediaquery */
     display: flex;
@@ -163,4 +164,14 @@ main {
 .öppentider-container:hover{
     background-color: #844e10d4;
     transition: 1s ease-in-out;
+}
+
+#måne{
+    width: 40%;
+    z-index: 0;
+    position: absolute;
+    filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
+    top: 1020px;  /* media query */
+    right: 490px;
+    opacity: .2;
 }
