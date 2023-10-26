@@ -195,7 +195,8 @@ main {
 
 .services{
     height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    overflow:hidden;
     color: white;
     background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%,  rgba(191, 103, 53, 1) 75%);
     display: flex;
@@ -209,7 +210,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
 .gear{
     width: 240px;
@@ -241,6 +242,15 @@ main {
     5px 5px 10px rgb(0, 0, 0);
 }
 
+.outro {
+    height: 90px;
+    text-align: center;
+    background-color: #131d26;
+}
+.outro :first-child{
+    padding: 20px 0;
+}
+
 /* #endregion footer */
 #footer-fri{
     height: 30px;
@@ -249,7 +259,7 @@ main {
     margin-top: 9px;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1400px) {
     /* #region HERO SECTION */
     /* #endregion  */
 
@@ -257,6 +267,15 @@ main {
     /* #endregion */
 
     /* #region LAST SECTION */
+    .services{
+        overflow-x: scroll;
+        align-items: start;
+    }
+
+        .utrustning{
+        align-items: start;
+        margin-bottom: 70px;
+    }
     /* #endregion */
 }
 
@@ -290,7 +309,15 @@ main {
 
 
     /* #region LAST SECTION */
+        .services{
+        overflow-x: scroll;
+        align-items: start;
+    }
 
+        .utrustning{
+        align-items: start;
+            margin-bottom: 70px;
+    }
     /* #endregion */
 }
 
@@ -322,6 +349,13 @@ main {
 
 
     /* #region LAST SECTION */
-
+    .services{
+        overflow-x: scroll;
+        align-items: start;
+    }
+    .utrustning{
+        align-items: start;
+        margin-bottom: 70px;
+    }
     /* #endregion */
 }
