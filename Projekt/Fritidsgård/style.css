@@ -175,15 +175,15 @@ main {
     z-index: 0;
     position: absolute;
     filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
-    top: 1020px;  /* media query */
-    right: 30%;
+    top: 120%;  /* media query */
+    right: 30%;  /* media query */
     opacity: .2;
 }
 
 #umgänge{
     max-width: 25%;
     position: absolute;
-    top: 1220px;  /* media query */
+    top: 155%;  /* media query */
     right: 50%;
     border-radius: 5px;
 
@@ -201,34 +201,61 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding-left: 25px;
 }
 .utrustning{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 .gear{
     width: 240px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.flex-margin{
+    margin: 100px 0px;
 }
 
 .utrustning ul{
     display: flex;
-    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .utrustning ul li{
     list-style: none;
 }
-.fritid-img img{
-    width: 240px; /* media query */
+
+.fritid-list{
+    margin-left: 120px;
+}
+.fritid-list img{
+    width: 230px; /* media query */
+    margin-right: 130px;
+    box-shadow:
+    5px 5px 10px rgb(0, 0, 0);
 }
 
 /* footer */
+#footer-fri{
+    height: 30px;
+    text-align: center;
+    word-spacing: 5px;
+    margin-top: 9px;
+}
 
-@media  (max-width: 1200px) {
+@media screen and (min-width: 1300px) {
     
 }
 
-@media (max-width: 650px){
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and(max-width: 770px){
 
 }
