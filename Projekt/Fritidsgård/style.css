@@ -171,12 +171,12 @@ main {
 }
 
 #måne{
-    width: 40%;
+    width: 40%; /* media query */
     z-index: 0;
     position: absolute;
     filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
     top: 1020px;  /* media query */
-    right: 490px;
+    right: 30%;
     opacity: .2;
 }
 
@@ -184,7 +184,7 @@ main {
     max-width: 25%;
     position: absolute;
     top: 1220px;  /* media query */
-    right: 700px;
+    right: 50%;
     border-radius: 5px;
 
 }
@@ -206,6 +206,10 @@ main {
 .utrustning{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+.gear{
+    width: 240px;
 }
 
 .utrustning ul{
@@ -217,4 +221,14 @@ main {
 }
 .fritid-img img{
     width: 240px; /* media query */
+}
+
+/* footer */
+
+@media  (max-width: 1200px) {
+    
+}
+
+@media (max-width: 650px){
+
 }
