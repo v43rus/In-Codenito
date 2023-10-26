@@ -48,7 +48,7 @@ body {
 
 header nav img {
     max-width: 130px;
-    margin: 0 30px;
+    margin: 0px 30px;
 }
 
 .navbar {
@@ -74,8 +74,6 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* filter: blur(1px); */
 }
 
 .text {
@@ -90,7 +88,7 @@ main {
     border-radius: 5px;
     box-shadow:
         -10px -10px 40px #081f3d;
-    padding: 100px 20px;
+    padding: 100px 20px;  /* media query */
     transform: translate(-50%, -50%);
     text-align: center;
     width: 60%;
@@ -98,18 +96,18 @@ main {
 
 .text h1 {
     text-shadow: 1px 1px 1px  wheat;
-    font-size: 3em;
+    font-size: 3rem; /* media query */
     line-height: 1.2em;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
 .text p {
-    text-shadow: -1px -1px 1px  rgb(152, 149, 144);
+    text-shadow: -1px -1px 1px  rgba(235, 195, 127, 0.512);
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1rem;  /* media query */
     line-height: 1em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 500;
 }
 
@@ -117,7 +115,7 @@ main {
 
 /* #endregion */
 
-/* #region NEWS SECTION */
+/* #region MID SECTION */
 
 .öppentider {
     background: rgb(191, 103, 53);
@@ -143,12 +141,13 @@ main {
     border-radius: 50px;
     box-shadow:  20px 20px 40px #0a0f13,
         -20px -20px 40px #1c2b39;
-    width: 350px;
+    width: 330px;
     height: max-content;
     position: relative;
     top: 80px;
+    left: 60px;  /* media query */
     z-index: 1;
-    left: 110px; 
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -162,7 +161,7 @@ main {
 .öppentider #intro-text{
     margin: 10px 15px;
     text-align: center;
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem); ;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); ;
 }
 
 .öppentider-container:hover{
@@ -183,14 +182,16 @@ main {
 #umgänge{
     max-width: 25%;
     position: absolute;
-    top: 155%;  /* media query */
-    right: 50%;
+    top: 160%;  /* media query */
+    right: 55%;
     border-radius: 5px;
 
 }
 
+/* #endregion */
 
-/* Last part */
+
+/* #region Last part */
 
 .services{
     height: 100vh;
@@ -240,7 +241,7 @@ main {
     5px 5px 10px rgb(0, 0, 0);
 }
 
-/* footer */
+/* #endregion footer */
 #footer-fri{
     height: 30px;
     text-align: center;
@@ -249,13 +250,78 @@ main {
 }
 
 @media screen and (min-width: 1300px) {
-    
+    /* #region HERO SECTION */
+    /* #endregion  */
+
+    /* #region MID SECTION */
+    /* #endregion */
+
+    /* #region LAST SECTION */
+    /* #endregion */
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
+    /* #region HERO SECTION */
     
+    .text{  
+        padding: 70px 20px;
+    }
+
+    .text h1{
+        font-size: 2.2rem;
+    }
+    .text p{
+
+    }
+    /* #endregion */
+    
+    
+    /* #region MID SECTION */
+        .öppentider{
+        gap: 90px;
+    }
+
+    #umgänge{
+        right: 60%;
+        top: 165%;
+    }
+    /* #endregion */
+
+
+
+    /* #region LAST SECTION */
+
+    /* #endregion */
 }
 
-@media screen and(max-width: 770px){
+@media screen and (max-width: 650px){
+    /* #region HERO SECTION */
 
+
+
+        .text p{
+            font-size: 0.8rem;
+    }
+    /* #endregion */
+
+    /* #region MID SECTION */
+    .öppentider{
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .öppentider-container{
+        left: 20%;
+        top: 60px;
+    }
+
+    #umgänge{
+        display: none;
+    }
+    /* #endregion */
+
+
+    /* #region LAST SECTION */
+
+    /* #endregion */
 }
