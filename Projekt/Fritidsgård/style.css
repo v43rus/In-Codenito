@@ -180,7 +180,7 @@ main {
 }
 
 #umgänge{
-    max-width: 25%;
+    max-width: 30%;
     position: absolute;
     top: 160%;  /* media query */
     right: 55%;
@@ -203,7 +203,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 25px;
 }
 .utrustning{
     display: flex;
@@ -215,7 +214,7 @@ main {
 .gear{
     width: 240px;
     margin-top: 25px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .flex-margin{
@@ -237,7 +236,8 @@ main {
 }
 .fritid-list img{
     width: 230px; /* media query */
-    margin-right: 130px;
+    margin-right: 90px;
+    margin-left: 20px;
     box-shadow:
     5px 5px 10px rgb(0, 0, 0);
 }
@@ -248,15 +248,19 @@ main {
     background-color: #131d26;
 }
 .outro :first-child{
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+.outro :last-child{
+    padding-top: -20px;
 }
 
 /* #endregion footer */
 #footer-fri{
-    height: 30px;
+    height: 40px;
     text-align: center;
     word-spacing: 5px;
-    margin-top: 9px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -264,6 +268,9 @@ main {
     /* #endregion  */
 
     /* #region MID SECTION */
+    #umgänge{
+        top: 150%;
+    }
     /* #endregion */
 
     /* #region LAST SECTION */
@@ -327,7 +334,7 @@ main {
 
 
         .text p{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
     }
     /* #endregion */
 
@@ -338,7 +345,7 @@ main {
     }
 
     .öppentider-container{
-        left: 20%;
+        left: 11%;
         top: 60px;
     }
 
@@ -355,7 +362,7 @@ main {
     }
     .utrustning{
         align-items: start;
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
     /* #endregion */
 }
