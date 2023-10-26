@@ -56,9 +56,7 @@ const stadsKontoret = {
     forvaltningsNamn: "Stadskontoret",
     organisationInfo: "Stadsbyggnadskontoret ansvarar för den fysiska planeringen i Incodenito kommun. Kontoret arbetar med översiktlig planering och detaljplaner, bygglov, stadsmätning, fastighetsbildning samt bostadsanpassning. \
     Mer konkret innebär det att stadskontoret ansvarar för Incodenito kommuns översiktsplan som beskriver hur Incodenitos fysiska miljö ska utvecklas på lång sikt. \
-    Vi ansvarar för detaljplanering som styr lokalisering och utformning av områden, bebyggelse, parker, grönområden, infrastruktur med mer. \
-    Vi arbetar också med strategisk planering för social hållbarhet, vatten, klimatanpassning samt buller- och riskfrågor prövar och beslutar frågor om bygglov samt ansvar för tillsyn av bland annat olovligt byggande. \
-    Vi producerar olika typer av kartor över kommunen, digitala stadsmodeller, 3D - visualisering och hanterar frågor om fastighetsbildning utreder behov och fattar beslut om bidrag för bostadsanpassning till personer med bestående funktionsnedsättning.",
+    Vi ansvarar också för detaljplanering som styr lokalisering och utformning av områden, bebyggelse, parker, grönområden, infrastruktur med mer.",
     antalAnstallda: "X",
     kontaktNamn: "Växel:",
     kontaktNr: "XXXX-65460"

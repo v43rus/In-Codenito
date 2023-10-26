@@ -242,7 +242,7 @@ footer section {
     background-color: lightskyblue;
     margin: 10px;
     border-radius: 5px;
-    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -251,14 +251,14 @@ footer section {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .navigation-center-article {
         aspect-ratio: 1 / 1;
         width: 100%;
         background-color: var(--secondary-color);
         background-color: lightskyblue;
         margin: 10px;
-        
+
     }
 }
 
@@ -313,7 +313,7 @@ footer section {
     align-items: center;
 }
 
-.navigation-center-button-text{
+.navigation-center-button-text {
     font-size: 16px;
     font-weight: bold;
 }
@@ -507,6 +507,13 @@ footer section {
     border: solid 1px black;
     width: 60%;
     padding: 10px;
+}
+
+#forvaltningarInfo h4,
+#forvaltningsNamn,
+#orgInfo,
+#antalAnstallda {
+    margin: 8px;
 }
 
 /* #endregion */
@@ -1055,6 +1062,20 @@ a {
     #submit-button {
         grid-area: 15 / 1 / 16 / 2;
     }
+
+    #searchBar {
+        display: none;
+    }
+
+    #earIcon {
+        width: 16px;
+        padding: 0px;
+    }
+
+    #lyssnaLink {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /*Style for submit-file buttons*/
@@ -1161,10 +1182,11 @@ a {
     font-weight: bold;
     font-size: 35px;
 }
-  
+
 #myBtn:hover {
     background-color: #555;
-} 
+}
+
 /*-----------------------------*/
 
 /*Mobile version of site*/
