@@ -4,8 +4,8 @@ const omForvaltningar = {
     organisationInfo: "Kommunens förvaltningsorganisation är indelad i sex förvaltningar/kontor, alla med sitt speciffika verksamhetsområde. Personalen som sköter de dagliga frågorna inom kommunen är anställda i en förvaltning eller ett bolag. \
     Du kan läsa mer om de individuella förvaltningarna eller kontakta dem med hjälp av flikarna till höger.",
     antalAnstallda: "Totalt över alla förvaltningar är vi X anställda.",
-    kontaktNamn: "Mhattias Roswall: ",
-    kontaktNr: "XXXX-65400"
+    kontaktNamn: "Växel: ",
+    kontaktNr: "4545-65400"
 };
 
 const kulturFritid = {
@@ -13,8 +13,8 @@ const kulturFritid = {
     organisationInfo: "Kultur- och fritidsförvaltningen ger stöd till studieförbund och föreningar, ansvarar för ungdomsverksamhet, bad och uthyrning av kommunala idrottsanläggningar. \
     Förvaltningen ansvarar också för biblioteket och den övriga kommunala kulturverksamheten i form av kulturarrangemang, kultur i förskolan och konst. Kulturskolan är också en del av vår förvaltning.",
     antalAnstallda: "X",
-    kontaktNamn: "Tim Falk:",
-    kontaktNr: "XXXX-65410"
+    kontaktNamn: "Tim Falk: ",
+    kontaktNr: "4545-65410"
 };
 
 const tekniskaKontoret = {
@@ -22,16 +22,16 @@ const tekniskaKontoret = {
     organisationInfo: "Tekniska kontoret har ansvaret för kommunens gator, vatten- och avlopp, fastigheter, mark, naturområden, parker och parkeringar. \
     Tekniska kontoret har också ansvar för avfallshantering, hamnar och parkeringsverksamhet samt planering för kommunens bostads- och markförsörjning. ",
     antalAnstallda: "X",
-    kontaktNamn: "Ingen utnämnd:",
-    kontaktNr: "XXXX-65420"
+    kontaktNamn: "Sean Banan:",
+    kontaktNr: "4545-65420"
 };
 
 const utbildningsForvaltningen = {
     forvaltningsNamn: "Utbildningsförvaltningen",
     organisationInfo: "Vi ansvarar för barnomsorgen och alla skolor från förskola upp till gymnasienivå, inklusive vuxenutbildningen. Barn och utbildningsnämnden har det politiska ansvaret för verksamheten.",
-    antalAnstallda: "321",
-    kontaktNamn: "Ingen utnämnd",
-    kontaktNr: "XXXX-65430"
+    antalAnstallda: "X",
+    kontaktNamn: "Genard Laha: ",
+    kontaktNr: "4545-65430"
 };
 
 const socialForvaltningen = {
@@ -39,8 +39,8 @@ const socialForvaltningen = {
     organisationInfo: "Vår uppgift är att bistå behövande i Incodenito kommun med insatser i form av stöd, vård och omsorg när ni har rätt till det. \
     Våra främsta ansvarsområden är: biståndshandläggning, stöd och omsorg till äldre, stöd och omsorg till personer med fysisk och psykisk funktionsnedsättning, stöd och omsorg till individ och familjer.",
     antalAnstallda: "X",
-    kontaktNamn: "Ingen utnämnd",
-    kontaktNr: "XXXX-65440"
+    kontaktNamn: "Frans Lindström: ",
+    kontaktNr: "4545-65440"
 };
 
 const raddningsTjansten = {
@@ -48,8 +48,8 @@ const raddningsTjansten = {
     organisationInfo: "Den kommunala räddningstjänstens uppgift är att förebygga olyckor och begränsa skadorna när de inträffar. Det går inte att försäkra sig mot alla olyckor – exempelvis bränder, utsläpp av farliga ämnen eller översvämningar. \
     Men genom räddningstjänsten finns beredskap för att hindra och begränsa skador.",
     antalAnstallda: "X",
-    kontaktNamn: "Ingen utnämnd",
-    kontaktNr: "XXXX-65450"
+    kontaktNamn: "Byggare Bob: ",
+    kontaktNr: "4545-65450"
 };
 
 const stadsKontoret = {
@@ -59,12 +59,11 @@ const stadsKontoret = {
     Vi ansvarar också för detaljplanering som styr lokalisering och utformning av områden, bebyggelse, parker, grönområden, infrastruktur med mer.",
     antalAnstallda: "X",
     kontaktNamn: "Växel:",
-    kontaktNr: "XXXX-65460"
+    kontaktNr: "4545-65460"
 };
 
 
 var omForvaltningarKnapp = document.getElementById("omForvaltningarKnapp");
-onclick
 
 var kulturFritidKnapp = document.getElementById("kulturFritidKnapp");
 

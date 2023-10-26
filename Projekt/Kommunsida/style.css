@@ -52,6 +52,8 @@ main {
     text-align: center;
 }
 
+
+
 .navOverview ul {
     display: flex;
     flex-direction: row;
@@ -145,7 +147,7 @@ header nav {
     align-items: center;
     background-color: var(--primary-color);
     width: 100%;
-    min-height: fit-content;
+    height: 40px;
 }
 
 header nav a {
@@ -353,6 +355,23 @@ footer section {
     text-align: center;
 }
 
+#kontaktVerksamheter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.verksamhet {
+    max-width: fit-content;
+}
+
+.verksamheterRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .sideBySide {
     display: flex;
     flex-direction: row;
@@ -399,7 +418,6 @@ footer section {
     border-radius: 15px;
     padding: 5px;
     max-width: 200px;
-    max-height: 200px;
     min-width: 100px;
     min-height: 100px;
 }
@@ -478,6 +496,7 @@ footer section {
 }
 
 #forvaltningarLista li {
+    text-align: center;
     list-style-type: none;
     border: solid var(--text-color);
     border-width: 2px 2px 0px 2px;
@@ -676,6 +695,8 @@ a {
         align-items: baseline;
     }
 
+
+
     /* CARD QUERY */
     .container {
         gap: 0px;
@@ -709,6 +730,11 @@ a {
     .aktuellt-section article p {
         font-size: 0.9rem;
         font-weight: 500;
+    }
+
+    #earIcon {
+        width: 12px !important;
+        padding: 0px;
     }
 
 }
@@ -1196,15 +1222,57 @@ a {
     .inlineImgLink {
         font-size: 14px;
         align-items: baseline;
-        padding: 7px;
+        padding: 7px 5px;
+    }
+
+    header nav {
+        height: 34px;
     }
 
     .hideAt1024 {
         display: none;
     }
 
+    .blockAt1024 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .verksamhet img {
+        max-width: 20vw;
+    }
+
+    #mainContentKP h4,
+    #mainContentKP p {
+        font-size: 14px;
+    }
+
+    .verksamhet p {
+        font-size: 14px;
+        margin: 2px 0px;
+    }
+
+    #forvaltningar ul {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #forvaltningar li {
+        padding: 5px 10px;
+    }
+
+    #forvaltningarLista {
+        width: 100%;
+    }
+
     #forvaltningarInfo .inlineImgLink {
         align-items: center;
+    }
+
+    #forvaltningarInfo {
+        width: 95%;
+        padding: 5px;
     }
 
     #job-info-flex-container {
