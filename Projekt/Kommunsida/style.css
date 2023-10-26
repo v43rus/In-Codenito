@@ -229,12 +229,41 @@ footer section {
 
 #navigation-center {
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navigation-center-article {
     aspect-ratio: 1 / 1;
     width: 25%;
     background-color: var(--secondary-color);
+    background-color: lightskyblue;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    #navigation-center {
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-center-article {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        background-color: var(--secondary-color);
+        background-color: lightskyblue;
+        margin: 10px;
+
+    }
+}
+
+.navigation-center-article:hover {
+    box-shadow: 0px 0px 10px #000000;
 }
 
 .nav-article-link {
@@ -267,7 +296,7 @@ footer section {
 
 .navigation-center-button {
     width: 8em;
-    height: 2em;
+    height: 2.5em;
     margin: 20px auto;
 
     background-color: white;
@@ -276,10 +305,17 @@ footer section {
     border-width: 1.5px;
 
     text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-center-button-text {
     font-size: 16px;
     font-weight: bold;
-
-    cursor: pointer;
 }
 
 /* #endregion */
@@ -471,6 +507,13 @@ footer section {
     border: solid 1px black;
     width: 60%;
     padding: 10px;
+}
+
+#forvaltningarInfo h4,
+#forvaltningsNamn,
+#orgInfo,
+#antalAnstallda {
+    margin: 8px;
 }
 
 /* #endregion */
@@ -1019,6 +1062,20 @@ a {
     #submit-button {
         grid-area: 15 / 1 / 16 / 2;
     }
+
+    #searchBar {
+        display: none;
+    }
+
+    #earIcon {
+        width: 16px;
+        padding: 0px;
+    }
+
+    #lyssnaLink {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /*Style for submit-file buttons*/
@@ -1125,10 +1182,11 @@ a {
     font-weight: bold;
     font-size: 35px;
 }
-  
+
 #myBtn:hover {
     background-color: #555;
-} 
+}
+
 /*-----------------------------*/
 
 /*Mobile version of site*/
