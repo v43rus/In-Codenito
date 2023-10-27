@@ -7,15 +7,10 @@
 }
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Qwigley&display=swap');
 
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --accent-color: #ffff;
-    --text-dark: #35363a;
-    --text-light: #f5f5f5;
-
 }
 
 html {
@@ -62,7 +57,7 @@ main {
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+
 }
 
 .hero img {
@@ -161,7 +156,7 @@ main {
 .öppentider #intro-text{
     margin: 10px 15px;
     text-align: center;
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem); ;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); ;
 }
 
 .öppentider-container:hover{
@@ -294,10 +289,10 @@ main {
     }
 
     .text h1{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .text p{
-
+        font-size: 1rem;
     }
     /* #endregion */
     
@@ -323,7 +318,7 @@ main {
 
         .utrustning{
         align-items: start;
-            margin-bottom: 70px;
+        margin-bottom: 70px;
     }
     /* #endregion */
 }
