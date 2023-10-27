@@ -277,6 +277,7 @@ main {
     .services{
         overflow-x: scroll;
         align-items: start;
+        padding-left: 20px;
     }
 
         #scroll{
