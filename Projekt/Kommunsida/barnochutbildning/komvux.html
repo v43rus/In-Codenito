@@ -13,8 +13,11 @@
 <body>
     <header>
         <section>
-            <a id="logoLink" href="../index.html"><img id="logo"
-                    src="../Images/logotype.png"></a>
+            <a id="logoLink" href="../index.html"><img id="logo" alt="Incodenito Logo" src="../Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img class="inlineIcon" alt="Sök" src="../icons/searchicon.png"></a>
+            </div>
         </section>
 
         <nav>
@@ -23,13 +26,16 @@
             <a href="../kulturochfritid.html">Kultur &amp; Fritid</a>
             <a href="../barnochutbildning.html">Barn &amp; Utbildning</a>
             <a href="../kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="../icons/earicon.png">Lyssna</a>
         </nav>
     </header>
 
     <main class="mainSkolor">
         <nav class="navOverview">
             <ul>
-                <li class="inlineImgLink"><img class="inlineIcon" src="../icons/homeicon.png"><a href="../index.html">Startsida</a></li>
+                <li class="inlineImgLink"><img class="inlineIcon" alt="Hem" src="../icons/homeicon.png"><a
+                        href="../index.html">Startsida</a></li>
                 <li>/</li>
                 <li><a href="../barnochutbildning.html">Barn och utbildning</a></li>
                 <li>/</li>
@@ -41,7 +47,7 @@
             <nav class="navskolor">
                 <section class="skollank">
                     <section class="navbildcontainer">
-                        <a  href="forskola.html"><img class="navbild" src="img/forskola.jpg" alt="Förskola"></a>
+                        <a href="forskola.html"><img class="navbild" src="img/forskola.jpg" alt="Förskola"></a>
                         <section class="navtext">
                             <a href="forskola.html">Förskola</a>
                         </section>
@@ -73,7 +79,8 @@
                 </section>
                 <section class="skollank">
                     <section class="navbildcontainer">
-                        <a href="kulturskola.html"><img class="navbild" src="img/kulturskolan.jpg" alt="Kulturskola"></a>
+                        <a href="kulturskola.html"><img class="navbild" src="img/kulturskolan.jpg"
+                                alt="Kulturskola"></a>
                         <section class="navtext">
                             <a href="kulturskola.html">Kulturskola</a>
                         </section>
@@ -102,8 +109,7 @@
                     Thapperska har vuxenutbildningar för dig som vill börja studera i vuxen ålder. Du
                     kan studera på SFI, på grundskolenivå och på gymnasienivå men också enstaka kurser och
                     yrkespaket. Dina behov och önskemål styr vad du ska studera.
-                <p><a href="">Läs mer om Thapperska på vår webbsida.</a></p>
-                </p>
+                <p><a href="">Läs mer om Thapperska på vår webbsida.</a>
             </section>
         </section>
 
@@ -114,26 +120,29 @@
             <ul>
                 <li class="footerSubHeading">Postaddress</li>
                 <li>Incodenito Kommun</li>
-                <li>XXX XX Incodenito</li>
+                <li>103 16 Incodenito</li>
             </ul>
             <ul>
                 <li>Organisationsnummer:</li>
-                <li>212 000-XXXX</li>
-                <li class="footerIconLink"><img class="footerIcon" src="../icons/phoneicon.png"><a class="footerLinks"
-                        href="tel:XXXXXXXXXX">+46XXXXXXXX</a></li>
-                <li class="footerIconLink"><img class="footerIcon" src="../icons/mailicon.png"> <a class="footerLinks"
-                        href="mailto:system@incodenitokommun.se">Skicka
+                <li>212 000-4444</li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Ring" src="../icons/phoneicon.png"><a
+                        class="footerLinks" href="tel:XXXXXXXXXX">+46789456123</a></li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Maila" src="../icons/mailicon.png"> <a
+                        class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
                         mejl</a></li>
             </ul>
         </section>
         <section>
-            <p class="footerHeading">Sociala Medier</p>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="../icons/facebookicon.png">Facebook</a></li>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="../icons/instagramicon.png">Instagram</a></li>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="../icons/linkedinicon.png">LinkedIn</a></li>
+            <ul>
+                <li>
+                    <p class="footerHeading">Sociala Medier</p>
+                </li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Facebook"
+                            src="../icons/facebookicon.png">Facebook</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Instagram"
+                            src="../icons/instagramicon.png">Instagram</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
+                            src="../icons/linkedinicon.png">LinkedIn</a></li>
             </ul>
         </section>
 
@@ -142,22 +151,22 @@
         <script>
             // Get the button
             let mybutton = document.getElementById("myBtn");
-            
+
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
+            window.onscroll = function () { scrollFunction() };
+
             function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
             }
-            
+
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
             }
         </script>
         <!---->
