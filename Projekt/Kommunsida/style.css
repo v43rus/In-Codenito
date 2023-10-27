@@ -222,7 +222,7 @@ footer section {
 
 #earIcon {
     max-width: 20px;
-    padding: 10px 0px 10px 10px;
+    padding: 0px;
 }
 
 /* #endregion */
@@ -423,7 +423,7 @@ footer section {
 }
 
 .kommunStyrelsen {
-    color: var(--background-color);
+    color: var(--text-color);
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -695,7 +695,20 @@ a {
         align-items: baseline;
     }
 
+    .hideAt650 {
+        display: none;
+    }
 
+    .blockAt650 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerTextAt650 {
+        text-align: center;
+    }
 
     /* CARD QUERY */
     .container {
@@ -912,14 +925,6 @@ a {
         max-width: 700px;
         display: inline;
         margin: 0 auto 50px auto;
-    }
-
-    #img-1-application-form {
-        display: none;
-    }
-
-    #img-2-application-form {
-        display: none;
     }
 }
 

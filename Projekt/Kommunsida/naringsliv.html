@@ -13,22 +13,29 @@
 <body>
     <header>
         <section>
-            <a id="logoLink" href="index.html"><img id="logo" src="Images/logotype.png"></a>
+            <a id="logoLink" href="index.html"><img id="logo" alt="Incodenito Logo" src="Images/logotype.png"></a>
+            <div id="searchBar">
+                <input type="text" placeholder="Sök...">
+                <a href=""><img class="inlineIcon" alt="Sök" src="icons/searchicon.png"></a>
+            </div>
         </section>
 
         <nav>
-            <a href="ledigajobb.html">Lediga Jobb</a>
+            <a href=" ledigajobb.html">Lediga Jobb</a>
             <a href="naringsliv.html">Näringsliv</a>
             <a href="kulturochfritid.html">Kultur &amp; Fritid</a>
             <a href="barnochutbildning.html">Barn &amp; Utbildning</a>
             <a href="kommunochpolitik.html">Kommun &amp; Politik</a>
+            <a id="lyssnaLink" class="inlineImgLink" href=""><img class="inlineIcon" alt="Lyssna" id="earIcon"
+                    src="icons/earicon.png">Lyssna</a>
         </nav>
     </header>
 
     <main class="mainNaringsliv">
         <nav class="navOverview">
             <ul>
-                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png"><a href="index.html">Startsida</a></li>
+                <li class="inlineImgLink"><img class="inlineIcon" src="icons/homeicon.png"><a
+                        href="index.html">Startsida</a></li>
                 <li>/</li>
                 <li>Näringsliv</li>
             </ul>
@@ -44,10 +51,10 @@
                     <section class="imgForetagWrapper">
                         <img class="imgForetag" src="Images/naringsliv/naringsliv.jpg">
                     </section>
-                    In-Codenito kommun arbetar för att erbjuda bästa möjliga förutsättningar för 
+                    In-Codenito kommun arbetar för att erbjuda bästa möjliga förutsättningar för
                     befintliga företag att växa och för nya företag att starta och etablera sig hos oss.
-                    Vårt näringslivsarbete tar avstamp i stadens näringslivspolicy. Ett 
-                    intensivt arbete inom fyra fokusområden ska leda till näringslivspolicyns mål om att 
+                    Vårt näringslivsarbete tar avstamp i stadens näringslivspolicy. Ett
+                    intensivt arbete inom fyra fokusområden ska leda till näringslivspolicyns mål om att
                     In-Codenito kommun ska ha ett gott företagsklimat.
                     <br><br>
                     Fokusområden är:
@@ -57,12 +64,12 @@
                         <li>Skapa attraktivare miljöer och bättre framkomlighet</li>
                         <li>Öka tillgången till arbetskraft med relevant kompetens</li>
                     </ul>
-                    Utifrån företagens behov samt vad vi som kommun kan och ska hjälpa till med erbjuder vi 
-                    företagsservice. Det kan till exempel handla om att vi informerar företagare om vilka 
-                    tillstånd de behöver, stöttar med etableringsservice eller erbjuder möjligheter att 
-                    samverka med staden kring sin kompetensförsörjning. Dessutom finns flera initiativ där 
-                    staden samarbetar med näringslivet för att utveckla samhället och öka stadens 
-                    attraktivitet. Med gemensamma krafter arbetar vi till exempel för att minska 
+                    Utifrån företagens behov samt vad vi som kommun kan och ska hjälpa till med erbjuder vi
+                    företagsservice. Det kan till exempel handla om att vi informerar företagare om vilka
+                    tillstånd de behöver, stöttar med etableringsservice eller erbjuder möjligheter att
+                    samverka med staden kring sin kompetensförsörjning. Dessutom finns flera initiativ där
+                    staden samarbetar med näringslivet för att utveckla samhället och öka stadens
+                    attraktivitet. Med gemensamma krafter arbetar vi till exempel för att minska
                     klimatpåverkan, skapa innovativa ekosystem, bekämpa brott och öka tryggheten.
                 </section>
             </section>
@@ -70,7 +77,7 @@
             <section>
                 <h3>Ansökningsformulär for olika events:</h3>
                 <p>
-                    För att hålla ett event eller bedriva någon form av försäljning behöver du först 
+                    För att hålla ett event eller bedriva någon form av försäljning behöver du först
                     fylla i ett formulär. Det gör du via någon av knapparna nedan.
                 </p>
             </section>
@@ -81,16 +88,16 @@
                     <div class="form-popup" id="myForm">
                         <form action="" class="form-container">
                             <h1>Ansökan om att hålla ett event</h1>
-                      
+
                             <!--Events-->
                             <label for="events" id="label-events"><b>Välj event</b></label>
                             <select name="events" id="events" required>
-                              <option value="-" selected>-</option>
-                              <option value="Event">Event</option>
-                              <option value="Tävling">Tävling</option>
-                              <option value="Festival">Festival</option>
+                                <option value="-" selected>-</option>
+                                <option value="Event">Event</option>
+                                <option value="Tävling">Tävling</option>
+                                <option value="Festival">Festival</option>
                             </select>
-                      
+
                             <br><br>
                             <label for="Namn">Namn:</label><br>
                             <input type="text" placeholder="Ditt fullständiga namn" name="namn" required>
@@ -109,7 +116,7 @@
                             <br>
                             <label for="tlfn">Telefon:</label>
                             <input type="number" placeholder="Telefonnummer inklusive riktnummer" name="tlfn" required>
-                  
+
                             <button type="submit" class="btn">Skicka ansökan</button>
                             <button type="button" class="btn cancel" onclick="closeForm()">Avbryt</button>
                         </form>
@@ -119,7 +126,7 @@
                         function openForm() {
                             document.getElementById("myForm").style.display = "block";
                         }
-                    
+
                         function closeForm() {
                             document.getElementById("myForm").style.display = "none";
                         }
@@ -132,16 +139,16 @@
                     <div class="form-popup" id="formHandel">
                         <form action="" class="form-container">
                             <h1>Ansökan om att bedriva försäljning</h1>
-                      
+
                             <!--Handel-->
                             <label for="events" id="label-events"><b>Välj typ av handel</b></label>
                             <select name="events" id="events" required>
-                              <option value="-" selected>-</option>
-                              <option value="Event">Marknad</option>
-                              <option value="Tävling">Torghandel</option>
-                              <option value="Festival">Gatuförsäljning</option>
+                                <option value="-" selected>-</option>
+                                <option value="Event">Marknad</option>
+                                <option value="Tävling">Torghandel</option>
+                                <option value="Festival">Gatuförsäljning</option>
                             </select>
-                      
+
                             <br><br>
                             <label for="Namn">Namn:</label><br>
                             <input type="text" placeholder="Ditt fullständiga namn" name="namn" required>
@@ -160,7 +167,7 @@
                             <br>
                             <label for="tlfn">Telefon:</label>
                             <input type="number" placeholder="Telefonnummer inklusive riktnummer" name="tlfn" required>
-                  
+
                             <button type="submit" class="btn">Skicka ansökan</button>
                             <button type="button" class="btn cancel" onclick="closeFormSalj()">Avbryt</button>
                         </form>
@@ -170,14 +177,14 @@
                         function openFormSalj() {
                             document.getElementById("formHandel").style.display = "block";
                         }
-                    
+
                         function closeFormSalj() {
                             document.getElementById("formHandel").style.display = "none";
                         }
                     </script>
                 </section>
             </section>
-            
+
             <section class="foretag">
                 <h3 class="foretagTitel">Företagsverksamhet</h3>
                 <details class="detailsBox">
@@ -188,22 +195,22 @@
                         <section class="imgForetagWrapper">
                             <img class="imgForetag" src="Images/naringsliv/startup.jpg">
                         </section>
-                        Har du en företagsidé och känner att du behöver mer kunskap för att komma igång? 
-                        Eller har du kommit en bit på vägen, men behöver någon att bolla med eller få råd 
-                        och tips av? Här hittar du exempel på aktörer som kan hjälpa dig att utveckla din 
+                        Har du en företagsidé och känner att du behöver mer kunskap för att komma igång?
+                        Eller har du kommit en bit på vägen, men behöver någon att bolla med eller få råd
+                        och tips av? Här hittar du exempel på aktörer som kan hjälpa dig att utveckla din
                         affärsidé och komma vidare med din verksamhet:
                         <br><br>
                         www.verksamt.se
                         <br>
-                        På verksamt.se får du som ska starta företag en mängd viktig information om hur 
-                        du går vidare med ditt företag. Här kan du också få hjälp med lån, investering 
+                        På verksamt.se får du som ska starta företag en mängd viktig information om hur
+                        du går vidare med ditt företag. Här kan du också få hjälp med lån, investering
                         och bidrag men även med patent och licensiering.
                         <br><br>
                         www.näringslivsavdelningen.se
                         <br>
-                        Näringslivsavdelningen arbetar med service och stöd till alla typer av företag och 
-                        i alla företagets stadier. Här kan du också läsa om olika tillstånd och regler och 
-                        och även ansöka om tillstånd. Du kan boka ett möte med oss genom att skicka ett mejl till 
+                        Näringslivsavdelningen arbetar med service och stöd till alla typer av företag och
+                        i alla företagets stadier. Här kan du också läsa om olika tillstånd och regler och
+                        och även ansöka om tillstånd. Du kan boka ett möte med oss genom att skicka ett mejl till
                         näringsliv@in-codenito.se
                         <br><br>
                         För mer information kan du vända dig till Bolagsverket, Skatteverket eller Tullverket.
@@ -217,22 +224,22 @@
                         <section class="imgForetagWrapper">
                             <img class="imgForetag" src="Images/naringsliv/utveckla.jpg">
                         </section>
-                        I In-Codenito finns goda förutsättningar för tillväxt. Ett utmärkt geografiskt läge, 
-                        väl utvecklad infrastruktur och god tillgång på kompetens betyder attraktiva 
-                        möjligheter för företag inom en rad branscher. Vill du diskutera ditt företags 
-                        utveckling och få veta mer om kommunens service? Vid ett besök eller samtal kan vi 
+                        I In-Codenito finns goda förutsättningar för tillväxt. Ett utmärkt geografiskt läge,
+                        väl utvecklad infrastruktur och god tillgång på kompetens betyder attraktiva
+                        möjligheter för företag inom en rad branscher. Vill du diskutera ditt företags
+                        utveckling och få veta mer om kommunens service? Vid ett besök eller samtal kan vi
                         till exempel diskutera:
                         <ul>
                             <li>Företagets situation i dagsläget</li>
                             <li>Vilka möjligheter företaget ser att utvecklas och växa</li>
                             <li>Vilken form av stöd och råd företaget har behov av</li>
                         </ul>
-                        Vi berättar om kommunens service och tjänster, samt förmedlar kontakter med andra 
+                        Vi berättar om kommunens service och tjänster, samt förmedlar kontakter med andra
                         organisationer eller företagare.
                         <br><br>
-                        Behöver du hjälp med flera myndighetsärenden, som till exempel brandtillsyn, bygglov, 
-                        markupplåtelse, miljö- och hälsoskydd eller serveringstillstånd? In-Codenitos kommun 
-                        kan erbjuda dig ett "dukat bord" där du får träffa flera handläggare vid samma 
+                        Behöver du hjälp med flera myndighetsärenden, som till exempel brandtillsyn, bygglov,
+                        markupplåtelse, miljö- och hälsoskydd eller serveringstillstånd? In-Codenitos kommun
+                        kan erbjuda dig ett "dukat bord" där du får träffa flera handläggare vid samma
                         tillfälle. Mejla oss på naringsliv@in-codenito.se om du vill boka en tid för Dukat Bord.
                     </section>
                 </details>
@@ -244,37 +251,37 @@
                         <section class="imgForetagWrapper">
                             <img class="imgForetag" src="Images/naringsliv/etablera.jpg">
                         </section>
-                        Det finns många faktorer att ta hänsyn till när man väljer etableringsort. 
-                        In-Codenito är attraktivt för många olika typer av företag. Från traditionsrika 
-                        företag inom papper och förpackning till kunskaps- och kreativitetsdrivna företag 
+                        Det finns många faktorer att ta hänsyn till när man väljer etableringsort.
+                        In-Codenito är attraktivt för många olika typer av företag. Från traditionsrika
+                        företag inom papper och förpackning till kunskaps- och kreativitetsdrivna företag
                         inom visualisering och medieteknik.
                         <br><br>
-                        Här finns en välutvecklad infrastruktur med hamn, järnväg och Europavägar. 
-                        Det ger utmärkta transportförutsättningar, inte minst för den nordiska marknaden och 
+                        Här finns en välutvecklad infrastruktur med hamn, järnväg och Europavägar.
+                        Det ger utmärkta transportförutsättningar, inte minst för den nordiska marknaden och
                         Baltikum.
                         <br><br>
-                        Här bedrivs utbildning och forskning i världsklass. I In-Codenito finns ungefär 5 500 
-                        studenter, det är en viktig grund för kompetensförsörjning med kvalitet. Här utbildas 
-                        bland annat framtidens kompetens inom sjukvård, pedagogik, miljö, visualisering, 
-                        medieteknik, logistik och media. In-Codenito är också en bas för nya entreprenörer med 
+                        Här bedrivs utbildning och forskning i världsklass. I In-Codenito finns ungefär 5 500
+                        studenter, det är en viktig grund för kompetensförsörjning med kvalitet. Här utbildas
+                        bland annat framtidens kompetens inom sjukvård, pedagogik, miljö, visualisering,
+                        medieteknik, logistik och media. In-Codenito är också en bas för nya entreprenörer med
                         spännande affärsidéer.
                         <br><br>
-                        Smidig, snabb och effektiv service är viktigt i en kommun med gott näringslivsklimat. 
-                        Från första kontakt till etablerad verksamhet finns näringslivskontoret till din 
+                        Smidig, snabb och effektiv service är viktigt i en kommun med gott näringslivsklimat.
+                        Från första kontakt till etablerad verksamhet finns näringslivskontoret till din
                         tjänst för att:
                         <ul>
                             <li>hitta rätt läge</li>
                             <li>hitta rätt resurser för just dina behov</li>
                             <li>hitta kontakt med universitetet, andra företag, organisationer eller nätverk.</li>
                         </ul>
-                        Näringslivsavdelningen har ett brett kontaktnät både i kommunen och i näringslivet. 
-                        Service och råd är naturligtvis kostnadsfria, och självklart behandlar vi 
+                        Näringslivsavdelningen har ett brett kontaktnät både i kommunen och i näringslivet.
+                        Service och råd är naturligtvis kostnadsfria, och självklart behandlar vi
                         företagsinformation konfidentiellt.
                     </section>
                 </details>
                 <script>
-                    document.querySelectorAll('details').forEach((D,_,A)=>{
-                    D.ontoggle =_=>{ if(D.open) A.forEach(d =>{ if(d!=D) d.open=false })}
+                    document.querySelectorAll('details').forEach((D, _, A) => {
+                        D.ontoggle = _ => { if (D.open) A.forEach(d => { if (d != D) d.open = false }) }
                     })
                 </script>
             </section>
@@ -287,49 +294,53 @@
             <ul>
                 <li class="footerSubHeading">Postaddress</li>
                 <li>Incodenito Kommun</li>
-                <li>XXX XX Incodenito</li>
+                <li>103 16 Incodenito</li>
             </ul>
             <ul>
                 <li>Organisationsnummer:</li>
-                <li>212 000-XXXX</li>
-                <li class="footerIconLink"><img class="footerIcon" src="icons/phoneicon.png"><a class="footerLinks"
-                        href="tel:XXXXXXXXXX">+46XXXXXXXX</a></li>
-                <li class="footerIconLink"><img class="footerIcon" src="icons/mailicon.png"> <a class="footerLinks"
-                        href="mailto:system@incodenitokommun.se">Skicka
+                <li>212 000-4444</li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Ring" src="icons/phoneicon.png"><a
+                        class="footerLinks" href="tel:XXXXXXXXXX">+46789456123</a></li>
+                <li class="footerIconLink"><img class="footerIcon" alt="Maila" src="icons/mailicon.png"> <a
+                        class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
                         mejl</a></li>
             </ul>
         </section>
         <section>
-            <p class="footerHeading">Sociala Medier</p>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="icons/facebookicon.png">Facebook</a></li>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="icons/instagramicon.png">Instagram</a></li>
-            <li class="footerIconLink"><a class="footerLinks" href=""><img
-                        class="footerSocialIcon" src="icons/linkedinicon.png">LinkedIn</a></li>
+            <ul>
+                <li>
+                    <p class="footerHeading">Sociala Medier</p>
+                </li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Facebook"
+                            src="icons/facebookicon.png">Facebook</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="Instagram"
+                            src="icons/instagramicon.png">Instagram</a></li>
+                <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
+                            src="icons/linkedinicon.png">LinkedIn</a></li>
             </ul>
         </section>
+
         <!--Skrolla upp till toppen knapp-->
         <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
         <script>
             // Get the button
             let mybutton = document.getElementById("myBtn");
-            
+
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
+            window.onscroll = function () { scrollFunction() };
+
             function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
             }
-            
+
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
             }
         </script>
         <!---->
