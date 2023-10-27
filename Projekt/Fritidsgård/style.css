@@ -263,12 +263,6 @@ main {
     margin-top: 5px;
 }
 
-@media screens and (max-width: 1800px) {
-    #umgänge{
-            width: 850px;
-    }
-}
-
 @media screen and (max-width: 1400px) {
     /* #region HERO SECTION */
     /* #endregion  */
