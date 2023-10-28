@@ -90,6 +90,11 @@ main {
     margin: 0px;
 }
 
+.inlineImgLink a {
+    color: #551A8B;
+    font-weight: normal !important;
+}
+
 /* #endregion */
 
 

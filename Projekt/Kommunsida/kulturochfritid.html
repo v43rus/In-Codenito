@@ -35,21 +35,20 @@
         </nav>
     </header>
 
-    <main class="KF"> <!-- Main content of Kultur & Fritid -->
-        <nav class="page-finder"> <!-- Website navigator map for the page -->
+    <main id="KF"> <!-- Main content of Kultur & Fritid -->
+        <nav class="navOverview">
             <ul>
-                <li><i class="fa-solid fa-house"></i><a class="last-page" href="index.html"> Startsida</a></li>
-                <!-- Home Icon from Font 
-                                                                                                                    Awesome-->
+                <li class="inlineImgLink"><img class="inlineIcon" alt="Hem" src="icons/homeicon.png"><a
+                        href="index.html">Startsida</a></li>
                 <li>/</li>
-                <li><a href="kulturochfritid.html">Kultur & Fritid</a></li>
+                <li>Kommun &amp; Politik</li>
             </ul>
         </nav>
         <hr>
         <section class="KF-container"> <!-- Container sections for different content, built on a image that comes first, then a heading 
                                             and then a paragraph, continious style throughout the main content -->
             <h2>Kultur & Fritid</h2>
-            <p class="welcome-text">
+            <p id="welcome-text">
                 I In-Codenito omfamnar vi vikten av kultur och fritidsaktiviteter för att skapa en levande och
                 sammanhållen gemenskap.
                 Kultur ger oss en känsla av identitet och samhörighet medan fritidsaktiviteter erbjuder avkoppling och
@@ -329,7 +328,7 @@
                             </p>
                         </figcaption>
                     </figure>
-                    <form class="input-container" action="#"> <!-- Booking form to book a facility for companies -->
+                    <form id="booking-form" action="#"> <!-- Booking form to book a facility for companies -->
                         <label for="fname"><i class="fa fa-user icon"></i>Förnamn</label>
                         <input id="fname" class="input-field" type="text" name="firstname"
                             placeholder="Ange bokarens förnamn:" required>
@@ -345,10 +344,10 @@
                         <label for="subject"><i class="fa-solid fa-keyboard icon"></i>Datum och Verksamhet</label>
                         <textarea id="subject" name="subject" placeholder="Ange datum samt bokarens verksamhet:"
                             required></textarea>
-                        <button class="btn" type="submit">Hyr Idrottshallen</button>
+                        <button id="booking-button" type="submit">Hyr Idrottshallen</button>
                     </form>
                     <hr>
-                    <p class="KF-synlighet">
+                    <p id="KF-synlighet">
                         Önskar er verksamhet synas här? Vänligen kontakta kommunen på telefonnummer <a
                             href="tel:08-333-54-01">+46XXXXXXXX</a>
                         för ytterligare information och möjligheter. Vi är redo att diskutera hur vi kan bistå er och

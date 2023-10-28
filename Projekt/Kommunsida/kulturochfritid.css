@@ -9,7 +9,7 @@
 }
 
 /* CONTAINER FOR MAIN CONTENT */
-.KF {
+#KF {
     max-width: 100%;
     font-family: poppins, sans-serif;
     background-color: var(--background-color);
@@ -18,7 +18,7 @@
 }
 
 /* LINKS INSIDE MAIN CONTENT */
-.KF a {
+#KF a {
     color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
@@ -27,48 +27,24 @@
 }
 
 /* LINKS INSIDE MAIN CONTENT WHEN CLICKED ON */
-.KF a:active {
+#KF a:active {
     animation: flash .5s infinite;
 }
 
 /* HORIZONTAL RULE IN MAIN CONTENT */
-.KF hr {
+#KF hr {
     background-color: var(--accent-color);
     height: .3vh;
     width: 85%;
 }
 
 /* BOTTOM OF PAGE OF SECTION "KOMMUNEN TIPSAR" */
-.KF .KF-synlighet {
+#KF #KF-synlighet {
     font-size: 1rem;
     line-height: 3vh;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-/* FOR THE LIST IN THE MAPNAVIGATOR */
-.page-finder ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 2vw;
-    font-size: 1rem;
-    padding-top: .7rem;
-    margin-left: -1.3rem;
-}
-
-/* FOR THE ICON IN THE MAPNAVIGATOR */
-.page-finder i {
-    cursor: pointer;
-}
-
-/* FOR THE LAST VISISTED PAGE IN MAPNAVIGATOR */
-.page-finder .last-page {
-    color: var(--text-color);
-    font-weight: 400;
 }
 
 /* FOR THE CONTAINER OF SECTIONS */
@@ -154,7 +130,7 @@ summary::marker {
 }
 
 /* FOR THE BOOKING FORM CONTAINER */
-.input-container {
+#booking-form {
     width: 100%;
     padding-top: 1rem;
     padding-right: 3rem;
@@ -169,7 +145,7 @@ label,
 textarea::placeholder, 
 .input-field:focus, 
 textarea:focus, 
-.btn {
+#booking-button {
     font-size: 1rem;
     font-family: poppins, sans-serif;
     color: var(--text-color);
@@ -237,7 +213,7 @@ textarea:focus {
 }
   
 /* FOR THE BOOKING BUTTON INSIDE THE BOOKING FORM */
-.btn {
+#booking-button {
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: .7rem 1rem;
@@ -260,7 +236,7 @@ textarea:focus {
         font-size: 1rem;
         line-height: 2.5vh;
     }
-    .KF .KF-synlighet {
+    #KF #KF-synlighet {
         line-height: 2.5vh;
         padding-left: 3rem;
         padding-right: 3rem;
@@ -282,7 +258,7 @@ textarea:focus {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .input-container,
+    #booking-form,
     .input-field,
     label,
     textarea {
@@ -292,7 +268,7 @@ textarea:focus {
 
 /* FOR LAPTOPS */
 @media all and (min-width: 950px) {
-    .welcome-text,
+    #welcome-text,
     summary {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -328,7 +304,7 @@ textarea:focus {
         line-height: 2.3vh;
         margin-top: 0!important;
     }
-    .KF .KF-synlighet {
+    #KF #KF-synlighet {
         padding-left: 5rem;
         padding-right: 5rem;
         margin-top: 2rem;
@@ -341,7 +317,7 @@ textarea:focus {
     #sundberg {
         height: 35vh;
     }
-    .input-container,
+    #booking-form,
     .input-field,
     label,
     textarea {
@@ -359,7 +335,7 @@ textarea:focus {
 
 /* FOR DESKTOPS */
 @media all and (min-width: 1400px) {
-    .welcome-text,
+    #welcome-text,
     summary {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -374,7 +350,7 @@ textarea:focus {
     .KF-container figure {
         gap: 5rem;
     }
-    .KF .KF-synlighet {
+    #KF #KF-synlighet {
         padding-left: 12rem;
         padding-right: 12rem;
         padding-top: 2rem;
@@ -389,7 +365,7 @@ textarea:focus {
     .KF-container img {
         width: 30%;
     }
-    .input-container,
+    #booking-form,
     .input-field,
     label,
     textarea {
