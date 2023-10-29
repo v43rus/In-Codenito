@@ -7,7 +7,7 @@
 }
 
 .mainNaringsliv{
-    width: 95%;
+    width: 100%;
 }
 
 .naringslivwrapper{
@@ -20,9 +20,13 @@
     text-align: center;
 }
 
+#infoNaringsliv{
+    margin: 10px;
+}
+
 #formNaringsliv{
     display: flex;  
-    margin: auto;                      
+    margin: auto;                     
 }
 
 #formForEvents{
@@ -40,7 +44,7 @@ summary::marker {
 
 .foretag{
     position: relative;
-    width: 100%;
+    width: 98%;
     margin: auto;
     padding-bottom: 50px;
 }
@@ -133,27 +137,6 @@ summary::marker {
   /*border: none;*/
   background: #f1f1f1;
 }
-/*
-.form-container input[type=text]:focus, .form-container input[type=number]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 40%;
-  margin: auto;
-  margin-bottom:10px;
-}
-
-.form-container .cancel {
-  background-color: red;
-}
-*/
 /*-------------------------------------------------------------------------*/
 
 @media screen and (max-width: 800px){   /*Layout for små skärmar*/
