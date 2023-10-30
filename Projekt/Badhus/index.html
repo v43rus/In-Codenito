@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport properties for responsive design -->
+    <meta name="description" content="In-Codenito badhuset"> <!-- Defines meta description of page -->
+    <meta name="keywords" content="Badhus, Simskola, Öppettider, Priser, Resturang"> <!-- Defines meta keywords of page -->
+    <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
     <link rel="stylesheet" href="css/style.css"> <!-- Links an external stylesheet for styling -->
     <link rel="stylesheet" href="css/mediaqueries.css"> <!-- Links another external stylesheet for media queries -->
     <link rel="stylesheet" href="css/fonts.css"> <!-- Links another external stylesheet for fonts -->
@@ -10,32 +13,45 @@
     <link rel="icon" type="image/ico" href="img/favicon.ico" sizes="16x16"> <!-- Sets the favicon for the website -->
     <title>In-Codenito Badet | Simhall | Relax Spa | Gym</title> <!-- Sets the title of the web page -->
 </head>
-<body>
+<body id="scroll1">
     <nav class="navbar"> <!-- Navigation section of the webpage -->
         <ul class="toolbar"> <!-- Unordered list for toolbar items -->
             <li><a href="#scroll1"><i class="fa-solid fa-arrow-up"></i>Tillbaka Upp</a></li> <!-- Link for scrolling to the top with an arrow icon -->
-            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Öppettider</a></li> <!-- Link for scrolling to opening hours section with a question mark icon --> 
-            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Simskola</a></li> <!-- Link for scrolling to swim school section with a question mark icon --> 
-            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Priser</a></li> <!-- Link for scrolling to price section with a question mark icon --> 
-            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Om Oss</a></li> <!-- Link for scrolling to about us section with a question mark icon -->        
-            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Adress</a></li> <!-- Link for scrolling to address section with a question mark icon -->         
-            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Kontakt</a></li> <!-- Link for scrolling to contact section with a question mark icon -->         
+            <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i>Öppettider</a></li> <!-- Link for scrolling to opening hours section with a question mark icon -->
+            <li><a href="#scroll5"><i class="fa-regular fa-circle-question"></i>Simskola</a></li> <!-- Link for scrolling to swim school section with a question mark icon -->
+            <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i>Priser</a></li> <!-- Link for scrolling to price section with a question mark icon -->
+            <li><a href="#scroll6"><i class="fa-regular fa-circle-question"></i>Om Oss</a></li> <!-- Link for scrolling to about us section with a question mark icon -->
+            <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i>Adress</a></li> <!-- Link for scrolling to address section with a question mark icon -->
+            <li><a href="#scroll7"><i class="fa-regular fa-circle-question"></i>Kontakt</a></li> <!-- Link for scrolling to contact section with a question mark icon -->
             <li><a href="simskola.html"><i class="fa-regular fa-user"></i>Boka Simskola</a></li> <!-- Link to the book swim school page with a user icon -->
         </ul>
+        <details class="toolbar-phone"> <!-- Unordered list for toolbar items -->
+            <summary><i class="opened fa-solid fa-xmark"></i> <i class="closed fa-solid fa-bars"></i> Meny</summary>
+            <ul>
+                <li><a href="#scroll1"><i class="fa-solid fa-arrow-up"></i> Tillbaka Upp</a></li> <!-- Link for scrolling to the top with an arrow icon -->
+                <li><a href="#scroll2"><i class="fa-regular fa-circle-question"></i> Öppettider</a></li> <!-- Link for scrolling to opening hours section with a question mark icon -->
+                <li><a href="#scroll5"><i class="fa-regular fa-circle-question"></i> Simskola</a></li> <!-- Link for scrolling to swim school section with a question mark icon -->
+                <li><a href="#scroll3"><i class="fa-regular fa-circle-question"></i> Priser</a></li> <!-- Link for scrolling to price section with a question mark icon -->
+                <li><a href="#scroll6"><i class="fa-regular fa-circle-question"></i> Om Oss</a></li> <!-- Link for scrolling to about us section with a question mark icon -->
+                <li><a href="#scroll4"><i class="fa-regular fa-circle-question"></i> Adress</a></li> <!-- Link for scrolling to address section with a question mark icon -->
+                <li><a href="#scroll7"><i class="fa-regular fa-circle-question"></i> Kontakt</a></li> <!-- Link for scrolling to contact section with a question mark icon -->
+                <li><a href="simskola.html"><i class="fa-regular fa-user"></i> Boka Simskola</a></li> <!-- Link to the book swim school page with a user icon -->
+            </ul>
+        </details>
         <nav class="logobar"> <!-- Secondary navigation section with a logo and search bar -->
             <figure class="logofigure"> <!-- Logo image container with a link to the homepage -->
                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
             </figure>
             <nav class="searchbar"> <!-- Search bar container with a search input field and button -->
                 <form action="#">
-                    <button type="submit"><i class="fas fa-search"></i></button> <!-- Search button with a search icon -->
+                    <button type="submit">&nbsp;<i class="fas fa-search"></i></button> <!-- Search button with a search icon -->
                     <input type="text" placeholder="Sök.."> <!-- Search input field with a placeholder text -->
                 </form>
             </nav>
         </nav>
     </nav>
     <header id="headerbar"> <!-- Header section of the webpage -->
-        <p id="scroll1">
+        <p>
             JUST NU! <sup>__</sup> 20% rabatt för <b>barn</b> och <b>ungdomar</b>.
         </p>
     </header>
@@ -44,18 +60,12 @@
         <section id="hometextcontainer"> <!-- Section for the home text -->
             <h2 id="homeheading">IN-CODENITO BADET</h2> <!-- Heading for the homepage section -->
             <p id="hometext"> <!-- Home text -->
-                Välkommen till oss, det prisbelönta badhuset som har erövrat 
-                <br>
-                Sveriges hjärtan och blivit årets badhus tre år i rad 
-                <br>
-                enligt det svenska folket. 
-                <br>
-                Upplev en unik atmosfär av avkoppling och glädje, 
-                <br>
-                oavsett om du är här för familjelek i våra pooler, lyxig spaavkoppling eller energigivande träning i vårt moderna gym. 
-                <br> 
-                Vår kristallklara bassäng, spännande vattenrutschbanor och vänliga personal 
-                <br>
+                Välkommen till oss, det prisbelönta badhuset som har erövrat<br>
+                Sveriges hjärtan och blivit årets badhus tre år i rad<br>
+                enligt det svenska folket.<br>
+                Upplev en unik atmosfär av avkoppling och glädje,<br>
+                oavsett om du är här för familjelek i våra pooler, lyxig spaavkoppling eller energigivande träning i vårt moderna gym.<br>
+                Vår kristallklara bassäng, spännande vattenrutschbanor och vänliga personal<br>
                 skapar minnesvärda stunder för alla. Kom och upptäck en värld av nöje, välbefinnande och hälsa hos oss!
             </p>
         </section>
@@ -94,7 +104,7 @@
                         <br>
                         Söndag: 10:00 - 19:00
                     </p>
-                    <h3>Simskolorna</h3> 
+                    <h3>Simskolorna</h3>
                     <p>
                         <b>Babysim: 0 - 2 år</b>
                         <br>
@@ -198,7 +208,7 @@
                 </figure>
             </article>
             <article>
-                <figure>
+                <figure id="scroll5">
                 <img src="img/simskola.png" alt="Bild på barn i simskola">
                 <figcaption>
                     <h2>Simskola</h2> <!-- Prices and details for swimming school classes -->
@@ -244,38 +254,25 @@
                     <img id="slogan" src="img/slogan.png" alt="Slogan logo">
                 </figcaption>
                 </figure>
-                <figure>
+                <figure id="scroll6">
                     <img src="img/badhuset.png" alt="Bild på badhuset">
                     <figcaption>
                         <h2>Om Oss</h2> <!-- Description of the facility and its offerings -->
                         <p>
-                            Välkommen till vårt prisbelönta badhus! Vi är stolta över att vara Sveriges hjärta när det gäller avkoppling, 
-                            <br>
-                            motion och välbefinnande. Hos oss kan du njuta av en omfattande simupplevelse i vårt varierade utbud av pooler, 
-                            <br>
-                            oavsett om du är ute efter lugn simning eller spännande vattenrutschbanor.
-                            <br>
-                            <br>
-                            Vår anläggning är inte bara hem för en av de renaste och klaraste bassängerna i landet, 
-                            <br>
-                            utan också ett komplett gym med alla maskiner och hantlar du behöver för att träna och stärka din kropp. 
-                            <br>
-                            Efter en uppfriskande träningspass kan du koppla av i vår avkopplande relaxavdelning, 
-                            <br>
-                            där vi erbjuder en rad olika spaupplevelser, inklusive bastu och spaduschar.
-                            <br>
-                            <br>
-                            Och det är inte allt! Vår simhall är inte bara ett ställe för motion och avkoppling, 
-                            <br>
-                            det är också en plats för social samvaro och god mat. I anslutning till simhallen hittar du vår 
-                            <br>
+                            Välkommen till vårt prisbelönta badhus! Vi är stolta över att vara Sveriges hjärta när det gäller avkoppling,<br>
+                            motion och välbefinnande. Hos oss kan du njuta av en omfattande simupplevelse i vårt varierade utbud av pooler,<br>
+                            oavsett om du är ute efter lugn simning eller spännande vattenrutschbanor.<br><br>
+                            Vår anläggning är inte bara hem för en av de renaste och klaraste bassängerna i landet,<br>
+                            utan också ett komplett gym med alla maskiner och hantlar du behöver för att träna och stärka din kropp.<br>
+                            Efter en uppfriskande träningspass kan du koppla av i vår avkopplande relaxavdelning,<br>
+                            där vi erbjuder en rad olika spaupplevelser, inklusive bastu och spaduschar.<br><br>
+                            Och det är inte allt! Vår simhall är inte bara ett ställe för motion och avkoppling,<br>
+                            det är också en plats för social samvaro och god mat. I anslutning till simhallen hittar du vår<br>
                             mysiga restaurang, där du kan njuta av läckra rätter och fika efter ditt besök.
                         </p>
                         <p id="remove">
-                            Oavsett om du är här för att träna, koppla av eller bara ha roligt med familj och vänner, 
-                            <br>
-                            så är vårt badhus den perfekta platsen för dig. Vi ser fram emot att välkomna dig till vår 
-                            <br>
+                            Oavsett om du är här för att träna, koppla av eller bara ha roligt med familj och vänner,<br>
+                            så är vårt badhus den perfekta platsen för dig. Vi ser fram emot att välkomna dig till vår<br>
                             värld av nöje, hälsa och gemenskap!
                         </p>
                         <img id="tripadvisor" src="img/tripadvisor.png" alt="Tripadvisor logo">
@@ -297,7 +294,7 @@
                 <h2>Adress</h2>
                 <ul>
                     <li>
-                        <address>
+                        <address id="scroll7">
                             Badhusgatan 1
                             <br><br>
                             103 16, In-Codenito
@@ -311,7 +308,7 @@
                 <h2>Kontakt</h2>
                 <ul>
                     <li><a href="mailto:in-codenito.badhuset@in-codenito.com">E-postadress</a></li>
-                    <li><a href="tel:08-999-55-41">Tel. 08-999 55 41</a></li>
+                    <li><a href="tel:08-999-55-41">Tel.&nbsp;08&#8209;999&nbsp;55&nbsp;41</a></li>
                 </ul>
             </li>
         </ul>
@@ -352,9 +349,9 @@
     </footer>
     <hr class="footercontainerhr"> <!-- Horizontal rule separating sections in the footer -->
     <footer class="footericons"> <!-- Footer section with social media icons -->
-        <a href=""><i class="fa-brands fa-square-facebook"></i></a> <!-- Facebook icon with hyperlink -->
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a> <!-- Instagram icon with hyperlink -->
-        <a href=""><i class="fa-brands fa-square-twitter"></i></a> <!-- Twitter icon with hyperlink -->
+        <a href="">&nbsp;<i class="fa-brands fa-square-facebook"></i></a> <!-- Facebook icon with hyperlink -->
+        <a href="">&nbsp;<i class="fa-brands fa-square-instagram"></i></a> <!-- Instagram icon with hyperlink -->
+        <a href="">&nbsp;<i class="fa-brands fa-square-twitter"></i></a> <!-- Twitter icon with hyperlink -->
     </footer>
 </body>
 </html>
