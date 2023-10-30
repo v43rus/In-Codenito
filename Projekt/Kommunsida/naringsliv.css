@@ -21,7 +21,9 @@
 }
 
 #infoNaringsliv{
-    margin: 10px;
+    /*margin: 10px;*/
+    width: 80%;
+    margin: auto;
 }
 
 #formNaringsliv{
@@ -44,7 +46,7 @@ summary::marker {
 
 .foretag{
     position: relative;
-    width: 98%;
+    width: 80%;
     margin: auto;
     padding-bottom: 50px;
 }
