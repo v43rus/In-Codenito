@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="In-Codenito Näringsliv"> <!-- Defines meta description of page -->
-    <meta name="keywords" content="Startup, Utveckling, Etablering, Företagsverksamhet"> <!-- Defines meta keywords of page -->
+    <meta name="keywords" content="Startup, Utveckling, Etablering, Företagsverksamhet">
+    <!-- Defines meta keywords of page -->
     <meta name="author" content="In-Codenito"> <!-- Defines the author of page -->
     <link rel="icon" type="image/ico" href="Images/favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="style.css">
@@ -85,7 +86,7 @@
                 </section>
             </section>
 
-            
+
             <section id="formNaringsliv">
                 <section id="formForEvents">
                     <button class="open-button" onclick="openForm()">Event</button>
@@ -254,7 +255,8 @@
                         <br>
                         <h3 class="foretagTitel">Etablera ditt företag i In-Codenito kommun</h3>
                         <section class="imgForetagWrapper">
-                            <img class="imgForetag" src="Images/naringsliv/etablera.jpg" alt="Etablera ditt företag hos oss">
+                            <img class="imgForetag" src="Images/naringsliv/etablera.jpg"
+                                alt="Etablera ditt företag hos oss">
                         </section>
                         Det finns många faktorer att ta hänsyn till när man väljer etableringsort.
                         In-Codenito är attraktivt för många olika typer av företag. Från traditionsrika
@@ -294,7 +296,7 @@
     </main>
 
     <footer>
-        <section>
+        <div>
             <p class="footerHeading">Kontakt</p>
             <ul>
                 <li class="footerSubHeading">Postaddress</li>
@@ -310,8 +312,8 @@
                         class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
                         mejl</a></li>
             </ul>
-        </section>
-        <section>
+        </div>
+        <div>
             <ul>
                 <li>
                     <p class="footerHeading">Sociala Medier</p>
@@ -323,10 +325,10 @@
                 <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
                             src="icons/linkedinicon.png">LinkedIn</a></li>
             </ul>
-        </section>
+        </div>
 
         <!--Skrolla upp till toppen knapp-->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
         <script>
             // Get the button
             let mybutton = document.getElementById("myBtn");

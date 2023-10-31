@@ -47,8 +47,8 @@
 
 
         <section id="mainContentKP">
-            <h1>Kommun & Politik</h1>
-            <section class="inlineSection screenHundred centerTextAt650 blockAt650">
+            <h1>Kommun &amp; Politik</h1>
+            <div class="inlineSection screenHundred centerTextAt650 blockAt650">
                 <aside class="screenThirty">
                     <h4>Incodenito Kommun</h4>
                     <p>
@@ -79,9 +79,9 @@
                         likasinnade och delta i en mängd olika aktiviteter tillsammans. Grattis såklart!
                     </p>
                 </article>
-            </section>
+            </div>
 
-            <section class="inlineSection hideAt650">
+            <div class="inlineSection hideAt650">
                 <figure class="screenThirty figureKP">
                     <img class="kommunensHistoriaImg" src="Images/kommunochpolitik/komunnenshistorianatt.jpg">
                     <figcaption class="figCaptionKP">Incodenito Kommun kvällstid</figcaption>
@@ -94,27 +94,30 @@
                     <img class="kommunensHistoriaImg" src="Images/kommunochpolitik/komunnenshistoriavaderkvarn.jpg">
                     <figcaption class="figCaptionKP">Incodenito Kommuns Landsbygd</figcaption>
                 </figure>
-            </section>
+            </div>
 
-            <h2>Förvaltningar</h2>
-            <section class="sideBySide blockAt1024" id="forvaltningar">
+
+            <div class="sideBySide blockAt1024" id="forvaltningar">
                 <aside id="forvaltningarLista" class="blockAt1024">
                     <ul>
                         <li>
-                            <button id="omForvaltningarKnapp" onclick=changeInfo(omForvaltningar)>Om våra
+                            <button type="button" id="omForvaltningarKnapp" onclick="changeInfo(omForvaltningar)">Om
+                                våra
                                 förvaltningar</button>
                         </li>
-                        <li><button id="kulturFritidKnapp" onclick=changeInfo(kulturFritid)>Kultur &amp; Fritid</button>
+                        <li><button type="button" id="kulturFritidKnapp" onclick="changeInfo(kulturFritid)">Kultur &amp;
+                                Fritid</button>
                         </li>
-                        <li><button id="tekniskaKontoretKnapp" onclick=changeInfo(tekniskaKontoret)>Tekniska
-                                Kontoret</button></li>
-                        <li><button id="utbildningsForvaltningenKnapp"
-                                onclick=changeInfo(utbildningsForvaltningen)>Utbildningsförvaltningen</button></li>
-                        <li><button id="socialForvaltningenKnapp"
-                                onclick=changeInfo(socialForvaltningen)>Socialförvaltningen</button></li>
-                        <li><button id="raddningsTjanstenKnapp"
-                                onclick=changeInfo(raddningsTjansten)>Räddningstjänsten</button></li>
-                        <li><button id="stadsKontoretKnapp" onclick=changeInfo(stadsKontoret)>Stadskontoret</button>
+                        <li><button type="button" id="tekniskaKontoretKnapp"
+                                onclick="changeInfo(tekniskaKontoret)">Tekniska Kontoret</button></li>
+                        <li><button type="button" id="utbildningsForvaltningenKnapp"
+                                onclick="changeInfo(utbildningsForvaltningen)">Utbildningsförvaltningen</button></li>
+                        <li><button type="button" id="socialForvaltningenKnapp"
+                                onclick="changeInfo(socialForvaltningen)">Socialförvaltningen</button></li>
+                        <li><button type="button" id="raddningsTjanstenKnapp"
+                                onclick="changeInfo(raddningsTjansten)">Räddningstjänsten</button></li>
+                        <li><button type="button" id="stadsKontoretKnapp"
+                                onclick="changeInfo(stadsKontoret)">Stadskontoret</button>
                         </li>
                     </ul>
                 </aside>
@@ -138,10 +141,10 @@
                         </span><a id="telefonNr" href="tel:4545-65400">4545-65400</a>
                     </p>
                 </article>
-            </section>
+            </div>
             <section class="centerColumn screenHundred">
                 <h2 class="centerText">Kontakt för Verksamheter</h2>
-                <section id="kontaktVerksamheter">
+                <div id="kontaktVerksamheter">
                     <article class="verksamhet">
                         <img class="hideAt650" alt="Barnomsorg"
                             src="Images/kommunochpolitik/verksamheter/barnomsorg.jpg">
@@ -258,11 +261,11 @@
                             <p>Tel: +46XXXXXXXXX</p>
                         </div>
                     </article>
-                </section>
+                </div>
             </section>
             <section class="screenSeventy centerColumn">
                 <h2 class="centerText">Vi i Kommunstyrelsen</h2>
-                <section class="screenHundred">
+                <div class="screenHundred">
                     <article class="kommunStyrelsen">
                         <img class="circularSquare" alt="Mhattias Roswall"
                             src="Images/kommunochpolitik/kommunstyrelsen/mhattias.jpg">
@@ -298,7 +301,7 @@
                             <p>Ersättare</p>
                         </div>
                     </article>
-                </section>
+                </div>
 
             </section>
 
@@ -313,7 +316,7 @@
 
 
     <footer>
-        <section>
+        <div>
             <p class="footerHeading">Kontakt</p>
             <ul>
                 <li class="footerSubHeading">Postaddress</li>
@@ -329,8 +332,8 @@
                         class="footerLinks" href="mailto:system@incodenitokommun.se">Skicka
                         mejl</a></li>
             </ul>
-        </section>
-        <section>
+        </div>
+        <div>
             <ul>
                 <li>
                     <p class="footerHeading">Sociala Medier</p>
@@ -342,10 +345,10 @@
                 <li class="footerIconLink"><a class="footerLinks" href=""><img class="footerSocialIcon" alt="LinkedIn"
                             src="icons/linkedinicon.png">LinkedIn</a></li>
             </ul>
-        </section>
+        </div>
 
         <!--Skrolla upp till toppen knapp-->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
         <script>
             // Get the button
             let mybutton = document.getElementById("myBtn");

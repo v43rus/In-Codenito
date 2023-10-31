@@ -103,7 +103,7 @@ main {
 
 #logo {
     max-width: 100%;
-    padding: 10px;
+    padding: 10px !important;
 }
 
 #logoLink {
@@ -188,7 +188,7 @@ footer ul {
     padding: 0px;
 }
 
-footer section {
+footer div {
     padding: 1% 5%;
 }
 
@@ -406,6 +406,10 @@ footer section {
 .screenTwenty {
     width: 20%;
     margin: 10px;
+}
+
+.blockElement {
+    display: block;
 }
 
 .verksamhet,
