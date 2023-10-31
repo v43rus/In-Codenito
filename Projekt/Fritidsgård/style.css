@@ -135,7 +135,7 @@ main {
     background: rgb(191, 103, 53);
     background: linear-gradient(0deg, rgba(191, 103, 53, 1) 0%, rgba(48, 79, 88, 1) 14%, rgba(34, 54, 73, 1) 35%, #131d26 75%);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     gap: 120px;
@@ -156,7 +156,7 @@ main {
     box-shadow: 20px 20px 40px #0a0f13,
         -20px -20px 40px #1c2b39;
     width: 330px;
-    max-height: fit-content;
+    height: min-content;
     position: relative;
     left: 60px;
     /* media query */
@@ -214,10 +214,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#scroll {
-    display: none;
 }
 
 
@@ -334,6 +330,10 @@ main {
         display: none;
     }
 
+    .öppentider{
+        padding-top: 70px;
+    }
+
     /* #endregion  */
 
     /* #region MID SECTION */
@@ -421,6 +421,8 @@ main {
     .öppentider {
         gap: 70px;
         flex-direction: column;
+        height: 100%;
+
     }
 
     .öppentider-container {
