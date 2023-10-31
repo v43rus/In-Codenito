@@ -1133,8 +1133,8 @@ a {
 /*Style for submit-file buttons*/
 #CV-file::file-selector-button,
 #PB-file::file-selector-button {
-    width: 8em;
-    height: 2em;
+    width: 20%;
+    aspect-ratio: 3 / 0.8;
     background-color: white;
     color: #000000;
     border-radius: 25px;
@@ -1148,8 +1148,8 @@ a {
 /*Style for Submit form button*/
 #submit-button {
     justify-items: center;
-    width: 14em;
-    height: 2.5em;
+    width: 40%;
+    aspect-ratio: 4 / 1;
     margin: 1px auto 1px auto;
     background-color: white;
     color: #000000;
@@ -1197,9 +1197,6 @@ a {
 }
 
 #to-form-button {
-    width: 8em;
-    height: 2em;
-
     display: block;
     /*The button wouldn't be centered with margin without this*/
     margin: 20px auto;
@@ -1323,7 +1320,6 @@ a {
     }
 
     #to-form-button {
-        width: 8em;
         aspect-ratio: 8 / 2;
         margin: 10px auto 20px;
     }
