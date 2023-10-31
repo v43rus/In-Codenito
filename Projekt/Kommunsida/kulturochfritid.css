@@ -19,10 +19,8 @@
 
 /* LINKS INSIDE MAIN CONTENT */
 #KF a {
-    color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
     transition: color .3s;
 }
 
@@ -140,11 +138,11 @@ summary::marker {
 }
 
 /* FOR THE CONTENT OF THE BOOKING FORM */
-label,  
-.input-field::placeholder, 
-textarea::placeholder, 
-.input-field:focus, 
-textarea:focus, 
+label,
+.input-field::placeholder,
+textarea::placeholder,
+.input-field:focus,
+textarea:focus,
 #booking-button {
     font-size: 1rem;
     font-family: poppins, sans-serif;
@@ -159,7 +157,7 @@ label {
     color: var(--text-color);
     width: 100%;
     text-align: center;
-    
+
 }
 
 /* FOR THE ICONS IN THE BOOKING FORM */
@@ -174,7 +172,7 @@ label {
     border: 2px solid var(--primary-color);
     outline: none;
 }
-  
+
 /* FOR THE INPUT FIELDS WHEN CLICKED ON */
 .input-field:focus {
     border: 2px solid var(--secondary-color);
@@ -192,7 +190,8 @@ textarea::placeholder {
 }
 
 .input-field:focus::placeholder,
-textarea:focus::placeholder { /* FOR THE PLACEHOLDER WHEN CLICKED ON */
+textarea:focus::placeholder {
+    /* FOR THE PLACEHOLDER WHEN CLICKED ON */
     color: transparent;
 }
 
@@ -211,7 +210,7 @@ textarea {
 textarea:focus {
     border: 2px solid var(--secondary-color);
 }
-  
+
 /* FOR THE BOOKING BUTTON INSIDE THE BOOKING FORM */
 #booking-button {
     background-color: var(--primary-color);
@@ -231,17 +230,20 @@ textarea:focus {
         padding-left: 5.5rem;
         padding-right: 5.5rem;
     }
+
     .KF-container h3,
     .KF-container p {
         font-size: 1rem;
         line-height: 2.5vh;
     }
+
     #KF #KF-synlighet {
         line-height: 2.5vh;
         padding-left: 3rem;
         padding-right: 3rem;
         margin-top: 1rem;
     }
+
     .KF-container img {
         width: 90%;
         display: block;
@@ -250,14 +252,17 @@ textarea:focus {
         margin-bottom: 1rem;
         margin-top: 2rem;
     }
+
     #sundberg {
         image-rendering: -webkit-optimize-contrast;
         height: 55vh;
     }
+
     details[open] .KF-container {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
     #booking-form,
     .input-field,
     label,
@@ -268,55 +273,67 @@ textarea:focus {
 
 /* FOR LAPTOPS */
 @media all and (min-width: 950px) {
+
     #welcome-text,
     summary {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
     details {
         margin-left: 3rem;
     }
+
     .page-finder ul {
         gap: 1vw;
         padding-left: 3.5rem;
         margin-left: 0;
     }
+
     .KF-container {
         padding-left: 8rem;
         padding-right: 8rem;
     }
+
     .KF-container h2 {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+
     .KF-container figure {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: 2rem;
     }
+
     .KF-container figcaption {
         flex: 1;
     }
+
     .KF-container h3,
     .KF-container p {
         font-size: 1rem;
         line-height: 2.3vh;
-        margin-top: 0!important;
+        margin-top: 0 !important;
     }
+
     #KF #KF-synlighet {
         padding-left: 5rem;
         padding-right: 5rem;
         margin-top: 2rem;
         line-height: 2.3vh;
     }
+
     .KF-container img {
         width: 50%;
         height: 25vh;
     }
+
     #sundberg {
         height: 35vh;
     }
+
     #booking-form,
     .input-field,
     label,
@@ -325,9 +342,11 @@ textarea:focus {
         margin-left: auto;
         margin-right: auto;
     }
+
     label {
         text-align: start;
     }
+
     .icon {
         padding-left: 3rem;
     }
@@ -335,36 +354,45 @@ textarea:focus {
 
 /* FOR DESKTOPS */
 @media all and (min-width: 1400px) {
+
     #welcome-text,
     summary {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
     details {
         margin-left: 5rem;
     }
+
     .KF-container h3,
     .KF-container p {
         margin-top: 2rem;
     }
+
     .KF-container figure {
         gap: 5rem;
     }
+
     #KF #KF-synlighet {
         padding-left: 12rem;
         padding-right: 12rem;
         padding-top: 2rem;
     }
+
     #bibloteket {
         height: 25vh;
         image-rendering: -webkit-optimize-contrast;
     }
+
     #sundberg {
         height: 40vh;
     }
+
     .KF-container img {
         width: 30%;
     }
+
     #booking-form,
     .input-field,
     label,
@@ -378,9 +406,11 @@ textarea:focus {
     0% {
         color: var(--accent-color);
     }
+
     50% {
         color: var(--link-color);
     }
+
     100% {
         color: var(--accent-color);
     }

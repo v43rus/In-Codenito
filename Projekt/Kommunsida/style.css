@@ -91,7 +91,8 @@ main {
 }
 
 .inlineImgLink a {
-    color: #551A8B;
+    color: var(--link-color);
+    font-size: 16px;
     font-weight: normal !important;
 }
 
@@ -522,7 +523,6 @@ footer div {
     text-decoration: underline;
     min-height: 100%;
     min-width: 100%;
-    line-height: 100%;
     height: max-content;
     border: none;
     background: none;
@@ -667,6 +667,7 @@ footer div {
 }
 
 a {
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -1284,8 +1285,8 @@ a {
     }
 
     #forvaltningar li {
-        padding: 5px 10px;
-        min-height: 25px;
+        padding: 0px 10px;
+        min-height: 35px;
     }
 
     #forvaltningarLista {
