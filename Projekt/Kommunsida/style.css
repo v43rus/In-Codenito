@@ -130,7 +130,7 @@ header h1 {
     font-size: 2vw;
 }
 
-#searchBar-container {
+section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
