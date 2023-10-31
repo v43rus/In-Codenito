@@ -50,18 +50,19 @@ header nav img {
     justify-content: space-evenly;
     align-items: center;
 }
-.navbar a p{
+
+.navbar a p {
     color: rgb(229, 223, 209);
 }
 
-.navbar a p:hover{
+.navbar a p:hover {
     transition: all .2s linear;
     color: rgb(255, 187, 70);
     cursor: pointer;
-    
+
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
 }
 
@@ -98,15 +99,17 @@ main {
     border-radius: 5px;
     box-shadow:
         -10px -10px 40px #081f3d;
-    padding: 90px 120px;  /* media query */
+    padding: 90px 120px;
+    /* media query */
     transform: translate(-50%, -50%);
     text-align: center;
     width: 60%;
 }
 
 .text h1 {
-    text-shadow: 1px 1px 1px  wheat;
-    font-size: 3rem; /* media query */
+    text-shadow: 1px 1px 1px wheat;
+    font-size: 3rem;
+    /* media query */
     line-height: 1.2em;
     letter-spacing: 2px;
     font-weight: bold;
@@ -115,7 +118,8 @@ main {
 .text p {
 
     margin-top: 20px;
-    font-size: 1rem;  /* media query */
+    font-size: 1rem;
+    /* media query */
     line-height: 1em;
     letter-spacing: 1px;
     font-weight: 500;
@@ -134,42 +138,45 @@ main {
     height: 80vh;
     display: flex;
     justify-content: center;
-    gap: 120px;   /* media query */ 
+    gap: 120px;
+    /* media query */
 
 }
 
-.öppentider ul{
+.öppentider ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.öppentider-container{
+.öppentider-container {
     border-radius: 50px;
-    box-shadow:  20px 20px 40px #0a0f13,
+    box-shadow: 20px 20px 40px #0a0f13,
         -20px -20px 40px #1c2b39;
     width: 330px;
     max-height: fit-content;
     position: relative;
-    left: 60px;  /* media query */
+    left: 60px;
+    /* media query */
     z-index: 1;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-#tider{
-    padding:10px;
+#tider {
+    padding: 10px;
     margin-top: 70px;
 }
 
 
-.öppentider #intro-text{
+.öppentider #intro-text {
     margin: 10px 5px;
     text-align: center;
     padding: 10px;
-    font-size: clamp(1rem, 2.5vw, 1.2rem); ;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    ;
 }
 
 /* .öppentider-container:hover{
@@ -177,13 +184,16 @@ main {
     transition: 1s ease-in-out;
 } */
 
-#moon{
-    width: 40%; /* media query */
+#moon {
+    width: 40%;
+    /* media query */
     z-index: 0;
     position: absolute;
     filter: drop-shadow(1px 1px 10px rgb(6, 87, 72)) invert(1%);
-    top: 120%;  /* media query */
-    right: 30%;  /* media query */
+    top: 120%;
+    /* media query */
+    right: 30%;
+    /* media query */
     opacity: .2;
 }
 
@@ -193,58 +203,56 @@ main {
 
 /* #region Last part */
 
-.services{
+.services {
     height: 90vh;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     color: white;
-    background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%,  rgba(191, 103, 53, 1) 75%);
+    background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#scroll{
+#scroll {
     display: none;
 }
 
 
-.utrustning{
+.utrustning {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
-/* .gear{
-    width: 240px;
-    margin-top: 25px;
-    margin-left: 20px;
-} */
 
-.flex-margin{
+.flex-margin {
     margin: 100px 10px;
 }
 
-.utrustning ul{
+.utrustning ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.utrustning ul li{
+
+.utrustning ul li {
     list-style: none;
 }
 
-.fritid-list{
-    margin-left:20px;
+.fritid-list {
+    margin-left: 20px;
 }
-.fritid-list img{
-    max-width: clamp(170px, 30vw, 260px); /* media query */
+
+.fritid-list img {
+    max-width: clamp(170px, 30vw, 260px);
+    /* media query */
     margin: 10px 30px;
     box-shadow:
-    5px 5px 10px rgb(0, 0, 0);
+        5px 5px 10px rgb(0, 0, 0);
 }
 
 .outro {
@@ -253,109 +261,168 @@ main {
     background-color: #131d26;
     margin: 0 auto;
 }
-.outro :first-child{
+
+.outro :first-child {
     padding: 10px 0;
 }
 
-.outro :last-child{
+.outro :last-child {
     padding-top: -20px;
 }
 
 /* #endregion footer */
-#footer-fri{
+#footer-fri {
     height: 40px;
     text-align: center;
     word-spacing: 5px;
     margin: 5px;
 }
 
+
+/* #region ny utrustnings section */
+
+#mobile-down {
+    display: none;
+}
+
+#down {
+    display: block;
+}
+
+.flex-services {
+    background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
+    display: flex;
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.flex-utrustning {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    /* align-content: center; */
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+}
+
+.flex-utrustning article img {
+    max-width: 70%;
+}
+
+.utrustning-flöde {
+    height: 300px;
+}
+
 @media screen and (max-width: 1400px) {
+
     /* #region HERO SECTION */
+    #mobile-down {
+        display: block;
+    }
+
+    #down {
+        display: none;
+    }
+
     /* #endregion  */
 
     /* #region MID SECTION */
     /* #endregion */
 
     /* #region LAST SECTION */
-    .services{
+
+    .flex-services {
+        display: block;
+        background-image: linear-gradient(0deg, #131d26 0%, rgba(34, 54, 73, 1)14%, rgba(48, 79, 88, 1) 35%, rgba(191, 103, 53, 1) 75%);
+        display: flex;
+        padding-top: 150px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .services {
+        display: none;
         overflow-x: scroll;
         align-items: start;
         padding-left: 20px;
     }
 
-        #scroll{
+    #scroll {
         display: block;
         font-size: 1rem;
         text-decoration: underline;
     }
 
-        .utrustning{
+    .utrustning {
+        display: none;
         align-items: start;
         margin-bottom: 70px;
     }
+
     /* #endregion */
 }
 
 @media screen and (max-width: 900px) {
     /* #region HERO SECTION */
-    
-    .text{  
+
+    .text {
         padding: 70px 20px;
     }
 
-    .text h1{
+    .text h1 {
         font-size: 2rem;
     }
-    .text p{
+
+    .text p {
         font-size: 1rem;
     }
+
     /* #endregion */
-    
-    
+
+
     /* #region MID SECTION */
-        .öppentider{
+    .öppentider {
         /* gap: 40px; */
     }
+
     /* #endregion */
 
 
 
     /* #region LAST SECTION */
-        .services{
-        overflow-x: scroll;
-        align-items: start;
-    }
 
-        #scroll{
-        display: block;
-        font-size: 1rem;
-        text-decoration: underline;
-    }
-
-        .utrustning{
-        align-items: start;
-        margin-bottom: 70px;
-    }
     /* #endregion */
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     /* #region HERO SECTION */
 
 
 
-        .text p{
-            font-size: 0.9rem;
+    .text p {
+        font-size: 0.9rem;
     }
+
     /* #endregion */
 
     /* #region MID SECTION */
-    .öppentider{
+    .öppentider {
         gap: 70px;
         flex-direction: column;
     }
 
-    .öppentider-container{
+    .öppentider-container {
         top: 10px;
         left: 20px;
     }
@@ -363,23 +430,6 @@ main {
     /* #endregion */
 
     /* #region LAST SECTION */
-    .services{
-        height: 110vh;
-        overflow-x: scroll;
-        align-items: start;
-        padding-left: 20px;
-        padding-top: 10px;
-    }
 
-    #scroll{
-        display: block;
-        font-size: 1rem;
-        text-decoration: underline;
-    }
-
-    .utrustning{
-        align-items: start;
-        margin-bottom: 70px;
-    }
     /* #endregion */
 }
