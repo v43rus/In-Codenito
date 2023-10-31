@@ -107,6 +107,8 @@ summary::marker {
   color: white;
   padding: 16px 20px;
   border: none;
+  border-radius: 10px;
+  font-size:1em;
   cursor: pointer;
   width: 180px;
 }
