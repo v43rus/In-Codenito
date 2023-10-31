@@ -531,6 +531,7 @@ footer div {
 
 #forvaltningar button:hover {
     color: var(--text-color);
+    cursor: pointer;
 }
 
 
@@ -686,7 +687,7 @@ a {
     margin-left: 5px;
 }
 
-#twoCards{
+#twoCards {
     text-align: center;
 }
 
