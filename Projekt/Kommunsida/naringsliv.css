@@ -166,6 +166,6 @@ summary::marker {
 
 @media screen and (min-width: 2000px){   /*Layout för stora skärmar*/
     .mainNaringsliv{
-        width: 80%;
+        width: 100%;
     }
 }
