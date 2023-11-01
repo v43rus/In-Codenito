@@ -131,7 +131,7 @@ header h1 {
     font-size: 2vw;
 }
 
-header section {
+#headerTopContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
