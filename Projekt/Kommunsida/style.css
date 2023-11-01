@@ -766,6 +766,10 @@ a {
         font-weight: 500;
     }
 
+    article.verksamhet {
+        padding: 10px;
+    }
+
     #earIcon {
         width: 12px !important;
         padding: 0px;
