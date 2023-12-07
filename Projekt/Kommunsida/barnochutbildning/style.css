@@ -6,11 +6,11 @@
     --text-color: #000000;
 }
 
-.mainSkolor{
+.mainSkolor {
     width: 100%;
 }
 
-.skolwrapper{
+.skolwrapper {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -18,7 +18,8 @@
 }
 
 /*----------------Navigation styling börjar här--------------*/
-.navskolor{     /*Container för navigationen*/
+.navskolor {
+    /*Container för navigationen*/
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -26,20 +27,23 @@
     margin: auto;
 }
 
-.navbildcontainer{  /*Container för bilderna till navigationen*/
+.navbildcontainer {
+    /*Container för bilderna till navigationen*/
     width: 120px;
     height: 90px;
     position: relative;
 }
 
-.navbild{       /*Bilden ska fylla hela containern som den är i*/
+.navbild {
+    /*Bilden ska fylla hela containern som den är i*/
     width: 120px;
     height: 90px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.skollank{          /*Container för bilden och länktexten*/
+.skollank {
+    /*Container för bilden och länktexten*/
     width: 120px;
     height: 90px;
     margin-right: 10px;
@@ -49,64 +53,71 @@
     border-radius: 20px;
 }
 
-.navtext{           /*Placera länktexten i en container och ge den en bakgrundsfärg*/
-    width: 100%;    
+.navtext {
+    /*Placera länktexten i en container och ge den en bakgrundsfärg*/
+    width: 100%;
     height: 30px;
     background-color: #000000;
-    position: absolute;     /*Placera containern i mitten*/
+    position: absolute;
+    /*Placera containern i mitten*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.navskolor a{       /*Styla länkarna*/
+.navskolor a {
+    /*Styla länkarna*/
     color: #FFFFFF;
     font-weight: bold;
-    position: absolute;     /*Och placera de i mitten*/
+    position: absolute;
+    /*Och placera de i mitten*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.1em;
 }
 
-.navskolor a:hover{
-    color:#CBBD98;
+.navskolor a:hover {
+    color: #CBBD98;
 }
+
 /*------------------------Navigation styling slutar här-------------*/
 
-.titelSkola{
+.titelSkola {
     width: 100%;
     text-align: center;
 }
 
-.skolbildcontainer{
+.skolbildcontainer {
     width: 90%;
     margin: auto;
 }
 
-#skolvideo{
+#skolvideo {
     width: 100%;
-    margin:auto;
+    margin: auto;
 }
 
-.skolbild{
+.skolbild {
     width: 100%;
     object-fit: contain;
     border-radius: 15px;
 }
 
-@media screen and (min-width: 1000px){   /*Layout för stora skärmar*/
-    .skolbildcontainer{
+@media screen and (min-width: 1000px) {
+
+    /*Layout för stora skärmar*/
+    .skolbildcontainer {
         width: 50%;
         margin: 0;
     }
-    
-    .infoSkola{
+
+    .infoSkola {
         width: 40%;
         margin: auto;
     }
 
-    #skolstartsida{
+    #skolstartsida {
         width: 80%;
     }
 }
